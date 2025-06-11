@@ -11,7 +11,6 @@ import { Logout } from "../logout";
 
 export const NavbarRoutes: FC = ({}) => {
 	const pathname = usePathname();
-	// const router = useRouter();
 
 	const isTeacherPage = pathname?.startsWith(ENUM_PATH.TEACHER_PATHS);
 	const isPlayerPage = pathname?.includes(ENUM_PATH.PLAYER_PATHS);
