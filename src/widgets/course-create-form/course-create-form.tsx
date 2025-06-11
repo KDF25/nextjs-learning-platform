@@ -1,7 +1,6 @@
 "use client";
 
 import { zodResolver } from "@hookform/resolvers/zod";
-import axios from "axios";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { FC } from "react";
@@ -21,12 +20,16 @@ import {
 	Input
 } from "@/shared/ui";
 
-import { ICourseForm, formSchema } from "./model";
+import {
+	CourseService,
+	ICourseCreateForm,
+	formSchemaCourseCreate
+} from "@/entities/course";
 
-export const CreateCourseForm: FC = ({}) => {
+export const CourseCreateForm: FC = ({}) => {
 	const router = useRouter();
-	const form = useForm<ICourseForm>({
-		resolver: zodResolver(formSchema),
+	const form = useForm<ICourseCreateForm>({
+		resolver: zodResolver(formSchemaCourseCreate),
 		defaultValues: {
 			title: ""
 		}
@@ -36,10 +39,9 @@ export const CreateCourseForm: FC = ({}) => {
 		handleSubmit
 	} = form;
 
-	const onSubmit = async (data: ICourseForm) => {
+	const onSubmit = async (data: ICourseCreateForm) => {
 		try {
-			const response = await axios.post("/api/courses", data);
-			console.log("Response:", response, data);
+			await CourseService.create(data);
 			router.push(ENUM_PATH.TEACHER_COURSES);
 		} catch {
 			toast.error("Failed to create course. Please try again.");
