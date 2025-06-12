@@ -30,17 +30,19 @@ export const CourseSetupPage: FC<ICourseSetupPageProps> = async ({
 	const { total, completed } = getCourseFields({ course });
 
 	return (
-		<div className="p-6 grid grid-cols-1 gap-6">
-			<div className="flex items-center justify-between">
-				<div className="flex flex-col gap-x-2">
-					<h1 className="text-2xl font-medium">Course setup</h1>
-					<span className="text-sm text-slate-700">
-						Complete all fields {completed}/{total}
-					</span>
+		<div>
+			<div className="p-6 flex flex-col gap-6">
+				<div className="flex items-center justify-between">
+					<div className="flex flex-col gap-x-2">
+						<h1 className="text-2xl font-medium">Course setup</h1>
+						<span className="text-sm text-slate-700">
+							Complete all fields {completed}/{total}
+						</span>
+					</div>
 				</div>
-			</div>
-			<div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-				<CourseCustomForm course={course} />
+				<div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+					<CourseCustomForm course={course} />
+				</div>
 			</div>
 		</div>
 	);

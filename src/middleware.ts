@@ -3,6 +3,13 @@ import { clerkMiddleware, createRouteMatcher } from "@clerk/nextjs/server";
 const isPublicRoute = createRouteMatcher(["/sign-in(.*)"]);
 
 export default clerkMiddleware(async (auth, req) => {
+	const { nextUrl } = req;
+
+	// Пропускаем аутентификацию для API маршрутов, которые обрабатывают свою собственную аутентификацию
+	if (nextUrl.pathname.startsWith("/api/uploadthing")) {
+		return;
+	}
+
 	if (!isPublicRoute(req)) {
 		await auth.protect();
 	}
@@ -10,9 +17,9 @@ export default clerkMiddleware(async (auth, req) => {
 
 export const config = {
 	matcher: [
-		// Skip Next.js internals and all static files, unless found in search params
+		// Пропускаем Next.js внутренние файлы и все статические файлы
 		"/((?!_next|[^?]*\\.(?:html?|css|js(?!on)|jpe?g|webp|png|gif|svg|ttf|woff2?|ico|csv|docx?|xlsx?|zip|webmanifest)).*)",
-		// Always run for API routes
+		// Всегда выполняем для API маршрутов
 		"/(api|trpc)(.*)"
 	]
 };

@@ -1,27 +1,15 @@
 "use client";
 
-import { zodResolver } from "@hookform/resolvers/zod";
 import { Course } from "@prisma/client";
-import { PlusCircle } from "lucide-react";
+import { ImageIcon, PlusCircle } from "lucide-react";
+import Image from "next/image";
 import { useRouter } from "next/navigation";
 import { FC, useState } from "react";
-import { useForm } from "react-hook-form";
 import toast from "react-hot-toast";
 
-import {
-	Button,
-	Form,
-	FormControl,
-	FormField,
-	FormItem,
-	Input
-} from "@/shared/ui";
+import { Button, FileUpload } from "@/shared/ui";
 
-import {
-	CourseService,
-	ICourseCustomForm,
-	formSchemaCourseCustom
-} from "@/entities/course";
+import { CourseService, ICourseCustomForm } from "@/entities/course";
 
 interface IImageSectionProps {
 	initialData: Course;
@@ -31,16 +19,6 @@ export const ImageSection: FC<IImageSectionProps> = ({ initialData }) => {
 	const [isEditing, setIsEditing] = useState<boolean>(false);
 
 	const router = useRouter();
-	const form = useForm<ICourseCustomForm>({
-		resolver: zodResolver(formSchemaCourseCustom),
-		defaultValues: {
-			imageUrl: initialData?.imageUrl || ""
-		}
-	});
-	const {
-		formState: { isSubmitting, isValid },
-		handleSubmit
-	} = form;
 
 	const onSubmit = async (data: ICourseCustomForm) => {
 		try {
@@ -65,55 +43,55 @@ export const ImageSection: FC<IImageSectionProps> = ({ initialData }) => {
 					className="flex flex-row gap-1"
 					onClick={() => setIsEditing(!isEditing)}
 				>
-					{isEditing ? (
-						<>Cancel</>
-					) : (
+					{isEditing && <>Cancel</>}
+
+					{!isEditing && !initialData?.imageUrl && (
 						<>
 							<PlusCircle size={12} />
 							Add an image
 						</>
 					)}
+
+					{!isEditing && initialData?.imageUrl && (
+						<>
+							<PlusCircle size={12} />
+							Edit image
+						</>
+					)}
 				</Button>
 			</div>
-			{isEditing ? (
-				<Form {...form}>
-					<form
-						onSubmit={handleSubmit(onSubmit)}
-						className="space-y-4   flex flex-col gap-2"
-					>
-						<FormField
-							control={form.control}
-							name="imageUrl"
-							render={({ field }) => (
-								<FormItem className="bg-white">
-									<FormControl>
-										<Input
-											disabled={isSubmitting}
-											placeholder="e.g. This course is about..."
-											{...field}
-										/>
-									</FormControl>
-								</FormItem>
-							)}
+
+			{!isEditing &&
+				(!initialData?.imageUrl ? (
+					<div className="flex items-center justify-center h-60 bg-slate-200 rounded-md">
+						<ImageIcon size={40} />
+					</div>
+				) : (
+					<div className="relative aspect-video">
+						<Image
+							alt="Upload"
+							fill
+							className="object-cover"
+							src={initialData?.imageUrl}
 						/>
-						<div className="flex items-center gap-2">
-							<Button
-								disabled={
-									!isValid ||
-									isSubmitting ||
-									initialData.description ===
-										form.getValues("imageUrl")
-								}
-								type="submit"
-							>
-								Save
-							</Button>
-						</div>
-					</form>
-				</Form>
-			) : (
-				<div className="text-sm text-slate-600">
-					{initialData?.imageUrl || "No image"}
+					</div>
+				))}
+
+			{isEditing && (
+				<div className="flex flex-col gap-2">
+					<FileUpload
+						endpoint="courseImage"
+						onChange={(url) => {
+							if (url) {
+								onSubmit({
+									imageUrl: url
+								} as ICourseCustomForm);
+							}
+						}}
+					/>
+					<div className="text-xs text-muted-foreground">
+						16:9 aspect ratio recommended
+					</div>
 				</div>
 			)}
 		</div>
