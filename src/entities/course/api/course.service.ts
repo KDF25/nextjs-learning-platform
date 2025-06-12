@@ -3,10 +3,10 @@ import axios from "axios";
 
 import { prisma } from "@/shared/database";
 
-import { ICourseCreateForm } from "../types";
+import { ICourseTitleForm } from "../types";
 
 export const CourseService = {
-	async create(data: ICourseCreateForm) {
+	async create(data: ICourseTitleForm) {
 		return await axios.post("/api/courses", data);
 	},
 

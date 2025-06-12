@@ -4,12 +4,7 @@ import { withUt } from "uploadthing/tw";
 export default withUt({
     darkMode: ["class"],
     content: [
-		"./src/app/**/*.{js,ts,jsx,tsx,mdx}",
-		"./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
-		"./src/entities/**/*.{js,ts,jsx,tsx,mdx}",
-		"./src/features/**/*.{js,ts,jsx,tsx,mdx}",
-		"./src/shared/**/*.{js,ts,jsx,tsx,mdx}",
-		"./src/widgets/**/*.{js,ts,jsx,tsx,mdx}",
+		"./src/**/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
   	extend: {

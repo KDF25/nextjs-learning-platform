@@ -1,7 +1,15 @@
 import z from "zod";
 
-import { formSchemaCourseCreate, formSchemaCourseCustom } from "../helpers";
+import {
+	formSchemaCourseCategory,
+	formSchemaCourseDescription,
+	formSchemaCourseTitle
+} from "../helpers";
 
-export type ICourseCreateForm = z.infer<typeof formSchemaCourseCreate>;
+export type ICourseTitleForm = z.infer<typeof formSchemaCourseTitle>;
 
-export type ICourseCustomForm = z.infer<typeof formSchemaCourseCustom>;
+export type ICourseDescriptionForm = z.infer<
+	typeof formSchemaCourseDescription
+>;
+
+export type ICourseCategoryForm = z.infer<typeof formSchemaCourseCategory>;

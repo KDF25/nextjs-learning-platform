@@ -1,0 +1,22 @@
+export const CATEGORIES = [
+	{ name: "Development" },
+	{ name: "Design & Creativity" },
+	{ name: "Business & Management" },
+	{ name: "Marketing & Advertising" },
+	{ name: "Finance & Investing" },
+	{ name: "Personal Development" },
+	{ name: "Health & Fitness" },
+	{ name: "Psychology & Self-help" },
+	{ name: "Languages" },
+	{ name: "Science & Engineering" },
+	{ name: "Arts & Crafts" },
+	{ name: "Music & Audio" },
+	{ name: "Photography & Video" },
+	{ name: "Writing & Content" },
+	{ name: "Career & Productivity" },
+	{ name: "Education & Teaching" },
+	{ name: "IT & Software" },
+	{ name: "Lifestyle & Hobbies" },
+	{ name: "Travel & Culture" },
+	{ name: "Parenting & Relationships" }
+];

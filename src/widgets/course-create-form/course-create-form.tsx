@@ -22,14 +22,14 @@ import {
 
 import {
 	CourseService,
-	ICourseCreateForm,
-	formSchemaCourseCreate
+	ICourseTitleForm,
+	formSchemaCourseTitle
 } from "@/entities/course";
 
 export const CourseCreateForm: FC = ({}) => {
 	const router = useRouter();
-	const form = useForm<ICourseCreateForm>({
-		resolver: zodResolver(formSchemaCourseCreate),
+	const form = useForm<ICourseTitleForm>({
+		resolver: zodResolver(formSchemaCourseTitle),
 		defaultValues: {
 			title: ""
 		}
@@ -39,7 +39,7 @@ export const CourseCreateForm: FC = ({}) => {
 		handleSubmit
 	} = form;
 
-	const onSubmit = async (data: ICourseCreateForm) => {
+	const onSubmit = async (data: ICourseTitleForm) => {
 		try {
 			await CourseService.create(data);
 			router.push(ENUM_PATH.TEACHER_COURSES);

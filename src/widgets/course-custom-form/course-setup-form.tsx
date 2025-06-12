@@ -1,18 +1,27 @@
 "use client";
 
-import { Course } from "@prisma/client";
+import { Category, Course } from "@prisma/client";
 import { ServerCogIcon } from "lucide-react";
 import { FC } from "react";
 
 import { CustomIcon } from "@/shared/ui";
 
-import { DescriptionSection, ImageSection, TitleSection } from "./ui";
+import {
+	CategorySection,
+	DescriptionSection,
+	ImageSection,
+	TitleSection
+} from "./ui";
 
 interface ICourseCustomFormProps {
 	course: Course;
+	categories: Category[];
 }
 
-export const CourseCustomForm: FC<ICourseCustomFormProps> = ({ course }) => {
+export const CourseCustomForm: FC<ICourseCustomFormProps> = ({
+	course,
+	categories
+}) => {
 	return (
 		<div className="flex flex-col gap-6">
 			<div className="flex items-center gap-x-2">
@@ -23,6 +32,13 @@ export const CourseCustomForm: FC<ICourseCustomFormProps> = ({ course }) => {
 			<TitleSection initialData={course} />
 			<DescriptionSection initialData={course} />
 			<ImageSection initialData={course} />
+			<CategorySection
+				initialData={course}
+				categories={categories.map((c) => ({
+					label: c.name,
+					value: c.id
+				}))}
+			/>
 		</div>
 	);
 };

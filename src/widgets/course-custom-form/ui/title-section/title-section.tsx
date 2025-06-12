@@ -19,8 +19,8 @@ import {
 
 import {
 	CourseService,
-	ICourseCustomForm,
-	formSchemaCourseCustom
+	ICourseTitleForm,
+	formSchemaCourseTitle
 } from "@/entities/course";
 
 interface ITitleSectionProps {
@@ -31,8 +31,8 @@ export const TitleSection: FC<ITitleSectionProps> = ({ initialData }) => {
 	const [isEditing, setIsEditing] = useState<boolean>(false);
 
 	const router = useRouter();
-	const form = useForm<ICourseCustomForm>({
-		resolver: zodResolver(formSchemaCourseCustom),
+	const form = useForm<ICourseTitleForm>({
+		resolver: zodResolver(formSchemaCourseTitle),
 		defaultValues: {
 			title: initialData?.title
 		}
@@ -42,7 +42,7 @@ export const TitleSection: FC<ITitleSectionProps> = ({ initialData }) => {
 		handleSubmit
 	} = form;
 
-	const onSubmit = async (data: ICourseCustomForm) => {
+	const onSubmit = async (data: ICourseTitleForm) => {
 		try {
 			await CourseService.update({
 				id: initialData?.id,

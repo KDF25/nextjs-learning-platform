@@ -9,7 +9,7 @@ import toast from "react-hot-toast";
 
 import { Button, FileUpload } from "@/shared/ui";
 
-import { CourseService, ICourseCustomForm } from "@/entities/course";
+import { CourseService } from "@/entities/course";
 
 interface IImageSectionProps {
 	initialData: Course;
@@ -20,7 +20,7 @@ export const ImageSection: FC<IImageSectionProps> = ({ initialData }) => {
 
 	const router = useRouter();
 
-	const onSubmit = async (data: ICourseCustomForm) => {
+	const onSubmit = async (data: { imageUrl: string }) => {
 		try {
 			await CourseService.update({
 				id: initialData?.id,
@@ -85,7 +85,7 @@ export const ImageSection: FC<IImageSectionProps> = ({ initialData }) => {
 							if (url) {
 								onSubmit({
 									imageUrl: url
-								} as ICourseCustomForm);
+								});
 							}
 						}}
 					/>

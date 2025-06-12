@@ -3,3 +3,8 @@ export * from "./form";
 export * from "./sheet";
 export * from "./label";
 export * from "./input";
+export * from "./command";
+export * from "./dialog";
+export * from "./popover";
+export * from "./combobox";
+export * from "./textarea";

@@ -1,11 +1,13 @@
 import z from "zod";
 
-export const formSchemaCourseCreate = z.object({
+export const formSchemaCourseTitle = z.object({
 	title: z.string().min(1, { message: "Title is required" })
 });
 
-export const formSchemaCourseCustom = z.object({
-	title: z.string().min(1, { message: "Title is required" }),
-	description: z.string().min(1, { message: "Description is required" }),
-	imageUrl: z.string().min(1, { message: "Image is required" })
+export const formSchemaCourseDescription = z.object({
+	description: z.string().min(1, { message: "Description is required" })
+});
+
+export const formSchemaCourseCategory = z.object({
+	categoryId: z.string().min(1, { message: "Category is required" })
 });

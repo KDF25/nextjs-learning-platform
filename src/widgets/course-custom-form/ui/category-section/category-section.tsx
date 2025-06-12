@@ -10,33 +10,35 @@ import toast from "react-hot-toast";
 
 import {
 	Button,
+	Combobox,
 	Form,
 	FormControl,
 	FormField,
-	FormItem,
-	Textarea
+	FormItem
 } from "@/shared/ui";
 
 import {
 	CourseService,
-	ICourseDescriptionForm,
-	formSchemaCourseDescription
+	ICourseCategoryForm,
+	formSchemaCourseCategory
 } from "@/entities/course";
 
-interface IDescriptionSectionProps {
+interface ICategorySectionProps {
 	initialData: Course;
+	categories: { label: string; value: string }[];
 }
 
-export const DescriptionSection: FC<IDescriptionSectionProps> = ({
-	initialData
+export const CategorySection: FC<ICategorySectionProps> = ({
+	initialData,
+	categories
 }) => {
 	const [isEditing, setIsEditing] = useState<boolean>(false);
 
 	const router = useRouter();
-	const form = useForm<ICourseDescriptionForm>({
-		resolver: zodResolver(formSchemaCourseDescription),
+	const form = useForm<ICourseCategoryForm>({
+		resolver: zodResolver(formSchemaCourseCategory),
 		defaultValues: {
-			description: initialData?.description || ""
+			categoryId: initialData?.categoryId || ""
 		}
 	});
 	const {
@@ -44,12 +46,12 @@ export const DescriptionSection: FC<IDescriptionSectionProps> = ({
 		handleSubmit
 	} = form;
 
-	const onSubmit = async (data: ICourseDescriptionForm) => {
+	const onSubmit = async (data: ICourseCategoryForm) => {
 		try {
 			await CourseService.update({
 				id: initialData?.id,
 				userId: initialData?.userId,
-				description: data?.description
+				categoryId: data?.categoryId
 			} as Course);
 			router.refresh();
 			setIsEditing(false);
@@ -58,10 +60,16 @@ export const DescriptionSection: FC<IDescriptionSectionProps> = ({
 		}
 	};
 
+	const selectedCategory = categories.find(
+		(category) => category.value === initialData?.categoryId
+	);
+
+	console.log(form.getValues(), isValid);
+
 	return (
 		<div className="border bg-slate-100 rounded-md p-4 flex flex-col gap-1">
 			<div className="font-medium flex items-center justify-between">
-				Course description
+				Course category
 				<Button
 					variant={"ghost"}
 					className="flex flex-row gap-1"
@@ -72,7 +80,7 @@ export const DescriptionSection: FC<IDescriptionSectionProps> = ({
 					) : (
 						<>
 							<Pencil size={12} />
-							Edit description
+							Edit category
 						</>
 					)}
 				</Button>
@@ -85,13 +93,14 @@ export const DescriptionSection: FC<IDescriptionSectionProps> = ({
 					>
 						<FormField
 							control={form.control}
-							name="description"
+							name="categoryId"
 							render={({ field }) => (
-								<FormItem className="bg-white">
+								<FormItem>
 									<FormControl>
-										<Textarea
-											disabled={isSubmitting}
-											placeholder="e.g. This course is about..."
+										<Combobox
+											options={categories}
+											placeholderButton="Select category"
+											placeholderInput="Search category..."
 											{...field}
 										/>
 									</FormControl>
@@ -100,12 +109,7 @@ export const DescriptionSection: FC<IDescriptionSectionProps> = ({
 						/>
 						<div className="flex items-center gap-2">
 							<Button
-								disabled={
-									!isValid ||
-									isSubmitting ||
-									initialData.description ===
-										form.getValues("description")
-								}
+								disabled={!isValid || isSubmitting}
 								type="submit"
 							>
 								Save
@@ -115,7 +119,7 @@ export const DescriptionSection: FC<IDescriptionSectionProps> = ({
 				</Form>
 			) : (
 				<div className="text-sm text-slate-600">
-					{initialData?.description || "No description"}
+					{selectedCategory?.label || "No category"}
 				</div>
 			)}
 		</div>
