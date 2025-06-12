@@ -22,6 +22,7 @@
     "@radix-ui/react-label": "^2.1.7",
     "@radix-ui/react-slot": "^1.2.3",
     "@trivago/prettier-plugin-sort-imports": "^5.2.2",
+    "@uploadthing/react": "^7.3.1",
     "axios": "^1.9.0",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
@@ -35,6 +36,7 @@
     "rimraf": "^6.0.1",
     "tailwind-merge": "^3.3.0",
     "tailwindcss-animate": "^1.0.7",
+    "uploadthing": "^7.7.2",
     "zod": "^3.25.32"
   },
   "devDependencies": {
