@@ -2,7 +2,7 @@
 
 import { zodResolver } from "@hookform/resolvers/zod";
 import { Course } from "@prisma/client";
-import { Pencil } from "lucide-react";
+import { PlusCircle } from "lucide-react";
 import { useRouter } from "next/navigation";
 import { FC, useState } from "react";
 import { useForm } from "react-hook-form";
@@ -23,20 +23,18 @@ import {
 	formSchemaCourseCustom
 } from "@/entities/course";
 
-interface IDescriptionSectionProps {
+interface IImageSectionProps {
 	initialData: Course;
 }
 
-export const DescriptionSection: FC<IDescriptionSectionProps> = ({
-	initialData
-}) => {
+export const ImageSection: FC<IImageSectionProps> = ({ initialData }) => {
 	const [isEditing, setIsEditing] = useState<boolean>(false);
 
 	const router = useRouter();
 	const form = useForm<ICourseCustomForm>({
 		resolver: zodResolver(formSchemaCourseCustom),
 		defaultValues: {
-			description: initialData?.description || ""
+			imageUrl: initialData?.imageUrl || ""
 		}
 	});
 	const {
@@ -49,7 +47,7 @@ export const DescriptionSection: FC<IDescriptionSectionProps> = ({
 			await CourseService.update({
 				id: initialData?.id,
 				userId: initialData?.userId,
-				description: data?.description
+				imageUrl: data?.imageUrl
 			} as Course);
 			router.refresh();
 			setIsEditing(false);
@@ -61,7 +59,7 @@ export const DescriptionSection: FC<IDescriptionSectionProps> = ({
 	return (
 		<div className="border bg-slate-100 rounded-md p-4 flex flex-col gap-1">
 			<div className="font-medium flex items-center justify-between">
-				Course description
+				Course image
 				<Button
 					variant={"ghost"}
 					className="flex flex-row gap-1"
@@ -71,8 +69,8 @@ export const DescriptionSection: FC<IDescriptionSectionProps> = ({
 						<>Cancel</>
 					) : (
 						<>
-							<Pencil size={12} />
-							Edit description
+							<PlusCircle size={12} />
+							Add an image
 						</>
 					)}
 				</Button>
@@ -85,7 +83,7 @@ export const DescriptionSection: FC<IDescriptionSectionProps> = ({
 					>
 						<FormField
 							control={form.control}
-							name="description"
+							name="imageUrl"
 							render={({ field }) => (
 								<FormItem className="bg-white">
 									<FormControl>
@@ -104,7 +102,7 @@ export const DescriptionSection: FC<IDescriptionSectionProps> = ({
 									!isValid ||
 									isSubmitting ||
 									initialData.description ===
-										form.getValues("description")
+										form.getValues("imageUrl")
 								}
 								type="submit"
 							>
@@ -115,7 +113,7 @@ export const DescriptionSection: FC<IDescriptionSectionProps> = ({
 				</Form>
 			) : (
 				<div className="text-sm text-slate-600">
-					{initialData?.description || "No description"}
+					{initialData?.imageUrl || "No image"}
 				</div>
 			)}
 		</div>

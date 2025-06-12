@@ -6,7 +6,7 @@ import { FC } from "react";
 
 import { CustomIcon } from "@/shared/ui";
 
-import { DescriptionSection, TitleSection } from "./ui";
+import { DescriptionSection, ImageSection, TitleSection } from "./ui";
 
 interface ICourseCustomFormProps {
 	course: Course;
@@ -22,6 +22,7 @@ export const CourseCustomForm: FC<ICourseCustomFormProps> = ({ course }) => {
 
 			<TitleSection initialData={course} />
 			<DescriptionSection initialData={course} />
+			<ImageSection initialData={course} />
 		</div>
 	);
 };

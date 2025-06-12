@@ -34,8 +34,7 @@ export const TitleSection: FC<ITitleSectionProps> = ({ initialData }) => {
 	const form = useForm<ICourseCustomForm>({
 		resolver: zodResolver(formSchemaCourseCustom),
 		defaultValues: {
-			title: initialData.title,
-			description: initialData?.description || ""
+			title: initialData?.title
 		}
 	});
 	const {
@@ -46,9 +45,9 @@ export const TitleSection: FC<ITitleSectionProps> = ({ initialData }) => {
 	const onSubmit = async (data: ICourseCustomForm) => {
 		try {
 			await CourseService.update({
-				id: initialData.id,
-				userId: initialData.userId,
-				title: data.title
+				id: initialData?.id,
+				userId: initialData?.userId,
+				title: data?.title
 			} as Course);
 			router.refresh();
 			setIsEditing(false);
