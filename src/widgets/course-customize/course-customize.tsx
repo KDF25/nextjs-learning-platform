@@ -13,12 +13,12 @@ import {
 	TitleSection
 } from "./ui";
 
-interface ICourseCustomFormProps {
+interface ICourseCustomizeFormProps {
 	course: Course;
 	categories: Category[];
 }
 
-export const CourseCustomForm: FC<ICourseCustomFormProps> = ({
+export const CourseCustomize: FC<ICourseCustomizeFormProps> = ({
 	course,
 	categories
 }) => {
@@ -26,7 +26,7 @@ export const CourseCustomForm: FC<ICourseCustomFormProps> = ({
 		<div className="flex flex-col gap-6">
 			<div className="flex items-center gap-x-2">
 				<CustomIcon icon={ServerCogIcon} />
-				<h2 className="text-xl">Customize your course</h2>
+				<h2 className="text-xl font-semibold">Customize your course</h2>
 			</div>
 
 			<TitleSection initialData={course} />

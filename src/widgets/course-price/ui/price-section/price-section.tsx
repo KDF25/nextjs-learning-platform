@@ -8,37 +8,34 @@ import { FC, useState } from "react";
 import { useForm } from "react-hook-form";
 import toast from "react-hot-toast";
 
+import { formatPrice } from "@/shared/lib";
 import {
 	Button,
-	Combobox,
 	Form,
 	FormControl,
 	FormField,
-	FormItem
+	FormItem,
+	Input
 } from "@/shared/ui";
 
 import {
 	CourseService,
-	ICourseCategoryForm,
-	formSchemaCourseCategory
+	ICoursePriceForm,
+	formSchemaCoursePrice
 } from "@/entities/course";
 
-interface ICategorySectionProps {
+interface IPriceSectionProps {
 	initialData: Course;
-	categories: { label: string; value: string }[];
 }
 
-export const CategorySection: FC<ICategorySectionProps> = ({
-	initialData,
-	categories
-}) => {
+export const PriceSection: FC<IPriceSectionProps> = ({ initialData }) => {
 	const [isEditing, setIsEditing] = useState<boolean>(false);
 
 	const router = useRouter();
-	const form = useForm<ICourseCategoryForm>({
-		resolver: zodResolver(formSchemaCourseCategory),
+	const form = useForm<ICoursePriceForm>({
+		resolver: zodResolver(formSchemaCoursePrice),
 		defaultValues: {
-			categoryId: initialData?.categoryId || ""
+			price: initialData?.price || 0
 		}
 	});
 	const {
@@ -46,12 +43,12 @@ export const CategorySection: FC<ICategorySectionProps> = ({
 		handleSubmit
 	} = form;
 
-	const onSubmit = async (data: ICourseCategoryForm) => {
+	const onSubmit = async (data: ICoursePriceForm) => {
 		try {
 			await CourseService.update({
 				id: initialData?.id,
 				userId: initialData?.userId,
-				categoryId: data?.categoryId
+				price: data?.price
 			} as Course);
 			router.refresh();
 			setIsEditing(false);
@@ -60,16 +57,10 @@ export const CategorySection: FC<ICategorySectionProps> = ({
 		}
 	};
 
-	const selectedCategory = categories.find(
-		(category) => category.value === initialData?.categoryId
-	);
-
-	console.log(form.getValues(), isValid);
-
 	return (
 		<div className="border bg-slate-100 rounded-md p-4 flex flex-col gap-1">
 			<div className="font-medium flex items-center justify-between">
-				Course category
+				Course price
 				<Button
 					variant={"ghost"}
 					className="flex flex-row gap-1"
@@ -80,7 +71,7 @@ export const CategorySection: FC<ICategorySectionProps> = ({
 					) : (
 						<>
 							<Pencil size={12} />
-							Edit category
+							Edit price
 						</>
 					)}
 				</Button>
@@ -93,14 +84,15 @@ export const CategorySection: FC<ICategorySectionProps> = ({
 					>
 						<FormField
 							control={form.control}
-							name="categoryId"
+							name="price"
 							render={({ field }) => (
-								<FormItem>
+								<FormItem className="bg-white">
 									<FormControl>
-										<Combobox
-											options={categories}
-											placeholderButton="Select category"
-											placeholderInput="Search category..."
+										<Input
+											disabled={isSubmitting}
+											type="number"
+											step="0.01"
+											placeholder="Set a price for your course"
 											{...field}
 										/>
 									</FormControl>
@@ -109,7 +101,12 @@ export const CategorySection: FC<ICategorySectionProps> = ({
 						/>
 						<div className="flex items-center gap-2">
 							<Button
-								disabled={!isValid || isSubmitting}
+								disabled={
+									!isValid ||
+									isSubmitting ||
+									initialData.price ===
+										form.getValues("price")
+								}
 								type="submit"
 							>
 								Save
@@ -119,7 +116,9 @@ export const CategorySection: FC<ICategorySectionProps> = ({
 				</Form>
 			) : (
 				<div className="text-sm text-slate-600">
-					{selectedCategory?.label || "No category"}
+					{initialData.price
+						? formatPrice(initialData.price)
+						: "No price"}
 				</div>
 			)}
 		</div>

@@ -7,7 +7,10 @@ import { ENUM_PATH } from "@/shared/config";
 import { CategoryService } from "@/entities/category";
 import { CourseService, getCourseFields } from "@/entities/course";
 
-import { CourseCustomForm } from "@/widgets/course-custom-form";
+import { CourseAttachment } from "@/widgets/course-attachment";
+import { CourseChapters } from "@/widgets/course-chapters";
+import { CourseCustomize } from "@/widgets/course-customize";
+import { CoursePrice } from "@/widgets/course-price";
 
 interface ICourseSetupPageProps {
 	courseId: string;
@@ -42,7 +45,12 @@ export const CourseSetupPage: FC<ICourseSetupPageProps> = async ({
 				</div>
 			</div>
 			<div className="grid grid-cols-1 md:grid-cols-2 gap-6 ">
-				<CourseCustomForm course={course} categories={categories} />
+				<CourseCustomize course={course} categories={categories} />
+				<div className="flex flex-col gap-6">
+					<CourseChapters course={course} />
+					<CoursePrice course={course} />
+					<CourseAttachment course={course} />
+				</div>
 			</div>
 		</div>
 	);

@@ -11,3 +11,7 @@ export const formSchemaCourseDescription = z.object({
 export const formSchemaCourseCategory = z.object({
 	categoryId: z.string().min(1, { message: "Category is required" })
 });
+
+export const formSchemaCoursePrice = z.object({
+	price: z.coerce.number()
+});

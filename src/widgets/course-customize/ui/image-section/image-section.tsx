@@ -81,10 +81,10 @@ export const ImageSection: FC<IImageSectionProps> = ({ initialData }) => {
 				<div className="flex flex-col gap-2">
 					<FileUpload
 						endpoint="courseImage"
-						onChange={(url) => {
-							if (url) {
+						onChange={(data) => {
+							if (data?.url) {
 								onSubmit({
-									imageUrl: url
+									imageUrl: data?.url
 								});
 							}
 						}}
