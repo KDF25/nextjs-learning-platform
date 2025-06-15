@@ -27,6 +27,7 @@ export const ImageSection: FC<IImageSectionProps> = ({ initialData }) => {
 				userId: initialData?.userId,
 				imageUrl: data?.imageUrl
 			} as Course);
+			toast.success("Image updated");
 			router.refresh();
 			setIsEditing(false);
 		} catch {

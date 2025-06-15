@@ -49,6 +49,7 @@ export const TitleSection: FC<ITitleSectionProps> = ({ initialData }) => {
 				userId: initialData?.userId,
 				title: data?.title
 			} as Course);
+			toast.success("Title updated");
 			router.refresh();
 			setIsEditing(false);
 		} catch {
@@ -96,19 +97,16 @@ export const TitleSection: FC<ITitleSectionProps> = ({ initialData }) => {
 								</FormItem>
 							)}
 						/>
-						<div className="flex items-center gap-2">
-							<Button
-								disabled={
-									!isValid ||
-									isSubmitting ||
-									initialData.title ===
-										form.getValues("title")
-								}
-								type="submit"
-							>
-								Save
-							</Button>
-						</div>
+						<Button
+							disabled={
+								!isValid ||
+								isSubmitting ||
+								initialData.title === form.getValues("title")
+							}
+							type="submit"
+						>
+							Save
+						</Button>
 					</form>
 				</Form>
 			) : (

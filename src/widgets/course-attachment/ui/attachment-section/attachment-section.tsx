@@ -31,6 +31,7 @@ export const AttachmentSection: FC<IAttachmentSectionProps> = ({
 				url: data?.url,
 				name: data?.name
 			});
+			toast.success("Attachment added");
 			router.refresh();
 			setIsEditing(false);
 		} catch {

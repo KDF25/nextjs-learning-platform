@@ -2,11 +2,11 @@ import { NextResponse } from "next/server";
 
 import { prisma } from "@/shared/database";
 
-import { IAddAttachment } from "@/entities/course";
+import { ICharperPosition } from "@/entities/course";
 
 import { authHandler, errorHandler, ownerHandler } from "@/app/api/__handler";
 
-export async function POST(
+export async function PUT(
 	req: Request,
 	{ params }: { params: Promise<{ courseId: string }> }
 ) {
@@ -15,21 +15,24 @@ export async function POST(
 		const userId = await authHandler();
 		await ownerHandler(courseId, userId);
 
-		const { url, name } = (await req.json()) as IAddAttachment;
+		const newData = (await req.json()) as ICharperPosition[];
 
-		const attachment = await prisma.attachment.create({
-			data: {
-				url,
-				name,
-				courseId
-			}
-		});
+		for (const data of newData) {
+			await prisma.chapter.update({
+				where: {
+					id: data.id
+				},
+				data: {
+					position: data.position
+				}
+			});
+		}
 
-		return NextResponse.json(attachment);
+		return new NextResponse("Success", { status: 200 });
 	} catch (error) {
 		errorHandler({
 			error,
-			route: "POST /api/courses/[courseId]/attachments"
+			route: "PUT /api/courses/[courseId]/chapters/reorder"
 		});
 	}
 }

@@ -23,3 +23,14 @@ export interface IAddAttachment {
 	url: string;
 	name: string;
 }
+
+export interface IAddChapter {
+	id: string;
+	userId: string;
+	title: string;
+}
+
+export interface ICharperPosition {
+	id: string;
+	position: number;
+}

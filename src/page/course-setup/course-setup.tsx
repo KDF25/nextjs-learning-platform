@@ -25,7 +25,7 @@ export const CourseSetupPage: FC<ICourseSetupPageProps> = async ({
 		redirect(ENUM_PATH.MAIN);
 	}
 
-	const course = await CourseService.getById(courseId);
+	const course = await CourseService.getById(userId, courseId);
 
 	if (!course) {
 		redirect(ENUM_PATH.MAIN);

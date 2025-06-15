@@ -23,7 +23,7 @@ export async function DELETE(
 	} catch (error) {
 		errorHandler({
 			error,
-			route: "DELETE /api/courses/[courseId]/attachments/[attachmentId]"
+			route: "DELETE /api/courses/[courseId]/chapters/[chapterId]"
 		});
 	}
 }

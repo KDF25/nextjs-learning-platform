@@ -51,6 +51,7 @@ export const DescriptionSection: FC<IDescriptionSectionProps> = ({
 				userId: initialData?.userId,
 				description: data?.description
 			} as Course);
+			toast.success("Description updated");
 			router.refresh();
 			setIsEditing(false);
 		} catch {
@@ -98,19 +99,17 @@ export const DescriptionSection: FC<IDescriptionSectionProps> = ({
 								</FormItem>
 							)}
 						/>
-						<div className="flex items-center gap-2">
-							<Button
-								disabled={
-									!isValid ||
-									isSubmitting ||
-									initialData.description ===
-										form.getValues("description")
-								}
-								type="submit"
-							>
-								Save
-							</Button>
-						</div>
+						<Button
+							disabled={
+								!isValid ||
+								isSubmitting ||
+								initialData.description ===
+									form.getValues("description")
+							}
+							type="submit"
+						>
+							Save
+						</Button>
 					</form>
 				</Form>
 			) : (

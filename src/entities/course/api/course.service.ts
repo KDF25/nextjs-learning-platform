@@ -1,9 +1,14 @@
-import { Attachment, Course } from "@prisma/client";
+import { Attachment, Chapter, Course } from "@prisma/client";
 import axios from "axios";
 
 import { prisma } from "@/shared/database";
 
-import { IAddAttachment, ICourseTitleForm } from "../types";
+import {
+	IAddAttachment,
+	IAddChapter,
+	ICharperPosition,
+	ICourseTitleForm
+} from "../types";
 
 export const CourseService = {
 	async create(data: ICourseTitleForm) {
@@ -11,11 +16,20 @@ export const CourseService = {
 	},
 
 	async getById(
+		userId: string,
 		id: string
-	): Promise<(Course & { attachments: Attachment[] }) | null> {
+	): Promise<
+		| (Course & { attachments: Attachment[] } & { chapters: Chapter[] })
+		| null
+	> {
 		return await prisma.course.findUnique({
-			where: { id },
+			where: { id, userId },
 			include: {
+				chapters: {
+					orderBy: {
+						position: "asc"
+					}
+				},
 				attachments: {
 					orderBy: {
 						createdAt: "desc"
@@ -36,6 +50,23 @@ export const CourseService = {
 	async deleteAttachment(courseId: string, attachmentId: string) {
 		return await axios.delete(
 			`/api/courses/${courseId}/attachments/${attachmentId}`
+		);
+	},
+
+	async addChapter(data: IAddChapter) {
+		return await axios.post(`/api/courses/${data.id}/chapters`, data);
+	},
+
+	async deleteChapters(courseId: string, attachmentId: string) {
+		return await axios.delete(
+			`/api/courses/${courseId}/chapters/${attachmentId}`
+		);
+	},
+
+	async updatePositionChapters(courseId: string, data: ICharperPosition[]) {
+		return await axios.put(
+			`/api/courses/${courseId}/chapters/reorder`,
+			data
 		);
 	}
 };

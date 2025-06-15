@@ -23,8 +23,8 @@ export const DeleteAttachment: FC<IDeleteAttachmentProps> = ({
 		try {
 			setIsDeleting(true);
 			await CourseService.deleteAttachment(courseId, attachmentId);
-			router.refresh();
 			toast.success("Attachment deleted");
+			router.refresh();
 		} catch {
 			toast.error("Something went wrong");
 		} finally {

@@ -53,6 +53,7 @@ export const CategorySection: FC<ICategorySectionProps> = ({
 				userId: initialData?.userId,
 				categoryId: data?.categoryId
 			} as Course);
+			toast.success("Category updated");
 			router.refresh();
 			setIsEditing(false);
 		} catch {
@@ -105,14 +106,12 @@ export const CategorySection: FC<ICategorySectionProps> = ({
 								</FormItem>
 							)}
 						/>
-						<div className="flex items-center gap-2">
-							<Button
-								disabled={!isValid || isSubmitting}
-								type="submit"
-							>
-								Save
-							</Button>
-						</div>
+						<Button
+							disabled={!isValid || isSubmitting}
+							type="submit"
+						>
+							Save
+						</Button>
 					</form>
 				</Form>
 			) : (
