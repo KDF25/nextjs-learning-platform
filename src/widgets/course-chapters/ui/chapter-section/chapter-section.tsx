@@ -17,12 +17,8 @@ import {
 	Input
 } from "@/shared/ui";
 
-import {
-	CourseService,
-	ICharperPosition,
-	ICourseTitleForm,
-	formSchemaCourseTitle
-} from "@/entities/course";
+import { ChapterService, ICharperPosition } from "@/entities/chapter";
+import { ICourseTitleForm, formSchemaCourseTitle } from "@/entities/course";
 
 import { ChapterList } from "../chapter-list";
 
@@ -48,7 +44,7 @@ export const ChapterSection: FC<IChapterSectionProps> = ({ initialData }) => {
 
 	const onSubmit = async (data: ICourseTitleForm) => {
 		try {
-			await CourseService.addChapter({
+			await ChapterService.add({
 				id: initialData?.id,
 				userId: initialData?.userId,
 				title: data?.title
@@ -64,10 +60,7 @@ export const ChapterSection: FC<IChapterSectionProps> = ({ initialData }) => {
 	const onReorder = async (updateData: ICharperPosition[]) => {
 		try {
 			setIsUpdating(true);
-			await CourseService.updatePositionChapters(
-				initialData?.id,
-				updateData
-			);
+			await ChapterService.updatePosition(initialData?.id, updateData);
 			toast.success("Chapter reordered");
 			router.refresh();
 		} catch {
@@ -78,7 +71,7 @@ export const ChapterSection: FC<IChapterSectionProps> = ({ initialData }) => {
 	};
 
 	const onEdit = (id: string) => {
-		router.push(`/dashboard/courses/${initialData?.id}/chapters/${id}`);
+		router.push(`/teacher/courses/${initialData?.id}/chapters/${id}`);
 	};
 
 	return (

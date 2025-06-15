@@ -1,12 +1,14 @@
 import { FC } from "react";
 
+import { ChapterIdPage } from "@/page/chapter-id-page";
+
 interface ChapterIdsPageProps {
-	params: Promise<{ chapterId: string }>;
+	params: Promise<{ courseId: string; chapterId: string }>;
 }
 
 const ChapterIdsPage: FC<ChapterIdsPageProps> = async ({ params }) => {
-	const {} = await params;
-	return <div>ChapterIdsPage</div>;
+	const { courseId, chapterId } = await params;
+	return <ChapterIdPage courseId={courseId} chapterId={chapterId} />;
 };
 
 export default ChapterIdsPage;

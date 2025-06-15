@@ -5,7 +5,7 @@ import { useRouter } from "next/navigation";
 import { FC, useState } from "react";
 import toast from "react-hot-toast";
 
-import { CourseService } from "@/entities/course";
+import { AttachmentService } from "@/entities/attachment";
 
 interface IDeleteAttachmentProps {
 	courseId: string;
@@ -22,7 +22,7 @@ export const DeleteAttachment: FC<IDeleteAttachmentProps> = ({
 	const handleDelete = async () => {
 		try {
 			setIsDeleting(true);
-			await CourseService.deleteAttachment(courseId, attachmentId);
+			await AttachmentService.delete(courseId, attachmentId);
 			toast.success("Attachment deleted");
 			router.refresh();
 		} catch {

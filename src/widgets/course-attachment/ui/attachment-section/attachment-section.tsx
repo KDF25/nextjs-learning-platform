@@ -8,7 +8,7 @@ import toast from "react-hot-toast";
 
 import { Button, FileUpload } from "@/shared/ui";
 
-import { AttachmentFile, CourseService } from "@/entities/course";
+import { AttachmentFile, AttachmentService } from "@/entities/attachment";
 
 import { DeleteAttachment } from "@/features/delete-attachment";
 
@@ -25,7 +25,7 @@ export const AttachmentSection: FC<IAttachmentSectionProps> = ({
 
 	const onSubmit = async (data: { url: string; name: string }) => {
 		try {
-			await CourseService.addAttachment({
+			await AttachmentService.add({
 				id: initialData?.id,
 				userId: initialData?.userId,
 				url: data?.url,

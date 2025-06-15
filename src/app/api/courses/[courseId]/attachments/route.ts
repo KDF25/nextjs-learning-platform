@@ -2,7 +2,7 @@ import { NextResponse } from "next/server";
 
 import { prisma } from "@/shared/database";
 
-import { IAddAttachment } from "@/entities/course";
+import { IAddAttachment } from "@/entities/attachment";
 
 import { authHandler, errorHandler, ownerHandler } from "@/app/api/__handler";
 

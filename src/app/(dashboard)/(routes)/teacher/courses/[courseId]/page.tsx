@@ -1,6 +1,6 @@
 import { FC } from "react";
 
-import { CourseSetupPage } from "@/page/course-setup";
+import { CourseIdPage } from "@/page/course-id-page";
 
 interface CourseIdsPageProps {
 	params: Promise<{ courseId: string }>;
@@ -8,7 +8,7 @@ interface CourseIdsPageProps {
 
 const CourseIdsPage: FC<CourseIdsPageProps> = async ({ params }) => {
 	const { courseId } = await params;
-	return <CourseSetupPage courseId={courseId} />;
+	return <CourseIdPage courseId={courseId} />;
 };
 
 export default CourseIdsPage;

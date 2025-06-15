@@ -3,12 +3,7 @@ import axios from "axios";
 
 import { prisma } from "@/shared/database";
 
-import {
-	IAddAttachment,
-	IAddChapter,
-	ICharperPosition,
-	ICourseTitleForm
-} from "../types";
+import { ICourseTitleForm } from "../types";
 
 export const CourseService = {
 	async create(data: ICourseTitleForm) {
@@ -41,32 +36,5 @@ export const CourseService = {
 
 	async update(data: Course) {
 		return await axios.patch(`/api/courses/${data.id}`, data);
-	},
-
-	async addAttachment(data: IAddAttachment) {
-		return await axios.post(`/api/courses/${data.id}/attachments`, data);
-	},
-
-	async deleteAttachment(courseId: string, attachmentId: string) {
-		return await axios.delete(
-			`/api/courses/${courseId}/attachments/${attachmentId}`
-		);
-	},
-
-	async addChapter(data: IAddChapter) {
-		return await axios.post(`/api/courses/${data.id}/chapters`, data);
-	},
-
-	async deleteChapters(courseId: string, attachmentId: string) {
-		return await axios.delete(
-			`/api/courses/${courseId}/chapters/${attachmentId}`
-		);
-	},
-
-	async updatePositionChapters(courseId: string, data: ICharperPosition[]) {
-		return await axios.put(
-			`/api/courses/${courseId}/chapters/reorder`,
-			data
-		);
 	}
 };

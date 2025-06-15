@@ -14,7 +14,7 @@ import { useMounted } from "@/shared/hooks";
 import { cn } from "@/shared/lib";
 import { Badge } from "@/shared/ui";
 
-import { ICharperPosition } from "@/entities/course";
+import { ICharperPosition } from "@/entities/chapter";
 
 interface IChapterListProps {
 	chapters: Chapter[];

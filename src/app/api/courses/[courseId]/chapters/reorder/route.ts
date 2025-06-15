@@ -2,7 +2,7 @@ import { NextResponse } from "next/server";
 
 import { prisma } from "@/shared/database";
 
-import { ICharperPosition } from "@/entities/course";
+import { ICharperPosition } from "@/entities/chapter";
 
 import { authHandler, errorHandler, ownerHandler } from "@/app/api/__handler";
 

@@ -12,13 +12,11 @@ import { CourseChapters } from "@/widgets/course-chapters";
 import { CourseCustomize } from "@/widgets/course-customize";
 import { CoursePrice } from "@/widgets/course-price";
 
-interface ICourseSetupPageProps {
+interface ICourseIdPageProps {
 	courseId: string;
 }
 
-export const CourseSetupPage: FC<ICourseSetupPageProps> = async ({
-	courseId
-}) => {
+export const CourseIdPage: FC<ICourseIdPageProps> = async ({ courseId }) => {
 	const { userId } = await auth();
 
 	if (!userId) {
@@ -37,7 +35,7 @@ export const CourseSetupPage: FC<ICourseSetupPageProps> = async ({
 	return (
 		<div className="p-6 flex flex-col gap-6">
 			<div className="flex items-center justify-between">
-				<div className="flex flex-col gap-x-2">
+				<div className="flex flex-col gap-2">
 					<h1 className="text-2xl font-medium">Course setup</h1>
 					<span className="text-sm text-slate-700">
 						Complete all fields {completed}/{total}

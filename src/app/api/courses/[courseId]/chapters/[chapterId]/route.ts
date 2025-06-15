@@ -1,29 +1,36 @@
+import { Chapter } from "@prisma/client";
 import { NextResponse } from "next/server";
 
 import { prisma } from "@/shared/database";
 
 import { authHandler, errorHandler, ownerHandler } from "@/app/api/__handler";
 
-export async function DELETE(
+export async function PATCH(
 	req: Request,
-	{ params }: { params: Promise<{ courseId: string; attachmentId: string }> }
+	{ params }: { params: Promise<{ courseId: string; chapterId: string }> }
 ) {
 	try {
-		const { courseId, attachmentId } = await params;
+		const { courseId, chapterId } = await params;
 		const userId = await authHandler();
 		await ownerHandler(courseId, userId);
 
-		const attachment = await prisma.attachment.delete({
+		const values = (await req.json()) as Chapter;
+
+		const chapter = await prisma.chapter.update({
 			where: {
-				id: attachmentId
+				id: chapterId,
+				courseId
+			},
+			data: {
+				...values
 			}
 		});
 
-		return NextResponse.json(attachment);
+		return NextResponse.json(chapter);
 	} catch (error) {
 		errorHandler({
 			error,
-			route: "DELETE /api/courses/[courseId]/chapters/[chapterId]"
+			route: "PATCH /api/courses/[courseId]/chapters/[chapterId]"
 		});
 	}
 }
