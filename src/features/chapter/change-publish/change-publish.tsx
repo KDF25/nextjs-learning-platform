@@ -4,6 +4,7 @@ import { useRouter } from "next/navigation";
 import { FC, useEffect } from "react";
 import toast from "react-hot-toast";
 
+import { useConfettiStore } from "@/shared/store";
 import { Button } from "@/shared/ui";
 
 import { useChapterPublish, useChapterUnpublish } from "@/entities/chapter";
@@ -28,6 +29,7 @@ export const ChangePublish: FC<IChangePublishProps> = ({
 	const { publish, isLoading: isLoadingPublish } = useChapterPublish();
 	const { unpublish, isLoading: isLoadingUnpublish } = useChapterUnpublish();
 	const router = useRouter();
+	const confetti = useConfettiStore();
 
 	const handleUpdate = () => {
 		if (!isComplete) {
@@ -48,6 +50,7 @@ export const ChangePublish: FC<IChangePublishProps> = ({
 				.then(() => {
 					toast.success("Chapter published");
 					router.refresh();
+					confetti.onOpen();
 				})
 				.catch(() => toast.error("Something went wrong"));
 		}
