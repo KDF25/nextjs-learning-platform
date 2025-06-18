@@ -3,7 +3,7 @@ import { NextResponse } from "next/server";
 
 import { prisma } from "@/shared/database";
 
-import { authHandler, errorHandler } from "../../__handler";
+import { authHandler, errorHandler } from "../../__handlers";
 
 export async function PATCH(
 	request: Request,

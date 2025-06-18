@@ -10,7 +10,7 @@ import { Button, FileUpload } from "@/shared/ui";
 
 import { AttachmentFile, AttachmentService } from "@/entities/attachment";
 
-import { DeleteAttachment } from "@/features/delete-attachment";
+import { DeleteAttachment } from "@/features/attachment";
 
 interface IAttachmentSectionProps {
 	initialData: Course & { attachments: Attachment[] };

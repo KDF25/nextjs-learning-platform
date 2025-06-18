@@ -29,9 +29,9 @@ export const ChapterService = {
 		return await axios.post(`/api/courses/${data.id}/chapters`, data);
 	},
 
-	async delete(courseId: string, attachmentId: string) {
+	async delete(courseId: string, chapterId: string) {
 		return await axios.delete(
-			`/api/courses/${courseId}/chapters/${attachmentId}`
+			`/api/courses/${courseId}/chapters/${chapterId}`
 		);
 	},
 
@@ -39,6 +39,18 @@ export const ChapterService = {
 		return await axios.put(
 			`/api/courses/${courseId}/chapters/reorder`,
 			data
+		);
+	},
+
+	async publish(courseId: string, chapterId: string) {
+		return await axios.patch(
+			`/api/courses/${courseId}/chapters/${chapterId}/publish`
+		);
+	},
+
+	async unpublish(courseId: string, chapterId: string) {
+		return await axios.patch(
+			`/api/courses/${courseId}/chapters/${chapterId}/unpublish`
 		);
 	}
 };

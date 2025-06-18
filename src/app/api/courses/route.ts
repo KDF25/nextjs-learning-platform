@@ -4,7 +4,7 @@ import { prisma } from "@/shared/database";
 
 import { ICourseTitleForm } from "@/entities/course";
 
-import { authHandler, errorHandler } from "../__handler";
+import { authHandler, errorHandler } from "../__handlers";
 
 export async function POST(request: Request) {
 	try {

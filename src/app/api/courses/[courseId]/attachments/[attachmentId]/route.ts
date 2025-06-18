@@ -2,7 +2,7 @@ import { NextResponse } from "next/server";
 
 import { prisma } from "@/shared/database";
 
-import { authHandler, errorHandler, ownerHandler } from "@/app/api/__handler";
+import { authHandler, errorHandler, ownerHandler } from "@/app/api/__handlers";
 
 export async function DELETE(
 	req: Request,

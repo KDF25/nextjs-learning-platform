@@ -10,3 +10,4 @@ export * from "./popover";
 export * from "./combobox";
 export * from "./textarea";
 export * from "./checkbox";
+export * from "./alert-dialog";

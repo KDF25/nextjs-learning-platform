@@ -7,10 +7,10 @@ import { ENUM_PATH } from "@/shared/config";
 import { CategoryService } from "@/entities/category";
 import { CourseService, getCourseFields } from "@/entities/course";
 
-import { CourseAttachment } from "@/widgets/course-attachment";
-import { CourseChapters } from "@/widgets/course-chapters";
-import { CourseCustomize } from "@/widgets/course-customize";
-import { CoursePrice } from "@/widgets/course-price";
+import { CourseAttachment } from "@/widgets/course/course-attachment";
+import { CourseChapters } from "@/widgets/course/course-chapters";
+import { CourseCustomize } from "@/widgets/course/course-customize";
+import { CoursePrice } from "@/widgets/course/course-price";
 
 interface ICourseIdPageProps {
 	courseId: string;

@@ -4,7 +4,7 @@ import { prisma } from "@/shared/database";
 
 import { IAddAttachment } from "@/entities/attachment";
 
-import { authHandler, errorHandler, ownerHandler } from "@/app/api/__handler";
+import { authHandler, errorHandler, ownerHandler } from "@/app/api/__handlers";
 
 export async function POST(
 	req: Request,
