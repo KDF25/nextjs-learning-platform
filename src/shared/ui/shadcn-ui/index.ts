@@ -11,3 +11,5 @@ export * from "./combobox";
 export * from "./textarea";
 export * from "./checkbox";
 export * from "./alert-dialog";
+export * from "./table";
+export * from "./dropdown-menu";

@@ -1,4 +1,3 @@
-import { auth } from "@clerk/nextjs/server";
 import { redirect } from "next/navigation";
 import { FC } from "react";
 
@@ -23,12 +22,6 @@ export const ChapterIdPage: FC<IChapterIdPageProps> = async ({
 	courseId,
 	chapterId
 }) => {
-	const { userId } = await auth();
-
-	if (!userId) {
-		redirect(ENUM_PATH.MAIN);
-	}
-
 	const chapter = await ChapterService.getById(chapterId, courseId);
 
 	if (!chapter) {

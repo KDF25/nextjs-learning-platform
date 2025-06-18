@@ -35,6 +35,15 @@ export const CourseService = {
 		});
 	},
 
+	async getAll(userId: string): Promise<Course[]> {
+		return await prisma.course.findMany({
+			where: { userId },
+			orderBy: {
+				createdAt: "desc"
+			}
+		});
+	},
+
 	async update(data: Course) {
 		return await axios.patch(`/api/courses/${data.id}`, data);
 	},

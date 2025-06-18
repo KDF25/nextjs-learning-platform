@@ -20,12 +20,7 @@ interface ICourseIdPageProps {
 
 export const CourseIdPage: FC<ICourseIdPageProps> = async ({ courseId }) => {
 	const { userId } = await auth();
-
-	if (!userId) {
-		redirect(ENUM_PATH.MAIN);
-	}
-
-	const course = await CourseService.getById(userId, courseId);
+	const course = await CourseService.getById(userId!, courseId);
 
 	if (!course) {
 		redirect(ENUM_PATH.MAIN);

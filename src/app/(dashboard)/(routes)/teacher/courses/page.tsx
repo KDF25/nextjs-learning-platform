@@ -1,19 +1,9 @@
-"use client";
-
-import Link from "next/link";
 import { FC } from "react";
 
-import { ENUM_PATH } from "@/shared/config";
-import { Button } from "@/shared/ui";
+import { CoursesPage } from "@/page/courses-page";
 
-const CoursesPage: FC = () => {
-	return (
-		<div className="p-6">
-			<Link href={ENUM_PATH.TEACHER_NEW_COURSE}>
-				<Button>New Course</Button>
-			</Link>
-		</div>
-	);
+const Courses: FC = () => {
+	return <CoursesPage />;
 };
 
-export default CoursesPage;
+export default Courses;
