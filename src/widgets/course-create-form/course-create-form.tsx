@@ -41,8 +41,8 @@ export const CourseCreateForm: FC = ({}) => {
 
 	const onSubmit = async (data: ICourseTitleForm) => {
 		try {
-			await CourseService.create(data);
-			router.push(ENUM_PATH.TEACHER_COURSES);
+			const course = await CourseService.create(data);
+			router.push(ENUM_PATH.TEACHER_COURSES + `/${course?.id}`);
 		} catch {
 			toast.error("Failed to create course. Please try again.");
 		}

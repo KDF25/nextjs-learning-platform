@@ -9,7 +9,7 @@ import { ChapterService, getChapterFields } from "@/entities/chapter";
 
 import {
 	ChapterAccess,
-	ChapterAction,
+	ChapterActions,
 	ChapterCustomize,
 	ChapterVideo
 } from "@/widgets/chapter";
@@ -35,7 +35,7 @@ export const ChapterIdPage: FC<IChapterIdPageProps> = async ({
 		redirect(ENUM_PATH.MAIN);
 	}
 
-	const { total, completed } = getChapterFields({ chapter });
+	const { total, completed, isComplete } = getChapterFields({ chapter });
 
 	return (
 		<>
@@ -61,10 +61,11 @@ export const ChapterIdPage: FC<IChapterIdPageProps> = async ({
 							Complete all fields {completed}/{total}
 						</span>
 					</div>
-					<ChapterAction
+					<ChapterActions
 						courseId={courseId}
 						chapterId={chapterId}
-						isPublished={chapter.isPublished}
+						isPublished={chapter?.isPublished}
+						isComplete={isComplete}
 					/>
 				</div>
 				<div className="grid grid-cols-1 md:grid-cols-2 gap-6 ">

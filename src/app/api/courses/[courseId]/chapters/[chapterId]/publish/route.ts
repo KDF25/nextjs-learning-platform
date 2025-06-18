@@ -2,6 +2,8 @@ import { NextResponse } from "next/server";
 
 import { prisma } from "@/shared/database";
 
+import { getChapterFields } from "@/entities/chapter";
+
 import { authHandler, errorHandler, ownerHandler } from "@/app/api/__handlers";
 
 export async function PATCH(
@@ -26,18 +28,22 @@ export async function PATCH(
 			}
 		});
 
-		if (
-			!chapter ||
-			!muxData ||
-			!chapter?.videoUrl ||
-			!chapter?.title ||
-			!chapter?.description
-		) {
+		if (!chapter || !muxData) {
+			return NextResponse.json(
+				{
+					message: "Chapter not found"
+				},
+				{ status: 400 }
+			);
+		}
+		const { isComplete } = getChapterFields({ chapter });
+
+		if (!isComplete) {
 			return NextResponse.json(
 				{
 					message: "Missing required fields"
 				},
-				{ status: 400 }
+				{ status: 404 }
 			);
 		}
 
@@ -55,7 +61,7 @@ export async function PATCH(
 	} catch (error) {
 		errorHandler({
 			error,
-			route: "PATCH /api/courses/[courseId]/chapters/[chapterId]/unpublish"
+			route: "PATCH /api/courses/[courseId]/chapters/[chapterId]/publish"
 		});
 	}
 }

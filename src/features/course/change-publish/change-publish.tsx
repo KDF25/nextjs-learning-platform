@@ -6,14 +6,13 @@ import toast from "react-hot-toast";
 
 import { Button } from "@/shared/ui";
 
-import { useChapterPublish, useChapterUnpublish } from "@/entities/chapter";
+import { useCoursePublish, useCourseUnpublish } from "@/entities/course";
 
 interface IChangePublishProps
 	extends React.ButtonHTMLAttributes<HTMLButtonElement> {
 	courseId: string;
 	isPublished?: boolean;
 	isComplete?: boolean;
-	chapterId: string;
 	onClickButton?: (isLoading: boolean) => void;
 }
 
@@ -21,32 +20,31 @@ export const ChangePublish: FC<IChangePublishProps> = ({
 	courseId,
 	isPublished,
 	isComplete,
-	chapterId,
 	onClickButton,
 	...props
 }) => {
-	const { publish, isLoading: isLoadingPublish } = useChapterPublish();
-	const { unpublish, isLoading: isLoadingUnpublish } = useChapterUnpublish();
+	const { publish, isLoading: isLoadingPublish } = useCoursePublish();
+	const { unpublish, isLoading: isLoadingUnpublish } = useCourseUnpublish();
 	const router = useRouter();
 
 	const handleUpdate = () => {
 		if (!isComplete) {
-			toast.error("Complete all fields to publish chapter");
+			toast.error("Complete all fields to publish course");
 			return;
 		}
 
 		if (isPublished) {
-			unpublish(courseId, chapterId)
+			unpublish(courseId)
 				.then(() => {
-					toast.success("Chapter unpublished");
+					toast.success("Course unpublished");
 					router.refresh();
 				})
 				.catch(() => toast.error("Something went wrong"));
 			return;
 		} else {
-			publish(courseId, chapterId)
+			publish(courseId)
 				.then(() => {
-					toast.success("Chapter published");
+					toast.success("Course published");
 					router.refresh();
 				})
 				.catch(() => toast.error("Something went wrong"));

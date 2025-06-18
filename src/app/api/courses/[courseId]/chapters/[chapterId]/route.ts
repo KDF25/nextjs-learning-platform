@@ -1,16 +1,13 @@
-import Mux from "@mux/mux-node";
 import { AssetCreateParams } from "@mux/mux-node/resources/video/assets.mjs";
 import { Chapter } from "@prisma/client";
 import { NextResponse } from "next/server";
 
+import { MUX_DATA } from "@/shared/config";
 import { prisma } from "@/shared/database";
 
 import { authHandler, errorHandler, ownerHandler } from "@/app/api/__handlers";
 
-const { video } = new Mux({
-	tokenId: process.env.MUX_TOKEN_ID || "",
-	tokenSecret: process.env.MUX_TOKEN_SECRET || ""
-});
+const { video } = MUX_DATA;
 
 export async function PATCH(
 	req: Request,
@@ -49,7 +46,8 @@ export async function PATCH(
 				});
 			}
 			const asset = await video.assets.create({
-				inputs: values.videoUrl as unknown as AssetCreateParams.Input[],
+				inputs: [],
+				input: values.videoUrl as unknown as AssetCreateParams.Input[],
 				playback_policies: ["public"],
 				test: false
 			});

@@ -17,8 +17,11 @@ export const getCourseFields = ({
 	const total = required.length;
 	const completed = required.filter(Boolean).length;
 
+	const isComplete = total === completed;
+
 	return {
 		total,
-		completed
+		completed,
+		isComplete
 	};
 };

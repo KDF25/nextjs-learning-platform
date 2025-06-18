@@ -4,16 +4,18 @@ import { FC, useState } from "react";
 
 import { ChangePublish, DeleteChapter } from "@/features/chapter";
 
-interface IChapterActionProps {
+interface IChapterActionsProps {
 	courseId: string;
 	chapterId: string;
 	isPublished: boolean;
+	isComplete?: boolean;
 }
 
-export const ChapterAction: FC<IChapterActionProps> = ({
+export const ChapterActions: FC<IChapterActionsProps> = ({
 	courseId,
 	chapterId,
-	isPublished
+	isPublished,
+	isComplete
 }) => {
 	const [isUpdating, setIsUpdating] = useState<boolean>(false);
 
@@ -25,6 +27,7 @@ export const ChapterAction: FC<IChapterActionProps> = ({
 				courseId={courseId}
 				chapterId={chapterId}
 				onClickButton={setIsUpdating}
+				isComplete={isComplete}
 			/>
 			<DeleteChapter
 				disabled={isUpdating}

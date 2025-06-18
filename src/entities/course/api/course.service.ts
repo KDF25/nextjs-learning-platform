@@ -6,8 +6,9 @@ import { prisma } from "@/shared/database";
 import { ICourseTitleForm } from "../types";
 
 export const CourseService = {
-	async create(data: ICourseTitleForm) {
-		return await axios.post("/api/courses", data);
+	async create(data: ICourseTitleForm): Promise<Course> {
+		const response = await axios.post<Course>("/api/courses", data);
+		return response.data;
 	},
 
 	async getById(
@@ -36,5 +37,17 @@ export const CourseService = {
 
 	async update(data: Course) {
 		return await axios.patch(`/api/courses/${data.id}`, data);
+	},
+
+	async delete(courseId: string) {
+		return await axios.delete(`/api/courses/${courseId}`);
+	},
+
+	async publish(courseId: string) {
+		return await axios.patch(`/api/courses/${courseId}/publish`);
+	},
+
+	async unpublish(courseId: string) {
+		return await axios.patch(`/api/courses/${courseId}/unpublish`);
 	}
 };

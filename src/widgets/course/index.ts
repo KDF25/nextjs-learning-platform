@@ -1,3 +1,4 @@
+export * from "./course-actions";
 export * from "./course-attachment";
 export * from "./course-chapters";
 export * from "./course-customize";
