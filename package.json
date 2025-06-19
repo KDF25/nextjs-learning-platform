@@ -42,6 +42,7 @@
     "compose-function": "^3.0.3",
     "lucide-react": "^0.511.0",
     "next": "^15.2.3",
+    "query-string": "^9.2.1",
     "react": "^18.2.0",
     "react-confetti": "^6.4.0",
     "react-dom": "^18.2.0",

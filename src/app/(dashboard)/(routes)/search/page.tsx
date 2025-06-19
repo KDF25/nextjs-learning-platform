@@ -1,7 +1,9 @@
 import { FC } from "react";
 
-const SearchPage: FC = () => {
-	return <div>SearchPage</div>;
+import { SearchPage } from "@/page/search-page";
+
+const Search: FC = () => {
+	return <SearchPage />;
 };
 
-export default SearchPage;
+export default Search;
