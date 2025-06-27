@@ -18,7 +18,7 @@ import {
 } from "@/shared/ui";
 
 import {
-	CourseService,
+	CourseApi,
 	ICourseDescriptionForm,
 	formSchemaCourseDescription
 } from "@/entities/course";
@@ -46,7 +46,7 @@ export const DescriptionSection: FC<IDescriptionSectionProps> = ({
 
 	const onSubmit = async (data: ICourseDescriptionForm) => {
 		try {
-			await CourseService.update({
+			await CourseApi.update({
 				id: initialData?.id,
 				userId: initialData?.userId,
 				description: data?.description

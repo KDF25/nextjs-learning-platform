@@ -19,7 +19,7 @@ import {
 } from "@/shared/ui";
 
 import {
-	CourseService,
+	CourseApi,
 	ICoursePriceForm,
 	formSchemaCoursePrice
 } from "@/entities/course";
@@ -45,7 +45,7 @@ export const PriceSection: FC<IPriceSectionProps> = ({ initialData }) => {
 
 	const onSubmit = async (data: ICoursePriceForm) => {
 		try {
-			await CourseService.update({
+			await CourseApi.update({
 				id: initialData?.id,
 				userId: initialData?.userId,
 				price: data?.price

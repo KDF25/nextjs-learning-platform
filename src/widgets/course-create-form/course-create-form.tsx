@@ -21,7 +21,7 @@ import {
 } from "@/shared/ui";
 
 import {
-	CourseService,
+	CourseApi,
 	ICourseTitleForm,
 	formSchemaCourseTitle
 } from "@/entities/course";
@@ -41,7 +41,7 @@ export const CourseCreateForm: FC = ({}) => {
 
 	const onSubmit = async (data: ICourseTitleForm) => {
 		try {
-			const course = await CourseService.create(data);
+			const course = await CourseApi.create(data);
 			router.push(ENUM_PATH.TEACHER_COURSES + `/${course?.id}`);
 		} catch {
 			toast.error("Failed to create course. Please try again.");

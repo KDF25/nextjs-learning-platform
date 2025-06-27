@@ -9,7 +9,7 @@ import toast from "react-hot-toast";
 
 import { Button, FileUpload } from "@/shared/ui";
 
-import { CourseService } from "@/entities/course";
+import { CourseApi } from "@/entities/course";
 
 interface IImageSectionProps {
 	initialData: Course;
@@ -22,7 +22,7 @@ export const ImageSection: FC<IImageSectionProps> = ({ initialData }) => {
 
 	const onSubmit = async (data: { imageUrl: string }) => {
 		try {
-			await CourseService.update({
+			await CourseApi.update({
 				id: initialData?.id,
 				userId: initialData?.userId,
 				imageUrl: data?.imageUrl

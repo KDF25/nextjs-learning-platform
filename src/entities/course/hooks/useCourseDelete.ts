@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 
-import { CourseService } from "../api";
+import { CourseApi } from "../api";
 
 export const useCourseDelete = () => {
 	const [isLoading, setIsLoading] = useState<boolean>(false);
@@ -11,7 +11,7 @@ export const useCourseDelete = () => {
 	const deleteChapter = async (courseId: string) => {
 		try {
 			setIsLoading(true);
-			await CourseService.delete(courseId);
+			await CourseApi.delete(courseId);
 		} catch (error) {
 			setIsError(true);
 			throw error;

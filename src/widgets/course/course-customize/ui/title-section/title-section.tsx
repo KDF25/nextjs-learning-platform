@@ -18,7 +18,7 @@ import {
 } from "@/shared/ui";
 
 import {
-	CourseService,
+	CourseApi,
 	ICourseTitleForm,
 	formSchemaCourseTitle
 } from "@/entities/course";
@@ -44,7 +44,7 @@ export const TitleSection: FC<ITitleSectionProps> = ({ initialData }) => {
 
 	const onSubmit = async (data: ICourseTitleForm) => {
 		try {
-			await CourseService.update({
+			await CourseApi.update({
 				id: initialData?.id,
 				userId: initialData?.userId,
 				title: data?.title

@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 
-import { CourseService } from "../api";
+import { CourseApi } from "../api";
 
 export const useCoursePublish = () => {
 	const [isLoading, setIsLoading] = useState<boolean>(false);
@@ -11,7 +11,7 @@ export const useCoursePublish = () => {
 	const publish = async (courseId: string) => {
 		try {
 			setIsLoading(true);
-			await CourseService.publish(courseId);
+			await CourseApi.publish(courseId);
 		} catch (error) {
 			setIsError(true);
 			throw error;

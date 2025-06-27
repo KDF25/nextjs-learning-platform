@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 
-import { CourseService } from "../api";
+import { CourseApi } from "../api";
 
 export const useCourseUnpublish = () => {
 	const [isLoading, setIsLoading] = useState<boolean>(false);
@@ -11,7 +11,7 @@ export const useCourseUnpublish = () => {
 	const unpublish = async (courseId: string) => {
 		try {
 			setIsLoading(true);
-			await CourseService.unpublish(courseId);
+			await CourseApi.unpublish(courseId);
 		} catch (error) {
 			setIsError(true);
 			throw error;

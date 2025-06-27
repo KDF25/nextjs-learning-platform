@@ -1,3 +1,4 @@
+import { Category, Course } from "@prisma/client";
 import z from "zod";
 
 import {
@@ -16,3 +17,15 @@ export type ICourseDescriptionForm = z.infer<
 export type ICourseCategoryForm = z.infer<typeof formSchemaCourseCategory>;
 
 export type ICoursePriceForm = z.infer<typeof formSchemaCoursePrice>;
+
+export type ICourseBaseData = Course & {
+	category: Category | null;
+	chapters: { id: string }[];
+	progress: number | null;
+};
+
+export type GetCourses = {
+	userId: string;
+	title?: string;
+	categoryId?: string;
+};

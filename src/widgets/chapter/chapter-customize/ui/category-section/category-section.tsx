@@ -18,7 +18,7 @@ import {
 } from "@/shared/ui";
 
 import {
-	CourseService,
+	CourseApi,
 	ICourseCategoryForm,
 	formSchemaCourseCategory
 } from "@/entities/course";
@@ -48,7 +48,7 @@ export const CategorySection: FC<ICategorySectionProps> = ({
 
 	const onSubmit = async (data: ICourseCategoryForm) => {
 		try {
-			await CourseService.update({
+			await CourseApi.update({
 				id: initialData?.id,
 				userId: initialData?.userId,
 				categoryId: data?.categoryId

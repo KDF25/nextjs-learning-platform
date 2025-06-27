@@ -6,7 +6,7 @@
 
 generator client {
   provider = "prisma-client-js"
-  // output   = "../src/generated/prisma"
+  previewFeatures = ["fullTextSearchPostgres"]
 }
 
 datasource db {
@@ -19,7 +19,7 @@ datasource db {
 model Course {
   id String @id @default(uuid())
   userId String
-  title String @db.Text
+  title String 
   description String? @db.Text
   imageUrl String? @db.Text
   price Float?
