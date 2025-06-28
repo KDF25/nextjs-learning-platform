@@ -4,7 +4,7 @@ import Link from "next/link";
 import { FC } from "react";
 
 import { formatPrice } from "@/shared/lib";
-import { CustomIcon } from "@/shared/ui";
+import { CustomIcon, CustomProgress } from "@/shared/ui";
 
 import { ICourseBaseData } from "../../types";
 
@@ -43,7 +43,13 @@ export const CourseCard: FC<ICourseCardProps> = ({ card }) => {
 						</div>
 					</div>
 					{card?.progress !== null ? (
-						<>11</>
+						<CustomProgress
+							progress={card?.progress}
+							size={"sm"}
+							variant={
+								card?.progress === 100 ? "success" : "default"
+							}
+						/>
 					) : (
 						<p className="text-md md:text-sm font-medium text-slate-700">
 							{formatPrice(card?.price || 0)}

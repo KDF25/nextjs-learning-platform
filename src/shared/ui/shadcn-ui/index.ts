@@ -14,3 +14,4 @@ export * from "./alert-dialog";
 export * from "./table";
 export * from "./dropdown-menu";
 export * from "./separator";
+export * from "./progress";

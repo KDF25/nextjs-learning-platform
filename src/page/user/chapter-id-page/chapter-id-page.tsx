@@ -17,12 +17,19 @@ export const ChapterIdPage: FC<IChapterIdPageProps> = async ({
 	chapterId
 }) => {
 	const { userId } = await auth();
-	const { chapter, course, muxData, userProgress, purchase, attachments } =
-		await ChapterService.getUserChapterById(
-			userId || "",
-			chapterId,
-			courseId
-		);
+	const {
+		chapter,
+		course,
+		muxData,
+		userProgress,
+		purchase,
+		attachments,
+		nextChapter
+	} = await ChapterService.getUserChapterById(
+		userId || "",
+		chapterId,
+		courseId
+	);
 
 	const isLocked = !chapter?.isFree && !purchase;
 	const competeOnEnd = !!purchase && !userProgress?.isCompleted;
@@ -52,6 +59,9 @@ export const ChapterIdPage: FC<IChapterIdPageProps> = async ({
 				chapter={chapter}
 				course={course}
 				attachments={attachments}
+				purchase={purchase}
+				nextChapter={nextChapter}
+				isCompleted={!!userProgress?.isCompleted}
 			/>
 		</div>
 	);

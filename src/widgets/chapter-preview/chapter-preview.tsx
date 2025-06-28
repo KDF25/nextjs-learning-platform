@@ -3,7 +3,7 @@ import { FC } from "react";
 
 import { EditorPreview, Separator } from "@/shared/ui";
 
-import { EnrollCourse } from "@/features/course";
+import { ChangeProgressCourse, EnrollCourse } from "@/features/course";
 
 import { AttachmentSection, VideoPlayer } from "./ui";
 
@@ -15,8 +15,10 @@ interface IChapterPreviewProps {
 	muxData?: MuxData | null;
 	chapter?: Chapter | null;
 	course?: Pick<Course, "price"> | null;
-	purchase?: Purchase;
+	purchase?: Purchase | null;
 	attachments: Attachment[];
+	nextChapter?: Chapter | null;
+	isCompleted?: boolean;
 }
 
 export const ChapterPreview: FC<IChapterPreviewProps> = ({
@@ -28,7 +30,9 @@ export const ChapterPreview: FC<IChapterPreviewProps> = ({
 	chapter,
 	course,
 	purchase,
-	attachments
+	attachments,
+	nextChapter,
+	isCompleted
 }) => {
 	return (
 		<div className="flex flex-col max-w-4xl mx-auto ">
@@ -40,13 +44,19 @@ export const ChapterPreview: FC<IChapterPreviewProps> = ({
 					isLocked={isLocked}
 					completeOnEnd={completeOnEnd}
 					playbackId={muxData?.playbackId}
+					nextChapterId={nextChapter?.id}
 				/>
 			</div>
 			<div>
-				<div className="p-4 flex flex-col md:flex-row items-center justify-between">
+				<div className="p-4 flex flex-col md:flex-row items-center justify-between gap-2">
 					<h2 className="text-2xl font-semibold">{chapter?.title}</h2>
-					{purchase ? (
-						<></>
+					{!!purchase ? (
+						<ChangeProgressCourse
+							chapterId={chapterId}
+							courseId={courseId}
+							nextChapterId={nextChapter?.id || ""}
+							isCompleted={isCompleted || false}
+						/>
 					) : (
 						<EnrollCourse
 							price={course?.price || 0}

@@ -55,9 +55,9 @@ export const CourseSidebarItem: FC<ICourseSidebarItemProps> = ({ item }) => {
 			</div>
 			<div
 				className={cn(
-					"ml-auto opacity-0 border-2 border-slate-700 h-full transition-all",
-					isActive && "opacity-100",
-					isCompleted && "opacity-100 border-emerald-700"
+					"ml-auto opacity-0 border-2 h-full transition-all",
+					isActive && "opacity-100 border-slate-700",
+					isActive && isCompleted && "border-emerald-700"
 				)}
 			></div>
 		</button>

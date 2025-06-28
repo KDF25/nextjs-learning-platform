@@ -38,5 +38,16 @@ export const ChapterApi = {
 		return await axios.patch(
 			`/api/courses/${courseId}/chapters/${chapterId}/unpublish`
 		);
+	},
+
+	async changeStatus(
+		courseId: string,
+		chapterId: string,
+		isCompeted: boolean
+	) {
+		return await axios.put(
+			`/api/courses/${courseId}/chapters/${chapterId}/progress`,
+			{ isCompleted: isCompeted }
+		);
 	}
 };

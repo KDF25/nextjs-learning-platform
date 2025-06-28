@@ -2,9 +2,15 @@
 
 import MuxPlayer from "@mux/mux-player-react";
 import { Loader2, Lock } from "lucide-react";
+import { useRouter } from "next/navigation";
 import { FC, useState } from "react";
+import toast from "react-hot-toast";
 
+import { ENUM_PATH } from "@/shared/config";
 import { cn } from "@/shared/lib";
+import { useConfettiStore } from "@/shared/store";
+
+import { useChapterChangeStatus } from "@/entities/chapter";
 
 interface IVideoPlayerProps {
 	chapterId: string;
@@ -13,17 +19,41 @@ interface IVideoPlayerProps {
 	completeOnEnd: boolean;
 	playbackId?: string | null;
 	title: string;
+	nextChapterId?: string | null;
 }
 
 export const VideoPlayer: FC<IVideoPlayerProps> = ({
-	// chapterId,
-	// courseId,
+	chapterId,
+	courseId,
 	isLocked,
-	// completeOnEnd,
+	completeOnEnd,
 	playbackId,
-	title
+	title,
+	nextChapterId
 }) => {
 	const [isReady, setIsReady] = useState(false);
+	const router = useRouter();
+	const confetti = useConfettiStore();
+	const { changeStatus } = useChapterChangeStatus();
+
+	const handleOnEnd = () => {
+		if (completeOnEnd) {
+			changeStatus(courseId, chapterId, true).then(() => {
+				if (!nextChapterId) {
+					confetti.onOpen();
+				}
+
+				toast.success("Progress updated");
+				router.refresh();
+
+				if (nextChapterId) {
+					router.push(
+						ENUM_PATH.COURSES.CHAPTER(courseId, nextChapterId)
+					);
+				}
+			});
+		}
+	};
 
 	return (
 		<div className="relative aspect-video">
@@ -45,7 +75,7 @@ export const VideoPlayer: FC<IVideoPlayerProps> = ({
 					className={cn(!isReady && "hidden")}
 					playbackId={playbackId!}
 					onCanPlay={() => setIsReady(true)}
-					onEnded={() => {}}
+					onEnded={handleOnEnd}
 					autoPlay
 				/>
 			)}
