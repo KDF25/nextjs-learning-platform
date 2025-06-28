@@ -2,7 +2,13 @@ import { Attachment, Chapter, Course } from "@prisma/client";
 
 import { prisma } from "@/shared/database";
 
-import { GetTeacherCourses, GetUserCourses, ICourseBaseData } from "../types";
+import {
+	DashboardUserCourse,
+	GetTeacherCourses,
+	GetUserCourses,
+	GetUserDashboardCourses,
+	ICourseBaseData
+} from "../types";
 
 export const CourseService = {
 	async getTeacherCourseById(
@@ -175,6 +181,54 @@ export const CourseService = {
 		} catch (error) {
 			console.log("[CourseService] getCourses", error);
 			return [];
+		}
+	},
+
+	async getUserDashboard(userId: string): Promise<GetUserDashboardCourses> {
+		try {
+			const purchases = await prisma.purchase.findMany({
+				where: {
+					userId
+				},
+				select: {
+					course: {
+						include: {
+							category: true,
+							chapters: {
+								where: {
+									isPublished: true
+								}
+							}
+						}
+					}
+				}
+			});
+			const courses = purchases.map(
+				(purchase) => purchase.course
+			) as DashboardUserCourse[];
+
+			for (const course of courses) {
+				const progress = await this.getProgress(userId, course.id);
+				course["progress"] = progress;
+			}
+
+			const completed = courses.filter(
+				(course) => course.progress === 100
+			);
+			const inProgress = courses.filter(
+				(course) => course.progress !== 100
+			);
+
+			return {
+				completed,
+				inProgress
+			};
+		} catch (error) {
+			console.log("[CourseService] getUserDashboard", error);
+			return {
+				completed: [],
+				inProgress: []
+			};
 		}
 	}
 };

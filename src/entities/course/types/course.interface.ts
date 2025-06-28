@@ -33,3 +33,14 @@ export type GetTeacherCourses = {
 export type GetUserCourses = Course & {
 	chapters: (Chapter & { userProgress: UserProgress[] | null })[];
 };
+
+export type DashboardUserCourse = Course & {
+	category: Category | null;
+	chapters: Chapter[];
+	progress: number | null;
+};
+
+export type GetUserDashboardCourses = {
+	completed: DashboardUserCourse[];
+	inProgress: DashboardUserCourse[];
+};

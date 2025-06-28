@@ -8,3 +8,4 @@ export * from "./banner";
 export * from "./custom-modal";
 export * from "./custom-progress";
 export * from "./navbar-routes";
+export * from "./info-card";

@@ -41,7 +41,7 @@ const iconVariants = cva("", {
 	}
 });
 
-interface ICustomIconProps
+export interface ICustomIconProps
 	extends VariantProps<typeof backgroundVariants>,
 		VariantProps<typeof iconVariants> {
 	icon: LucideIcon;
