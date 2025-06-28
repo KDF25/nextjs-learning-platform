@@ -10,7 +10,7 @@ export const AttachmentSection: FC<IAttachmentSectionProps> = ({
 	attachments
 }) => {
 	return (
-		<div className="p-4">
+		<div className="p-4 flex flex-col gap-2">
 			{attachments?.map((attachment) => (
 				<a
 					key={attachment?.id}

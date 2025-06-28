@@ -21,11 +21,11 @@ export const DeleteChapter: FC<IDeleteChapterProps> = ({
 	onClickButton,
 	...props
 }) => {
-	const { deleteChapter, isLoading } = useCourseDelete();
+	const { deleteCourse, isLoading } = useCourseDelete();
 	const router = useRouter();
 
 	const handleDelete = () => {
-		deleteChapter(courseId)
+		deleteCourse(courseId)
 			.then(() => {
 				toast.success("Course deleted");
 				router.push(ENUM_PATH.TEACHER.COURSES);

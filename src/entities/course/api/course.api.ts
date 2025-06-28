@@ -23,5 +23,9 @@ export const CourseApi = {
 
 	async unpublish(courseId: string) {
 		return await axios.patch(`/api/courses/${courseId}/unpublish`);
+	},
+
+	async checkout(courseId: string) {
+		return await axios.post(`/api/courses/${courseId}/checkout`);
 	}
 };

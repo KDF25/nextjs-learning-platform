@@ -4,14 +4,14 @@ import { useState } from "react";
 
 import { CourseApi } from "../api";
 
-export const useCourseDelete = () => {
+export const useCourseCheckout = () => {
 	const [isLoading, setIsLoading] = useState<boolean>(false);
 	const [isError, setIsError] = useState<boolean>(false);
 
-	const deleteCourse = async (courseId: string) => {
+	const checkout = async (courseId: string) => {
 		try {
 			setIsLoading(true);
-			await CourseApi.delete(courseId);
+			return await CourseApi.checkout(courseId);
 		} catch (error) {
 			setIsError(true);
 			throw error;
@@ -23,6 +23,6 @@ export const useCourseDelete = () => {
 	return {
 		isLoading,
 		isError,
-		deleteCourse
+		checkout
 	};
 };
