@@ -11,7 +11,7 @@ import {
 	SheetTrigger
 } from "@/shared/ui";
 
-import { Sidebar } from "@/widgets/layout/sidebar";
+import { Sidebar } from "@/widgets/layout/teacher/sidebar";
 
 export const MobileSidebar: FC = ({}) => {
 	return (

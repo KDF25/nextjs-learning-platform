@@ -6,15 +6,15 @@ import { FC } from "react";
 
 import { ENUM_PATH } from "@/shared/config";
 
-import { ChangeMode } from "../change-mode";
-import { Logout } from "../logout";
-import { SearchInput } from "../search-input";
+import { ChangeMode } from "../../../widgets/layout/teacher/navbar/ui/change-mode";
+import { Logout } from "../../../widgets/layout/teacher/navbar/ui/logout";
+import { SearchInput } from "../../../widgets/layout/teacher/navbar/ui/search-input";
 
 export const NavbarRoutes: FC = ({}) => {
 	const pathname = usePathname();
 
 	const isTeacherPage = pathname?.startsWith(ENUM_PATH.TEACHER_PATHS);
-	const isPlayerPage = pathname?.includes(ENUM_PATH.PLAYER_PATHS);
+	const isCoursePage = pathname?.includes(ENUM_PATH.COURSE_PATHS);
 	const isSearchPage = pathname === ENUM_PATH.SEARCH;
 
 	return (
@@ -25,7 +25,7 @@ export const NavbarRoutes: FC = ({}) => {
 				</div>
 			)}
 			<div className="flex gap-x-2 ml-auto">
-				{isTeacherPage || isPlayerPage ? <Logout /> : <ChangeMode />}
+				{isTeacherPage || isCoursePage ? <Logout /> : <ChangeMode />}
 				<UserButton />
 			</div>
 		</>

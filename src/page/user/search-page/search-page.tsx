@@ -6,7 +6,7 @@ import { CourseService } from "@/entities/course";
 
 import { CategoriesBar } from "@/widgets/categories-bar";
 import { CoursesList } from "@/widgets/courses-list";
-import { SearchInput } from "@/widgets/layout/navbar";
+import { SearchInput } from "@/widgets/layout/teacher/navbar";
 
 interface SearchPageProps {
 	searchParams: {
@@ -25,7 +25,7 @@ export const SearchPage: FC<SearchPageProps> = async ({ searchParams }) => {
 		title,
 		categoryId
 	});
-	console.log(courses);
+
 	return (
 		<>
 			<div className="px-6 pt-6 md:hidden md: mb: 0 block">

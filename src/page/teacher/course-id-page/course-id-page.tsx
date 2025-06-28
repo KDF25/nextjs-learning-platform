@@ -8,11 +8,13 @@ import { Banner } from "@/shared/ui";
 import { CategoryService } from "@/entities/category";
 import { CourseService, getCourseFields } from "@/entities/course";
 
-import { CourseActions } from "@/widgets/course";
-import { CourseAttachment } from "@/widgets/course/course-attachment";
-import { CourseChapters } from "@/widgets/course/course-chapters";
-import { CourseCustomize } from "@/widgets/course/course-customize";
-import { CoursePrice } from "@/widgets/course/course-price";
+import {
+	CourseActions,
+	CourseAttachment,
+	CourseChapters,
+	CourseCustomize,
+	CoursePrice
+} from "@/widgets/course";
 
 interface ICourseIdPageProps {
 	courseId: string;
@@ -20,7 +22,7 @@ interface ICourseIdPageProps {
 
 export const CourseIdPage: FC<ICourseIdPageProps> = async ({ courseId }) => {
 	const { userId } = await auth();
-	const course = await CourseService.getById(userId!, courseId);
+	const course = await CourseService.getTeacherCourseById(userId!, courseId);
 
 	if (!course) {
 		redirect(ENUM_PATH.MAIN);

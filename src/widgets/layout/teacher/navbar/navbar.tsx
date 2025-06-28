@@ -1,6 +1,8 @@
 import { FC } from "react";
 
-import { MobileSidebar, NavbarRoutes } from "./ui";
+import { NavbarRoutes } from "@/shared/ui";
+
+import { MobileSidebar } from "./ui";
 
 export const Navbar: FC = ({}) => {
 	return (

@@ -1,4 +1,4 @@
-import { Category, Course } from "@prisma/client";
+import { Category, Chapter, Course, UserProgress } from "@prisma/client";
 import z from "zod";
 
 import {
@@ -24,8 +24,12 @@ export type ICourseBaseData = Course & {
 	progress: number | null;
 };
 
-export type GetCourses = {
+export type GetTeacherCourses = {
 	userId: string;
 	title?: string;
 	categoryId?: string;
+};
+
+export type GetUserCourses = Course & {
+	chapters: (Chapter & { userProgress: UserProgress[] | null })[];
 };

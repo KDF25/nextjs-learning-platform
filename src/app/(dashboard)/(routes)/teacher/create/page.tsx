@@ -1,6 +1,6 @@
 import { FC } from "react";
 
-import { CourseCreatePage } from "@/page/course-create";
+import { CourseCreatePage } from "@/page/teacher";
 
 const CreatePage: FC = () => {
 	return <CourseCreatePage />;

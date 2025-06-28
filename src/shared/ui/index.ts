@@ -6,3 +6,4 @@ export * from "./editor";
 export * from "./editor-preview";
 export * from "./banner";
 export * from "./custom-modal";
+export * from "./navbar-routes";

@@ -2,10 +2,10 @@ import { Attachment, Chapter, Course } from "@prisma/client";
 
 import { prisma } from "@/shared/database";
 
-import { GetCourses, ICourseBaseData } from "../types";
+import { GetTeacherCourses, GetUserCourses, ICourseBaseData } from "../types";
 
 export const CourseService = {
-	async getById(
+	async getTeacherCourseById(
 		userId: string,
 		id: string
 	): Promise<
@@ -29,7 +29,38 @@ export const CourseService = {
 				}
 			});
 		} catch (error) {
-			console.log("[CourseService] getById", error);
+			console.log("[CourseService] getTeacherCourseById", error);
+			return null;
+		}
+	},
+
+	async getUserCourseById(
+		userId: string,
+		id: string
+	): Promise<GetUserCourses | null> {
+		try {
+			return await prisma.course.findUnique({
+				where: { id },
+				include: {
+					chapters: {
+						where: {
+							isPublished: true
+						},
+						include: {
+							userProgress: {
+								where: {
+									userId
+								}
+							}
+						},
+						orderBy: {
+							position: "asc"
+						}
+					}
+				}
+			});
+		} catch (error) {
+			console.log("[CourseService] getUserCourseById", error);
 			return null;
 		}
 	},
@@ -88,7 +119,7 @@ export const CourseService = {
 		userId,
 		title,
 		categoryId
-	}: GetCourses): Promise<ICourseBaseData[]> {
+	}: GetTeacherCourses): Promise<ICourseBaseData[]> {
 		try {
 			const courses = await prisma.course.findMany({
 				where: {

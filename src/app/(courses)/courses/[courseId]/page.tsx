@@ -1,6 +1,6 @@
 import { FC } from "react";
 
-import { CourseIdPage } from "@/page/teacher";
+import { CourseIdPage } from "@/page/user";
 
 interface CourseIdsPageProps {
 	params: Promise<{ courseId: string }>;

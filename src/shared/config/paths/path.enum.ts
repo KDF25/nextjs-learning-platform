@@ -5,5 +5,5 @@ export const ENUM_PATH = {
 	TEACHER_COURSES: "/teacher/courses",
 	TEACHER_NEW_COURSE: "/teacher/create",
 	TEACHER_ANALYTICS: "/teacher/analytics",
-	PLAYER_PATHS: "/chapter"
+	COURSE_PATHS: "/courses"
 } as const;

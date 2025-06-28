@@ -1,6 +1,6 @@
 import { FC } from "react";
 
-import { SearchPage } from "@/page/search-page";
+import { SearchPage } from "@/page/user";
 
 interface SearchPageProps {
 	searchParams: Promise<Record<string, string>>;
