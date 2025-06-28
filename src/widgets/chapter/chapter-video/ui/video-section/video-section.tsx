@@ -9,7 +9,7 @@ import toast from "react-hot-toast";
 
 import { Button, FileUpload } from "@/shared/ui";
 
-import { ChapterService } from "@/entities/chapter";
+import { ChapterApi } from "@/entities/chapter";
 
 interface IVideoSectionProps {
 	initialData: Chapter & { muxData?: MuxData };
@@ -28,7 +28,7 @@ export const VideoSection: FC<IVideoSectionProps> = ({
 
 	const onSubmit = async (data: IForm) => {
 		try {
-			await ChapterService.update(courseId, {
+			await ChapterApi.update(courseId, {
 				id: initialData?.id,
 				videoUrl: data?.videoUrl
 			} as Chapter);

@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 
-import { ChapterService } from "../api";
+import { ChapterApi } from "../api";
 
 export const useChapterDelete = () => {
 	const [isLoading, setIsLoading] = useState<boolean>(false);
@@ -11,7 +11,7 @@ export const useChapterDelete = () => {
 	const deleteChapter = async (courseId: string, chapterId: string) => {
 		try {
 			setIsLoading(true);
-			await ChapterService.delete(courseId, chapterId);
+			await ChapterApi.delete(courseId, chapterId);
 		} catch (error) {
 			setIsError(true);
 			throw error;

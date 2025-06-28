@@ -1,3 +1,4 @@
+import { auth } from "@clerk/nextjs/server";
 import { redirect } from "next/navigation";
 import { FC } from "react";
 
@@ -22,7 +23,13 @@ export const ChapterIdPage: FC<IChapterIdPageProps> = async ({
 	courseId,
 	chapterId
 }) => {
-	const chapter = await ChapterService.getById(chapterId, courseId);
+	const { userId } = await auth();
+
+	const chapter = await ChapterService.getTeacherChapterById(
+		userId || "",
+		courseId,
+		chapterId
+	);
 
 	if (!chapter) {
 		redirect(ENUM_PATH.MAIN);
@@ -45,7 +52,7 @@ export const ChapterIdPage: FC<IChapterIdPageProps> = async ({
 					<div className="flex flex-col gap-2">
 						<CustomBack
 							title="Back to course setup"
-							path={`/teacher/courses/${courseId}`}
+							path={ENUM_PATH.TEACHER.COURSE(courseId)}
 						/>
 						<h1 className="text-2xl font-medium">
 							Chapter creation

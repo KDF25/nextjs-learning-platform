@@ -19,7 +19,7 @@ import {
 } from "@/shared/ui";
 
 import {
-	ChapterService,
+	ChapterApi,
 	IChapterDescriptionForm,
 	formSchemaChapterDescription
 } from "@/entities/chapter";
@@ -49,7 +49,7 @@ export const DescriptionSection: FC<IDescriptionSectionProps> = ({
 
 	const onSubmit = async (data: IChapterDescriptionForm) => {
 		try {
-			await ChapterService.update(courseId, {
+			await ChapterApi.update(courseId, {
 				id: initialData?.id,
 				description: data?.description
 			} as Chapter);

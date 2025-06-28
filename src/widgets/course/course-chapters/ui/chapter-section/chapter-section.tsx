@@ -18,7 +18,7 @@ import {
 	Input
 } from "@/shared/ui";
 
-import { ChapterService, ICharperPosition } from "@/entities/chapter";
+import { ChapterApi, ICharperPosition } from "@/entities/chapter";
 import { ICourseTitleForm, formSchemaCourseTitle } from "@/entities/course";
 
 import { ChapterList } from "../chapter-list";
@@ -45,7 +45,7 @@ export const ChapterSection: FC<IChapterSectionProps> = ({ initialData }) => {
 
 	const onSubmit = async (data: ICourseTitleForm) => {
 		try {
-			await ChapterService.add({
+			await ChapterApi.add({
 				id: initialData?.id,
 				userId: initialData?.userId,
 				title: data?.title
@@ -61,7 +61,7 @@ export const ChapterSection: FC<IChapterSectionProps> = ({ initialData }) => {
 	const onReorder = async (updateData: ICharperPosition[]) => {
 		try {
 			setIsUpdating(true);
-			await ChapterService.updatePosition(initialData?.id, updateData);
+			await ChapterApi.updatePosition(initialData?.id, updateData);
 			toast.success("Chapter reordered");
 			router.refresh();
 		} catch {

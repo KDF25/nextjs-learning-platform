@@ -17,7 +17,7 @@ import {
 	FormItem
 } from "@/shared/ui";
 
-import { ChapterService } from "@/entities/chapter";
+import { ChapterApi } from "@/entities/chapter";
 
 interface IAccessSectionProps {
 	initialData: Chapter;
@@ -45,7 +45,7 @@ export const AccessSection: FC<IAccessSectionProps> = ({
 
 	const onSubmit = async (data: IForm) => {
 		try {
-			await ChapterService.update(courseId, {
+			await ChapterApi.update(courseId, {
 				id: initialData?.id,
 				isFree: data?.isFree
 			} as Chapter);
