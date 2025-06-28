@@ -5,6 +5,7 @@ import { CheckCircle, Lock, PlayCircle } from "lucide-react";
 import { usePathname, useRouter } from "next/navigation";
 import { FC } from "react";
 
+import { ENUM_PATH } from "@/shared/config";
 import { cn } from "@/shared/lib";
 
 interface ICourseSidebarItemProps {
@@ -26,7 +27,7 @@ export const CourseSidebarItem: FC<ICourseSidebarItemProps> = ({ item }) => {
 
 	const handleClick = () => {
 		if (isActive) return;
-		router.push(`/course/${item?.courseId}/chapter/${item?.id}`);
+		router.push(ENUM_PATH.COURSES.CHAPTER(item?.courseId, item?.id));
 	};
 
 	return (

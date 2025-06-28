@@ -21,11 +21,11 @@ export const SIDEBAR_TEACHER_ROUTES: ISidebarItem[] = [
 	{
 		icon: List,
 		label: "Courses",
-		href: ENUM_PATH.TEACHER_COURSES
+		href: ENUM_PATH.TEACHER.COURSES
 	},
 	{
 		icon: BarChart,
 		label: "Analytics",
-		href: ENUM_PATH.TEACHER_ANALYTICS
+		href: ENUM_PATH.TEACHER.ANALYTICS
 	}
 ];

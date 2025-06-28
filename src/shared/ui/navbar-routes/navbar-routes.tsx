@@ -13,8 +13,8 @@ import { SearchInput } from "../../../widgets/layout/teacher/navbar/ui/search-in
 export const NavbarRoutes: FC = ({}) => {
 	const pathname = usePathname();
 
-	const isTeacherPage = pathname?.startsWith(ENUM_PATH.TEACHER_PATHS);
-	const isCoursePage = pathname?.includes(ENUM_PATH.COURSE_PATHS);
+	const isTeacherPage = pathname?.startsWith(ENUM_PATH.TEACHER.ROOT);
+	const isCoursePage = pathname?.includes(ENUM_PATH.COURSES.ROOT);
 	const isSearchPage = pathname === ENUM_PATH.SEARCH;
 
 	return (

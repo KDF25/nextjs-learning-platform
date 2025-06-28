@@ -1,9 +1,21 @@
 export const ENUM_PATH = {
 	MAIN: "/",
 	SEARCH: "/search",
-	TEACHER_PATHS: "/teacher",
-	TEACHER_COURSES: "/teacher/courses",
-	TEACHER_NEW_COURSE: "/teacher/create",
-	TEACHER_ANALYTICS: "/teacher/analytics",
-	COURSE_PATHS: "/courses"
+
+	TEACHER: {
+		ROOT: "/teacher",
+		COURSES: "/teacher/courses",
+		CREATE: "/teacher/create",
+		ANALYTICS: "/teacher/analytics",
+		COURSE: (courseId: string) => `/teacher/courses/${courseId}`,
+		CHAPTER: (courseId: string, chapterId: string) =>
+			`/teacher/courses/${courseId}/chapters/${chapterId}`
+	},
+
+	COURSES: {
+		ROOT: "/courses",
+		COURSE: (courseId: string) => `/courses/${courseId}`,
+		CHAPTER: (courseId: string, chapterId: string) =>
+			`/courses/${courseId}/chapters/${chapterId}`
+	}
 } as const;

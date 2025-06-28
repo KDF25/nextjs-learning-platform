@@ -8,6 +8,7 @@ import { FC, useState } from "react";
 import { useForm } from "react-hook-form";
 import toast from "react-hot-toast";
 
+import { ENUM_PATH } from "@/shared/config";
 import {
 	Button,
 	Form,
@@ -71,7 +72,7 @@ export const ChapterSection: FC<IChapterSectionProps> = ({ initialData }) => {
 	};
 
 	const onEdit = (id: string) => {
-		router.push(`/teacher/courses/${initialData?.id}/chapters/${id}`);
+		router.push(ENUM_PATH.TEACHER.CHAPTER(initialData?.id, id));
 	};
 
 	return (

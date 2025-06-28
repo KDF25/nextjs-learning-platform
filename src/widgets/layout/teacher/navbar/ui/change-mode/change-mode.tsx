@@ -8,7 +8,7 @@ import { Button } from "@/shared/ui";
 
 export const ChangeMode: FC = ({}) => {
 	return (
-		<Link href={ENUM_PATH.TEACHER_COURSES}>
+		<Link href={ENUM_PATH.TEACHER.COURSES}>
 			<Button size={"sm"} variant={"ghost"}>
 				Teacher mode
 			</Button>

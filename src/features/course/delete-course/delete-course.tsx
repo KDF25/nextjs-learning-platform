@@ -5,6 +5,7 @@ import { useRouter } from "next/navigation";
 import { FC, useEffect } from "react";
 import toast from "react-hot-toast";
 
+import { ENUM_PATH } from "@/shared/config";
 import { Button, CustomModal } from "@/shared/ui";
 
 import { useCourseDelete } from "@/entities/course";
@@ -27,7 +28,7 @@ export const DeleteChapter: FC<IDeleteChapterProps> = ({
 		deleteChapter(courseId)
 			.then(() => {
 				toast.success("Course deleted");
-				router.push(`/teacher/courses`);
+				router.push(ENUM_PATH.TEACHER.COURSES);
 			})
 			.catch(() => toast.error("Something went wrong"));
 	};
