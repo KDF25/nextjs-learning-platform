@@ -1,7 +1,9 @@
 import { FC } from "react";
 
-const AnalyticsPage: FC = () => {
-	return <div>AnalyticsPage</div>;
+import { AnalyticsPage } from "@/page/teacher";
+
+const Analytics: FC = () => {
+	return <AnalyticsPage />;
 };
 
-export default AnalyticsPage;
+export default Analytics;

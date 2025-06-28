@@ -7,7 +7,9 @@ import {
 	GetTeacherCourses,
 	GetUserCourses,
 	GetUserDashboardCourses,
-	ICourseBaseData
+	IChart,
+	ICourseBaseData,
+	PurchaseCourse
 } from "../types";
 
 export const CourseService = {
@@ -228,6 +230,60 @@ export const CourseService = {
 			return {
 				completed: [],
 				inProgress: []
+			};
+		}
+	},
+
+	async groupByCourses(purchases: PurchaseCourse[]) {
+		const grouped: { [courseTitle: string]: number } = {};
+
+		purchases.forEach((purchase) => {
+			const courseTitle = purchase.course.title;
+			grouped[courseTitle] =
+				(grouped[courseTitle] || 0) + (purchase.course.price || 0);
+		});
+
+		return grouped;
+	},
+
+	async getTeacherAnalytics(userId: string) {
+		try {
+			const purchases = await prisma.purchase.findMany({
+				where: {
+					course: {
+						userId
+					}
+				},
+				include: {
+					course: true
+				}
+			});
+
+			const groupEarnings = await this.groupByCourses(purchases);
+			const data: IChart[] = Object.entries(groupEarnings).map(
+				([courseTitle, price]) => ({
+					name: courseTitle,
+					total: price
+				})
+			);
+
+			const totalRevenue = data.reduce(
+				(acc, curr) => acc + (curr.total || 0),
+				0
+			);
+			const totalSales = purchases.length;
+
+			return {
+				totalRevenue,
+				totalSales,
+				data
+			};
+		} catch (error) {
+			console.log("[CourseService] getTeacherAnalytics", error);
+			return {
+				totalRevenue: 0,
+				totalSales: 0,
+				data: []
 			};
 		}
 	}

@@ -1,4 +1,10 @@
-import { Category, Chapter, Course, UserProgress } from "@prisma/client";
+import {
+	Category,
+	Chapter,
+	Course,
+	Purchase,
+	UserProgress
+} from "@prisma/client";
 import z from "zod";
 
 import {
@@ -44,3 +50,12 @@ export type GetUserDashboardCourses = {
 	completed: DashboardUserCourse[];
 	inProgress: DashboardUserCourse[];
 };
+
+export type PurchaseCourse = Purchase & {
+	course: Course;
+};
+
+export interface IChart {
+	name: string;
+	total: number;
+}
