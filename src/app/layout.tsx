@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
-import Head from "next/head";
 
 import { IMAGES } from "@/shared/assets";
 import "@/shared/styles/globals.css";
@@ -19,6 +18,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
 	title: "Skill Forge",
+	manifest: "./manifest.json",
 	description:
 		"Skill Forge is your ultimate platform for mastering new skills. Explore a wide range of expert-led courses and enhance your career with flexible online learning.",
 	metadataBase: new URL(process.env.NEXT_PUBLIC_APP_URL || ""),
@@ -38,6 +38,9 @@ export const metadata: Metadata = {
 		],
 		locale: "en-US",
 		type: "website"
+	},
+	icons: {
+		icon: "./icons/icon-512.png"
 	}
 };
 
@@ -49,9 +52,6 @@ export default function RootLayout({
 	return (
 		<Providers>
 			<html lang="en" prefix="og: http://ogp.me/ns#">
-				<Head>
-					<link rel="icon" href={IMAGES.favicon.src} />
-				</Head>
 				<body
 					className={`${geistSans.variable} ${geistMono.variable} antialiased`}
 				>

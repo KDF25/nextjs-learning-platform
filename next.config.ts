@@ -1,9 +1,14 @@
-import type { NextConfig } from "next";
+import withPWA from 'next-pwa';
 
-const nextConfig: NextConfig = {
+const nextConfig = {
   images: {
     domains: ["utfs.io"]
   }
 };
 
-export default nextConfig;
+export default withPWA({
+  dest: 'public',
+  disable: false,
+  register: true,
+  skipWaiting: true,
+})(nextConfig);
