@@ -35,7 +35,7 @@ export const CategoriesBar: FC<ICategoriesBarProps> = ({ items }) => {
 	};
 
 	return (
-		<div className="flex items-center gap-x-2 overflow-x-auto">
+		<div className="flex items-center gap-x-2 overflow-x-auto custom-scroll pb-3">
 			{items.map((item) => (
 				<CategoryCard
 					key={item.id}

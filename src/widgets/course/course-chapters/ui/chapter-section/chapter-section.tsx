@@ -40,6 +40,7 @@ export const ChapterSection: FC<IChapterSectionProps> = ({ initialData }) => {
 	});
 	const {
 		formState: { isSubmitting, isValid },
+		setValue,
 		handleSubmit
 	} = form;
 
@@ -52,6 +53,7 @@ export const ChapterSection: FC<IChapterSectionProps> = ({ initialData }) => {
 			});
 			toast.success("Chapter updated");
 			router.refresh();
+			setValue("title", "");
 			setIsCreating(false);
 		} catch {
 			toast.error("Something went wrong");
@@ -74,7 +76,6 @@ export const ChapterSection: FC<IChapterSectionProps> = ({ initialData }) => {
 	const onEdit = (id: string) => {
 		router.push(ENUM_PATH.TEACHER.CHAPTER(initialData?.id, id));
 	};
-
 	return (
 		<div className="relative border bg-slate-100 rounded-md p-4 flex flex-col gap-1 overflow-hidden">
 			{isUpdating && (

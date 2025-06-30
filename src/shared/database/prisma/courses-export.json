@@ -1,0 +1,1263 @@
+[
+  {
+    "id": "aab82b5d-0d05-4367-8655-2918676adc66",
+    "userId": "user_2xis9eFWImMhDqMklAPUcZyQOHc",
+    "title": "Parenting in the Digital Age",
+    "description": "Technology is shaping our children’s world — are you prepared to guide them? This course explores parenting techniques that blend love, structure, and tech literacy to help raise confident and resilient digital natives.",
+    "imageUrl": "https://utfs.io/f/5VMVggWXb9pmvg1pgnmNzrBQqpHK68uOoGfSTUYhJZXRgwbM",
+    "price": 59,
+    "isPublished": true,
+    "categoryId": "d6ca7c08-c847-4533-ac22-e165fd23a66e",
+    "createdAt": "2025-06-30T09:31:13.915Z",
+    "updatedAt": "2025-06-30T09:51:52.891Z",
+    "chapters": [
+      {
+        "id": "07070cd3-2199-41ca-a3b1-4597baa95b9e",
+        "title": "Screen Time & Mental Health",
+        "description": "<p><strong>How much is too much?</strong> Understand the science behind screen exposure and its impact on focus, anxiety, and emotional regulation in kids.</p>",
+        "videoUrl": "https://utfs.io/f/5VMVggWXb9pmeHvSjMZn6hrVf3YayFOgdKuNbMzoZ51vmRPp",
+        "position": 1,
+        "isPublished": true,
+        "isFree": true,
+        "courseId": "aab82b5d-0d05-4367-8655-2918676adc66",
+        "createdAt": "2025-06-30T09:31:13.915Z",
+        "updatedAt": "2025-06-30T09:31:13.915Z",
+        "muxData": {
+          "id": "53e3f432-2654-4861-91e6-03e75a797eaf",
+          "assetId": "qqoj7vKYWcco9x00cAcjkmg4vtEjJPE5ImB01I9MQYHPU",
+          "playbackId": "iGezYTHk53302Kku75Xd5o1Ss5D8zPAeN3Q4Je01N4jGM",
+          "chapterId": "07070cd3-2199-41ca-a3b1-4597baa95b9e"
+        }
+      },
+      {
+        "id": "08d0ca10-dc52-463b-960b-744614d767ed",
+        "title": "Raising Responsible Tech Users",
+        "description": "<p>Discover how to <em>teach digital boundaries</em>, introduce ethical tech use, and build routines that encourage offline bonding.</p>",
+        "videoUrl": "https://utfs.io/f/5VMVggWXb9pmKk9Gi1kDjcbPoZJHaT98HbApRJdeFFtfEehU",
+        "position": 2,
+        "isPublished": true,
+        "isFree": false,
+        "courseId": "aab82b5d-0d05-4367-8655-2918676adc66",
+        "createdAt": "2025-06-30T09:31:13.915Z",
+        "updatedAt": "2025-06-30T09:31:13.915Z",
+        "muxData": {
+          "id": "2633340b-b4b9-4245-99a7-50e03f5ccc31",
+          "assetId": "qqoj7vKYWcco9x00cAcjkmg4vtEjJPE5ImB01I9MQYHPU",
+          "playbackId": "iGezYTHk53302Kku75Xd5o1Ss5D8zPAeN3Q4Je01N4jGM",
+          "chapterId": "08d0ca10-dc52-463b-960b-744614d767ed"
+        }
+      },
+      {
+        "id": "fa50203f-c475-4c56-b969-3597b533e774",
+        "title": "Parental Controls & Monitoring Tools",
+        "description": "<p>Get a hands-on guide to setting up controls across major devices. Learn what works, what’s intrusive, and how to build trust without spying.</p>",
+        "videoUrl": "https://utfs.io/f/5VMVggWXb9pmvT7wJkPtR8yXE5MshyKfeR3cc2eFgYPQ6FBo",
+        "position": 3,
+        "isPublished": true,
+        "isFree": false,
+        "courseId": "aab82b5d-0d05-4367-8655-2918676adc66",
+        "createdAt": "2025-06-30T09:31:13.915Z",
+        "updatedAt": "2025-06-30T09:31:13.915Z",
+        "muxData": {
+          "id": "afacdb27-c21c-47ff-8c64-68be715ee0fa",
+          "assetId": "qqoj7vKYWcco9x00cAcjkmg4vtEjJPE5ImB01I9MQYHPU",
+          "playbackId": "iGezYTHk53302Kku75Xd5o1Ss5D8zPAeN3Q4Je01N4jGM",
+          "chapterId": "fa50203f-c475-4c56-b969-3597b533e774"
+        }
+      },
+      {
+        "id": "37587ef3-1da6-4ad8-a6f6-6d5c3b3b1dbc",
+        "title": "Balancing Work and Family in a Connected Home",
+        "description": "<p>Remote jobs, online schooling, Zoom fatigue... Learn strategies for reclaiming <strong>family time</strong> in tech-heavy households.</p>",
+        "videoUrl": "https://utfs.io/f/5VMVggWXb9pmUXdMtJ9DoK9u32YasrDMzog6TnZFV1Hp5Dxj",
+        "position": 4,
+        "isPublished": true,
+        "isFree": false,
+        "courseId": "aab82b5d-0d05-4367-8655-2918676adc66",
+        "createdAt": "2025-06-30T09:31:13.915Z",
+        "updatedAt": "2025-06-30T09:31:13.915Z",
+        "muxData": {
+          "id": "b5cb24ec-7c42-405d-a0d8-18918ae3ee25",
+          "assetId": "qqoj7vKYWcco9x00cAcjkmg4vtEjJPE5ImB01I9MQYHPU",
+          "playbackId": "iGezYTHk53302Kku75Xd5o1Ss5D8zPAeN3Q4Je01N4jGM",
+          "chapterId": "37587ef3-1da6-4ad8-a6f6-6d5c3b3b1dbc"
+        }
+      }
+    ],
+    "attachments": [
+      {
+        "id": "4b7eb57d-46e9-4bc5-9215-efebc58d549a",
+        "name": "screen-time-guide.pdf",
+        "url": "https://utfs.io/f/5VMVggWXb9pmwWyf04Lb0qRudFOp6yvEmgxLBsQAl3e7ifD4",
+        "courseId": "aab82b5d-0d05-4367-8655-2918676adc66",
+        "createdAt": "2025-06-30T09:31:13.915Z",
+        "updatedAt": "2025-06-30T09:31:13.915Z"
+      }
+    ],
+    "category": {
+      "id": "d6ca7c08-c847-4533-ac22-e165fd23a66e",
+      "name": "Parenting & Relationships"
+    }
+  },
+  {
+    "id": "901e5c66-2b85-46f4-8b5d-9d8172123af2",
+    "userId": "user_2xis9eFWImMhDqMklAPUcZyQOHc",
+    "title": "Cultural Intelligence for Global Travelers",
+    "description": "Gain a deeper understanding of global customs, traditions, and social norms to travel respectfully and meaningfully. Whether you're a digital nomad or an occasional tourist, this course empowers you to navigate diverse cultures with empathy and awareness.",
+    "imageUrl": "https://utfs.io/f/5VMVggWXb9pmAdFJNYO1SpTZnefRwbckLsvD5K3GV6MyJYEC",
+    "price": 45,
+    "isPublished": true,
+    "categoryId": "a04586cc-9025-4992-b1b3-a31b04d43a07",
+    "createdAt": "2025-06-30T09:31:13.914Z",
+    "updatedAt": "2025-06-30T09:56:00.511Z",
+    "chapters": [
+      {
+        "id": "c983e16c-2830-46e7-9d55-22bad306d707",
+        "title": "Understanding Cultural Norms",
+        "description": "<p>Explore why behaviors that feel natural to you may be interpreted differently elsewhere. <strong>Understand the difference</strong> between high-context and low-context cultures and how that affects communication.</p>",
+        "videoUrl": "https://utfs.io/f/5VMVggWXb9pmeHvSjMZn6hrVf3YayFOgdKuNbMzoZ51vmRPp",
+        "position": 1,
+        "isPublished": true,
+        "isFree": true,
+        "courseId": "901e5c66-2b85-46f4-8b5d-9d8172123af2",
+        "createdAt": "2025-06-30T09:31:13.914Z",
+        "updatedAt": "2025-06-30T09:31:13.914Z",
+        "muxData": {
+          "id": "b092380f-60e1-4d6e-9460-4b9670a08c1c",
+          "assetId": "qqoj7vKYWcco9x00cAcjkmg4vtEjJPE5ImB01I9MQYHPU",
+          "playbackId": "iGezYTHk53302Kku75Xd5o1Ss5D8zPAeN3Q4Je01N4jGM",
+          "chapterId": "c983e16c-2830-46e7-9d55-22bad306d707"
+        }
+      },
+      {
+        "id": "d69a3896-6f90-4c05-8400-299dddeb50af",
+        "title": "Travel Ethics and Local Respect",
+        "description": "<p>Learn how to <em>respect sacred spaces</em>, dress appropriately, and avoid common tourist faux pas. This lesson includes case studies from Southeast Asia, Europe, and the Middle East.</p>",
+        "videoUrl": "https://utfs.io/f/5VMVggWXb9pmOZtQGsNaZscM6BCTW9YhNK8gE1joRL4Fwepu",
+        "position": 2,
+        "isPublished": true,
+        "isFree": false,
+        "courseId": "901e5c66-2b85-46f4-8b5d-9d8172123af2",
+        "createdAt": "2025-06-30T09:31:13.914Z",
+        "updatedAt": "2025-06-30T09:31:13.914Z",
+        "muxData": {
+          "id": "39e6e22c-e857-4809-964a-8e1d9375b5d3",
+          "assetId": "qqoj7vKYWcco9x00cAcjkmg4vtEjJPE5ImB01I9MQYHPU",
+          "playbackId": "iGezYTHk53302Kku75Xd5o1Ss5D8zPAeN3Q4Je01N4jGM",
+          "chapterId": "d69a3896-6f90-4c05-8400-299dddeb50af"
+        }
+      },
+      {
+        "id": "9354c035-3871-4c31-a6fb-4e5d9db27c2f",
+        "title": "Cross-Cultural Communication Tips",
+        "description": "<p>Practice listening beyond words. Use tone, gestures, and eye contact more intentionally. Plus, master greetings, small talk, and non-verbal etiquette around the world.</p>",
+        "videoUrl": "https://utfs.io/f/5VMVggWXb9pmQFt6tL0QdW7dIMMi92rETcnFhTzmhSk2SzK5",
+        "position": 3,
+        "isPublished": true,
+        "isFree": false,
+        "courseId": "901e5c66-2b85-46f4-8b5d-9d8172123af2",
+        "createdAt": "2025-06-30T09:31:13.914Z",
+        "updatedAt": "2025-06-30T09:31:13.914Z",
+        "muxData": {
+          "id": "81440d1c-6e11-4e4c-9aa0-1aabda6cc31f",
+          "assetId": "qqoj7vKYWcco9x00cAcjkmg4vtEjJPE5ImB01I9MQYHPU",
+          "playbackId": "iGezYTHk53302Kku75Xd5o1Ss5D8zPAeN3Q4Je01N4jGM",
+          "chapterId": "9354c035-3871-4c31-a6fb-4e5d9db27c2f"
+        }
+      }
+    ],
+    "attachments": [
+      {
+        "id": "b840d9be-49c1-4cf2-9d03-6f0eafde6f74",
+        "name": "global-etiquette-cheatsheet.pdf",
+        "url": "https://utfs.io/f/5VMVggWXb9pmwWyf04Lb0qRudFOp6yvEmgxLBsQAl3e7ifD4",
+        "courseId": "901e5c66-2b85-46f4-8b5d-9d8172123af2",
+        "createdAt": "2025-06-30T09:31:13.914Z",
+        "updatedAt": "2025-06-30T09:31:13.914Z"
+      }
+    ],
+    "category": {
+      "id": "a04586cc-9025-4992-b1b3-a31b04d43a07",
+      "name": "Travel & Culture"
+    }
+  },
+  {
+    "id": "0cea9150-36a4-4b6e-9ff5-8ca15084a288",
+    "userId": "user_2xis9eFWImMhDqMklAPUcZyQOHc",
+    "title": "Everyday Psychology for Better Decisions",
+    "description": "Discover how basic psychological principles can help you understand people and make smarter personal and business decisions.",
+    "imageUrl": "https://utfs.io/f/5VMVggWXb9pmpDH6MJy31uUGHgCBzjsIZrtO5vJhiyLNbexo",
+    "price": 29,
+    "isPublished": true,
+    "categoryId": "aa38857c-1be7-42cf-9edb-1f169498b239",
+    "createdAt": "2025-06-30T09:31:13.914Z",
+    "updatedAt": "2025-06-30T09:59:01.519Z",
+    "chapters": [
+      {
+        "id": "c4ee2a84-5e9c-4c20-b2d2-b45ef810f7e9",
+        "title": "Cognitive Biases in Daily Life",
+        "description": "<p>Recognize the invisible biases that affect our judgments and learn to make clearer, more rational choices.</p><ul><li>Anchoring and availability heuristics</li><li>Confirmation bias and its impact</li></ul>",
+        "videoUrl": "https://utfs.io/f/5VMVggWXb9pmeHvSjMZn6hrVf3YayFOgdKuNbMzoZ51vmRPp",
+        "position": 1,
+        "isPublished": true,
+        "isFree": true,
+        "courseId": "0cea9150-36a4-4b6e-9ff5-8ca15084a288",
+        "createdAt": "2025-06-30T09:31:13.914Z",
+        "updatedAt": "2025-06-30T09:31:13.914Z",
+        "muxData": {
+          "id": "271b019f-1efc-42d6-9368-c19616153114",
+          "assetId": "qqoj7vKYWcco9x00cAcjkmg4vtEjJPE5ImB01I9MQYHPU",
+          "playbackId": "iGezYTHk53302Kku75Xd5o1Ss5D8zPAeN3Q4Je01N4jGM",
+          "chapterId": "c4ee2a84-5e9c-4c20-b2d2-b45ef810f7e9"
+        }
+      },
+      {
+        "id": "fe766ec2-4583-4cb9-a94a-b70338b1fffa",
+        "title": "Psychology of Habits",
+        "description": "<p>Understand how habits are formed, and how to build or break them using behavioral psychology.</p><ul><li>Triggers and rewards</li><li>Habit stacking and replacement</li></ul>",
+        "videoUrl": "https://utfs.io/f/5VMVggWXb9pmOZtQGsNaZscM6BCTW9YhNK8gE1joRL4Fwepu",
+        "position": 2,
+        "isPublished": true,
+        "isFree": false,
+        "courseId": "0cea9150-36a4-4b6e-9ff5-8ca15084a288",
+        "createdAt": "2025-06-30T09:31:13.914Z",
+        "updatedAt": "2025-06-30T09:31:13.914Z",
+        "muxData": {
+          "id": "94d93282-d3af-4f6f-af5c-382d386ed428",
+          "assetId": "qqoj7vKYWcco9x00cAcjkmg4vtEjJPE5ImB01I9MQYHPU",
+          "playbackId": "iGezYTHk53302Kku75Xd5o1Ss5D8zPAeN3Q4Je01N4jGM",
+          "chapterId": "fe766ec2-4583-4cb9-a94a-b70338b1fffa"
+        }
+      }
+    ],
+    "attachments": [],
+    "category": {
+      "id": "aa38857c-1be7-42cf-9edb-1f169498b239",
+      "name": "Psychology & Self-help"
+    }
+  },
+  {
+    "id": "87badd57-24c7-42b6-87a8-b06bbda44ddf",
+    "userId": "user_2xis9eFWImMhDqMklAPUcZyQOHc",
+    "title": "Modern UI Design Principles with Figma",
+    "description": "Learn how to design clean, modern, and user-friendly interfaces using Figma. This course covers essential UI principles, color theory, typography, layout, and real-world design workflows. Perfect for aspiring UI/UX designers and product creators.",
+    "imageUrl": "https://utfs.io/f/5VMVggWXb9pmKBos1ulxdEPMqV0BUI7uRaHiQgStAcCJkemT",
+    "price": 49,
+    "isPublished": true,
+    "categoryId": "b0dd2704-4913-494c-93e3-c38cf304b04f",
+    "createdAt": "2025-06-30T07:55:39.682Z",
+    "updatedAt": "2025-06-30T08:14:11.238Z",
+    "chapters": [
+      {
+        "id": "a0fbf13b-09e7-4885-a0ae-8caa5272fc8a",
+        "title": "Typography and Layout Fundamentals",
+        "description": "<p>Master the building blocks of interface design through proper use of type and layout structure.</p><p><strong>You will learn:</strong></p><ol><li data-list=\"bullet\"><span class=\"ql-ui\" contenteditable=\"false\"></span>Choosing the right <strong>font pairings</strong></li><li data-list=\"bullet\"><span class=\"ql-ui\" contenteditable=\"false\"></span>Using <em>grid systems</em> for clean alignment</li><li data-list=\"bullet\"><span class=\"ql-ui\" contenteditable=\"false\"></span>Setting visual hierarchy using font size, weight, and spacing</li><li data-list=\"bullet\"><span class=\"ql-ui\" contenteditable=\"false\"></span>Best practices for readability on different screen sizes</li></ol><p><br></p>",
+        "videoUrl": "https://utfs.io/f/5VMVggWXb9pmeHvSjMZn6hrVf3YayFOgdKuNbMzoZ51vmRPp",
+        "position": 2,
+        "isPublished": true,
+        "isFree": true,
+        "courseId": "87badd57-24c7-42b6-87a8-b06bbda44ddf",
+        "createdAt": "2025-06-30T07:57:26.852Z",
+        "updatedAt": "2025-06-30T08:13:50.145Z",
+        "muxData": {
+          "id": "2bea08f0-fb4e-4bf8-9aaa-7d273d03f568",
+          "assetId": "qqoj7vKYWcco9x00cAcjkmg4vtEjJPE5ImB01I9MQYHPU",
+          "playbackId": "iGezYTHk53302Kku75Xd5o1Ss5D8zPAeN3Q4Je01N4jGM",
+          "chapterId": "a0fbf13b-09e7-4885-a0ae-8caa5272fc8a"
+        }
+      }
+    ],
+    "attachments": [
+      {
+        "id": "cbb07594-ba7c-48a0-853f-0aad38dc29be",
+        "name": "file_2.txt",
+        "url": "https://utfs.io/f/5VMVggWXb9pmwWyf04Lb0qRudFOp6yvEmgxLBsQAl3e7ifD4",
+        "courseId": "87badd57-24c7-42b6-87a8-b06bbda44ddf",
+        "createdAt": "2025-06-30T07:56:25.400Z",
+        "updatedAt": "2025-06-30T07:56:25.400Z"
+      }
+    ],
+    "category": {
+      "id": "b0dd2704-4913-494c-93e3-c38cf304b04f",
+      "name": "Design & Creativity"
+    }
+  },
+  {
+    "id": "360a58e9-a84e-4aea-a35f-6e1985941632",
+    "userId": "user_2xis9eFWImMhDqMklAPUcZyQOHc",
+    "title": "Full-Stack Web Development with Next.js and Prisma",
+    "description": "A complete guide to building full-featured web applications using Next.js, Prisma, and TypeScript. You will learn how to structure scalable architecture, connect to databases, implement authentication, handle media uploads, and deploy your app. This course is ideal for developers familiar with JavaScript and React.",
+    "imageUrl": "https://utfs.io/f/5VMVggWXb9pm4UV6GbAeNb3RTS61GdIjoxgVrcvWDY9tnu75",
+    "price": 79.99,
+    "isPublished": true,
+    "categoryId": "8f92d3d2-113c-485c-84b4-0150e80879be",
+    "createdAt": "2025-06-30T06:43:20.596Z",
+    "updatedAt": "2025-06-30T07:17:47.093Z",
+    "chapters": [
+      {
+        "id": "bb56ae0a-2545-4d90-8564-3456d6ac8227",
+        "title": "Setting up Next.js with TypeScript",
+        "description": "<p>Learn how to initialize your project using Next.js and TypeScript, and prepare a solid structure for future scalability.</p><p><strong>You will learn:</strong></p><ol><li data-list=\"bullet\"><span class=\"ql-ui\" contenteditable=\"false\"></span>Installing and configuring <strong>Next.js</strong> with <em>TypeScript</em></li><li data-list=\"bullet\"><span class=\"ql-ui\" contenteditable=\"false\"></span>Creating pages and reusable components</li><li data-list=\"bullet\"><span class=\"ql-ui\" contenteditable=\"false\"></span>Adding global styles and Google Fonts</li><li data-list=\"bullet\"><span class=\"ql-ui\" contenteditable=\"false\"></span>Organizing your codebase for clarity and maintainability</li></ol><p><br></p>",
+        "videoUrl": "https://utfs.io/f/5VMVggWXb9pmBkANZftdz5bDWk1SiBt6AGVIFYKfm2n90jxl",
+        "position": 1,
+        "isPublished": true,
+        "isFree": true,
+        "courseId": "360a58e9-a84e-4aea-a35f-6e1985941632",
+        "createdAt": "2025-06-30T06:53:24.643Z",
+        "updatedAt": "2025-06-30T07:06:09.749Z",
+        "muxData": {
+          "id": "7e9c882f-d634-400b-8e12-398c24d365a8",
+          "assetId": "GesGzLJEANjaX28z4FV00mc8tO3WuVc6qmQol4H5GXKM",
+          "playbackId": "g1xLA7klk84wSwy9f00FkmiFlc5hXzclmcpvQb2vigf00",
+          "chapterId": "bb56ae0a-2545-4d90-8564-3456d6ac8227"
+        }
+      },
+      {
+        "id": "533d99c3-bcb4-4441-ad41-6768b9e98861",
+        "title": "Implementing User Authentication",
+        "description": "<p>Build a secure and flexible user authentication system with registration, login, and session handling.</p><p><strong>You will learn:</strong></p><ol><li data-list=\"bullet\"><span class=\"ql-ui\" contenteditable=\"false\"></span>Creating a <strong>User</strong> model and authentication API routes</li><li data-list=\"bullet\"><span class=\"ql-ui\" contenteditable=\"false\"></span>Hashing passwords and validating credentials</li><li data-list=\"bullet\"><span class=\"ql-ui\" contenteditable=\"false\"></span>Managing sessions with <em>cookies</em> or <em>JWTs</em></li><li data-list=\"bullet\"><span class=\"ql-ui\" contenteditable=\"false\"></span>Protecting client-side and server-side routes</li></ol><p><br></p>",
+        "videoUrl": "https://utfs.io/f/5VMVggWXb9pmWFfdYljX1lvN0eduLtBkFAQZ5TERCgcPj673",
+        "position": 6,
+        "isPublished": true,
+        "isFree": false,
+        "courseId": "360a58e9-a84e-4aea-a35f-6e1985941632",
+        "createdAt": "2025-06-30T07:08:18.235Z",
+        "updatedAt": "2025-06-30T07:09:31.734Z",
+        "muxData": {
+          "id": "55109ec1-3bf3-40ab-be79-41d3f69f7133",
+          "assetId": "CMLA8I8vxmHmrP01m8Dd5h901aQGistfHo2x4fjIvUp6Q",
+          "playbackId": "3vV442g2ghx00I00G9bWWHlbmONW92J800UANU5xOfS01Eo",
+          "chapterId": "533d99c3-bcb4-4441-ad41-6768b9e98861"
+        }
+      },
+      {
+        "id": "cd2c2fb6-3ec7-4da7-bb2e-43277e18eb19",
+        "title": "Database Integration with Prisma",
+        "description": "<p>Connect a PostgreSQL database using Prisma ORM and define your application's data structure with elegant models.</p><p><strong>You will learn:</strong></p><ol><li data-list=\"bullet\"><span class=\"ql-ui\" contenteditable=\"false\"></span>Installing <strong>Prisma</strong> and initializing the schema</li><li data-list=\"bullet\"><span class=\"ql-ui\" contenteditable=\"false\"></span>Writing and customizing your <em>data models</em></li><li data-list=\"bullet\"><span class=\"ql-ui\" contenteditable=\"false\"></span>Running migrations and seeding test data</li><li data-list=\"bullet\"><span class=\"ql-ui\" contenteditable=\"false\"></span>Connecting your app to the database</li></ol><p><br></p>",
+        "videoUrl": "https://utfs.io/f/5VMVggWXb9pm5JyB1NWXb9pmHJ3lnAO6cfZjY8dNiR7e1uEV",
+        "position": 5,
+        "isPublished": true,
+        "isFree": false,
+        "courseId": "360a58e9-a84e-4aea-a35f-6e1985941632",
+        "createdAt": "2025-06-30T06:54:13.769Z",
+        "updatedAt": "2025-06-30T07:08:01.671Z",
+        "muxData": {
+          "id": "583ff27b-0597-4eb1-9ac5-c1f134126564",
+          "assetId": "c6wx01lBWr8DToVeJ79vUihzRrg81JmyxgzmWdR2iT8U",
+          "playbackId": "gO6rzYjBNhkswcu01WinK02WZhDwb8JWYen8lQGKMBKDM",
+          "chapterId": "cd2c2fb6-3ec7-4da7-bb2e-43277e18eb19"
+        }
+      },
+      {
+        "id": "c8f1db6d-4d5d-4bd9-89e8-def9e9f00be0",
+        "title": "Introduction to Full-Stack Development",
+        "description": "<p>Get a clear overview of full-stack architecture and the technologies that bridge frontend and backend development.</p><p><strong>You will learn:</strong></p><ol><li data-list=\"bullet\"><span class=\"ql-ui\" contenteditable=\"false\"></span>What <strong>full-stack development</strong> is</li><li data-list=\"bullet\"><span class=\"ql-ui\" contenteditable=\"false\"></span>Why <em>Next.js</em> is a strong choice for full-stack apps</li><li data-list=\"bullet\"><span class=\"ql-ui\" contenteditable=\"false\"></span>The connection between frontend, backend, and databases</li><li data-list=\"bullet\"><span class=\"ql-ui\" contenteditable=\"false\"></span>An overview of the stack: React, Next.js, Prisma, PostgreSQL</li></ol><p><br></p>",
+        "videoUrl": "https://utfs.io/f/5VMVggWXb9pmOZtQGsNaZscM6BCTW9YhNK8gE1joRL4Fwepu",
+        "position": 0,
+        "isPublished": true,
+        "isFree": true,
+        "courseId": "360a58e9-a84e-4aea-a35f-6e1985941632",
+        "createdAt": "2025-06-30T06:50:33.494Z",
+        "updatedAt": "2025-06-30T07:02:46.284Z",
+        "muxData": {
+          "id": "4f07747a-8365-46a2-aada-fb15ce989b1a",
+          "assetId": "uaViZiVL52SQVzAStbpmtvoX9ITH4YPJWHJXHYkVH1Y",
+          "playbackId": "jTyrFzZZ7K011IiJINqDh900IslpM8YIxT02RdKJreyyic",
+          "chapterId": "c8f1db6d-4d5d-4bd9-89e8-def9e9f00be0"
+        }
+      }
+    ],
+    "attachments": [
+      {
+        "id": "bfddb343-f6ea-406f-81b7-a62080be9917",
+        "name": "file_1.txt",
+        "url": "https://utfs.io/f/5VMVggWXb9pmzLMZ7SB8594SmnI0HWt7skYgrxNQRocVfq8y",
+        "courseId": "360a58e9-a84e-4aea-a35f-6e1985941632",
+        "createdAt": "2025-06-30T06:48:27.121Z",
+        "updatedAt": "2025-06-30T06:48:27.121Z"
+      },
+      {
+        "id": "0f76750b-3f33-4db5-a255-a064fde7c881",
+        "name": "file_2.txt",
+        "url": "https://utfs.io/f/5VMVggWXb9pme0jjQxZn6hrVf3YayFOgdKuNbMzoZ51vmRPp",
+        "courseId": "360a58e9-a84e-4aea-a35f-6e1985941632",
+        "createdAt": "2025-06-30T06:49:45.535Z",
+        "updatedAt": "2025-06-30T06:49:45.535Z"
+      },
+      {
+        "id": "ff6d096a-ad44-47ca-a36d-6ccaf094a6a8",
+        "name": "file_3.txt",
+        "url": "https://utfs.io/f/5VMVggWXb9pm7iJC6k1RH1fv96cWXrEdOVu53KjYxGNpl2qn",
+        "courseId": "360a58e9-a84e-4aea-a35f-6e1985941632",
+        "createdAt": "2025-06-30T06:50:03.819Z",
+        "updatedAt": "2025-06-30T06:50:03.819Z"
+      }
+    ],
+    "category": {
+      "id": "8f92d3d2-113c-485c-84b4-0150e80879be",
+      "name": "Development"
+    }
+  },
+  {
+    "id": "6cdd3654-2721-4d06-82a4-ce2ac984a84e",
+    "userId": "user_2xis9eFWImMhDqMklAPUcZyQOHc",
+    "title": "Design Thinking for Digital Products",
+    "description": "Master the problem-solving framework used by top tech teams to create intuitive, human-centered digital products.",
+    "imageUrl": "https://utfs.io/f/5VMVggWXb9pmyBawyD7uDbfA6C1z4Pq08cXSmajYohUTrtix",
+    "price": 59,
+    "isPublished": true,
+    "categoryId": "b0dd2704-4913-494c-93e3-c38cf304b04f",
+    "createdAt": "2025-06-30T09:31:13.913Z",
+    "updatedAt": "2025-06-30T10:01:10.549Z",
+    "chapters": [
+      {
+        "id": "1104a6c0-6324-4dbc-99f7-7acca4a382a6",
+        "title": "Empathy and User Research",
+        "description": "<p>Great design starts with <strong>understanding your users</strong>.</p>\n        <ul>\n          <li>Learn techniques like <em>interviews</em> and <em>observation</em></li>\n          <li>Understand pain points through empathy mapping</li>\n          <li>Craft actionable user personas</li>\n        </ul>",
+        "videoUrl": "https://utfs.io/f/5VMVggWXb9pmeHvSjMZn6hrVf3YayFOgdKuNbMzoZ51vmRPp",
+        "position": 1,
+        "isPublished": true,
+        "isFree": true,
+        "courseId": "6cdd3654-2721-4d06-82a4-ce2ac984a84e",
+        "createdAt": "2025-06-30T09:31:13.913Z",
+        "updatedAt": "2025-06-30T09:31:13.913Z",
+        "muxData": {
+          "id": "04c69ae8-a1f4-4a24-95a4-0a562c3e2bfc",
+          "assetId": "qqoj7vKYWcco9x00cAcjkmg4vtEjJPE5ImB01I9MQYHPU",
+          "playbackId": "iGezYTHk53302Kku75Xd5o1Ss5D8zPAeN3Q4Je01N4jGM",
+          "chapterId": "1104a6c0-6324-4dbc-99f7-7acca4a382a6"
+        }
+      },
+      {
+        "id": "a042789a-d6c3-42f7-ad66-40ea49b10533",
+        "title": "Define the Problem Clearly",
+        "description": "<p>Before you ideate, you must define the right problem.</p>\n        <p><strong>You will:</strong></p>\n        <ol>\n          <li>Distill research into concise problem statements</li>\n          <li>Avoid solution bias and scope creep</li>\n          <li>Formulate <em>HMW (How Might We)</em> questions</li>\n        </ol>",
+        "videoUrl": "https://utfs.io/f/5VMVggWXb9pmOZtQGsNaZscM6BCTW9YhNK8gE1joRL4Fwepu",
+        "position": 2,
+        "isPublished": true,
+        "isFree": false,
+        "courseId": "6cdd3654-2721-4d06-82a4-ce2ac984a84e",
+        "createdAt": "2025-06-30T09:31:13.913Z",
+        "updatedAt": "2025-06-30T09:31:13.913Z",
+        "muxData": {
+          "id": "bb58298e-b60c-4890-be2c-afe5a189591a",
+          "assetId": "qqoj7vKYWcco9x00cAcjkmg4vtEjJPE5ImB01I9MQYHPU",
+          "playbackId": "iGezYTHk53302Kku75Xd5o1Ss5D8zPAeN3Q4Je01N4jGM",
+          "chapterId": "a042789a-d6c3-42f7-ad66-40ea49b10533"
+        }
+      },
+      {
+        "id": "21403e78-f78a-4cb6-b7a6-97b3c1f879c8",
+        "title": "Ideate and Prototype",
+        "description": "<p>Bring ideas to life quickly with low-fidelity techniques.</p>\n        <ul>\n          <li>Use brainstorming frameworks like Crazy 8s</li>\n          <li>Build rapid wireframes in Figma</li>\n          <li>Test assumptions early</li>\n        </ul>",
+        "videoUrl": "https://utfs.io/f/5VMVggWXb9pmBkANZftdz5bDWk1SiBt6AGVIFYKfm2n90jxl",
+        "position": 3,
+        "isPublished": true,
+        "isFree": false,
+        "courseId": "6cdd3654-2721-4d06-82a4-ce2ac984a84e",
+        "createdAt": "2025-06-30T09:31:13.913Z",
+        "updatedAt": "2025-06-30T09:31:13.913Z",
+        "muxData": {
+          "id": "abc64190-3ade-43ae-a5dc-c434e0972e4a",
+          "assetId": "qqoj7vKYWcco9x00cAcjkmg4vtEjJPE5ImB01I9MQYHPU",
+          "playbackId": "iGezYTHk53302Kku75Xd5o1Ss5D8zPAeN3Q4Je01N4jGM",
+          "chapterId": "21403e78-f78a-4cb6-b7a6-97b3c1f879c8"
+        }
+      }
+    ],
+    "attachments": [
+      {
+        "id": "6c0c3c7d-bd9c-4025-b396-1653124db6cd",
+        "name": "design-thinking-handbook.pdf",
+        "url": "https://utfs.io/f/5VMVggWXb9pmwWyf04Lb0qRudFOp6yvEmgxLBsQAl3e7ifD4",
+        "courseId": "6cdd3654-2721-4d06-82a4-ce2ac984a84e",
+        "createdAt": "2025-06-30T09:31:13.913Z",
+        "updatedAt": "2025-06-30T09:31:13.913Z"
+      }
+    ],
+    "category": {
+      "id": "b0dd2704-4913-494c-93e3-c38cf304b04f",
+      "name": "Design & Creativity"
+    }
+  },
+  {
+    "id": "c3387341-741d-445a-8d88-7a421780fead",
+    "userId": "user_2xis9eFWImMhDqMklAPUcZyQOHc",
+    "title": "Remote Work Mastery: Building Discipline and Freedom",
+    "description": "Learn how to thrive in remote work by mastering productivity, communication, and work-life balance. Perfect for freelancers, remote teams, and digital nomads.",
+    "imageUrl": "https://utfs.io/f/5VMVggWXb9pmOWuFYWaZscM6BCTW9YhNK8gE1joRL4Fwepun",
+    "price": 45,
+    "isPublished": true,
+    "categoryId": "b4ed1737-9a0e-440a-ae49-fc7592fdc4d3",
+    "createdAt": "2025-06-30T09:31:13.915Z",
+    "updatedAt": "2025-06-30T09:50:45.083Z",
+    "chapters": [
+      {
+        "id": "a0a77564-4b43-4aef-87d3-4cfa8f5d6705",
+        "title": "Designing Your Ideal Remote Workspace",
+        "description": "<p>Create a focused and inspiring environment for work, even if space is limited.</p><ul><li>Lighting, sound, and ergonomics</li><li>Minimizing distractions</li><li>Tools that enhance deep work</li></ul>",
+        "videoUrl": "https://utfs.io/f/5VMVggWXb9pmeHvSjMZn6hrVf3YayFOgdKuNbMzoZ51vmRPp",
+        "position": 1,
+        "isPublished": true,
+        "isFree": true,
+        "courseId": "c3387341-741d-445a-8d88-7a421780fead",
+        "createdAt": "2025-06-30T09:31:13.915Z",
+        "updatedAt": "2025-06-30T09:31:13.915Z",
+        "muxData": {
+          "id": "03e1bea6-a8d8-4de2-9785-7562a8d5aca1",
+          "assetId": "qqoj7vKYWcco9x00cAcjkmg4vtEjJPE5ImB01I9MQYHPU",
+          "playbackId": "iGezYTHk53302Kku75Xd5o1Ss5D8zPAeN3Q4Je01N4jGM",
+          "chapterId": "a0a77564-4b43-4aef-87d3-4cfa8f5d6705"
+        }
+      },
+      {
+        "id": "3c829db4-f2a8-4ebd-ac67-e269b554736f",
+        "title": "Daily Rituals for Peak Performance",
+        "description": "<p>Structure your day for success with high-energy mornings and controlled evenings.</p><ol><li>Time-blocking for deep work</li><li>Pomodoro & focus techniques</li><li>How to stop working at the right time</li></ol>",
+        "videoUrl": "https://utfs.io/f/5VMVggWXb9pmOZtQGsNaZscM6BCTW9YhNK8gE1joRL4Fwepu",
+        "position": 2,
+        "isPublished": true,
+        "isFree": false,
+        "courseId": "c3387341-741d-445a-8d88-7a421780fead",
+        "createdAt": "2025-06-30T09:31:13.915Z",
+        "updatedAt": "2025-06-30T09:31:13.915Z",
+        "muxData": {
+          "id": "3f15f780-ba4b-4042-93b9-248f20199e67",
+          "assetId": "qqoj7vKYWcco9x00cAcjkmg4vtEjJPE5ImB01I9MQYHPU",
+          "playbackId": "iGezYTHk53302Kku75Xd5o1Ss5D8zPAeN3Q4Je01N4jGM",
+          "chapterId": "3c829db4-f2a8-4ebd-ac67-e269b554736f"
+        }
+      },
+      {
+        "id": "8b8db1f0-c01e-4513-b80d-a86d0728ff5c",
+        "title": "Avoiding Isolation and Burnout",
+        "description": "<p>Stay connected, healthy, and motivated even while working alone.</p><ul><li>Combatting loneliness</li><li>Setting work-life boundaries</li><li>Building supportive remote communities</li></ul>",
+        "videoUrl": "https://utfs.io/f/5VMVggWXb9pmOZtQGsNaZscM6BCTW9YhNK8gE1joRL4Fwepu",
+        "position": 4,
+        "isPublished": true,
+        "isFree": false,
+        "courseId": "c3387341-741d-445a-8d88-7a421780fead",
+        "createdAt": "2025-06-30T09:31:13.915Z",
+        "updatedAt": "2025-06-30T09:31:13.915Z",
+        "muxData": {
+          "id": "f976a03e-4750-400a-951a-f5baf78f1513",
+          "assetId": "qqoj7vKYWcco9x00cAcjkmg4vtEjJPE5ImB01I9MQYHPU",
+          "playbackId": "iGezYTHk53302Kku75Xd5o1Ss5D8zPAeN3Q4Je01N4jGM",
+          "chapterId": "8b8db1f0-c01e-4513-b80d-a86d0728ff5c"
+        }
+      },
+      {
+        "id": "9e603a14-8e50-445e-b8b2-96509a230b1d",
+        "title": "Asynchronous Communication Skills",
+        "description": "<p>Master written and recorded communication that keeps projects moving without meetings.</p><ul><li>Best practices for updates and handoffs</li><li>Voice and video messages</li><li>Tools for async-first collaboration</li></ul>",
+        "videoUrl": "https://utfs.io/f/5VMVggWXb9pmOZtQGsNaZscM6BCTW9YhNK8gE1joRL4Fwepu",
+        "position": 3,
+        "isPublished": true,
+        "isFree": false,
+        "courseId": "c3387341-741d-445a-8d88-7a421780fead",
+        "createdAt": "2025-06-30T09:31:13.915Z",
+        "updatedAt": "2025-06-30T09:31:13.915Z",
+        "muxData": {
+          "id": "171c8bcd-b69a-4fa4-b0a9-fdd584a2573c",
+          "assetId": "qqoj7vKYWcco9x00cAcjkmg4vtEjJPE5ImB01I9MQYHPU",
+          "playbackId": "iGezYTHk53302Kku75Xd5o1Ss5D8zPAeN3Q4Je01N4jGM",
+          "chapterId": "9e603a14-8e50-445e-b8b2-96509a230b1d"
+        }
+      }
+    ],
+    "attachments": [
+      {
+        "id": "0efe24cc-e062-41e5-ab44-4b84b617bdb5",
+        "name": "remote-setup-checklist.pdf",
+        "url": "https://utfs.io/f/5VMVggWXb9pmwWyf04Lb0qRudFOp6yvEmgxLBsQAl3e7ifD4",
+        "courseId": "c3387341-741d-445a-8d88-7a421780fead",
+        "createdAt": "2025-06-30T09:31:13.915Z",
+        "updatedAt": "2025-06-30T09:31:13.915Z"
+      },
+      {
+        "id": "32503f24-0732-44f8-b7c8-7b145b22459a",
+        "name": "time-blocking-template.xlsx",
+        "url": "https://utfs.io/f/5VMVggWXb9pmwWyf04Lb0qRudFOp6yvEmgxLBsQAl3e7ifD4",
+        "courseId": "c3387341-741d-445a-8d88-7a421780fead",
+        "createdAt": "2025-06-30T09:31:13.915Z",
+        "updatedAt": "2025-06-30T09:31:13.915Z"
+      }
+    ],
+    "category": {
+      "id": "b4ed1737-9a0e-440a-ae49-fc7592fdc4d3",
+      "name": "Career & Productivity"
+    }
+  },
+  {
+    "id": "fcdf3e0c-c23d-490f-b424-84f296b3fc2d",
+    "userId": "user_2xis9eFWImMhDqMklAPUcZyQOHc",
+    "title": "Mastering API Design with Node.js",
+    "description": "Build robust, scalable, and maintainable REST APIs using Node.js and Express. This course dives into real-world API design patterns, error handling, versioning, and testing strategies.",
+    "imageUrl": "https://utfs.io/f/5VMVggWXb9pm9QLCrvnbajKCMBSnzWQ4ZGsH7605e8mAqVhR",
+    "price": 59,
+    "isPublished": true,
+    "categoryId": "8f92d3d2-113c-485c-84b4-0150e80879be",
+    "createdAt": "2025-06-30T09:31:13.914Z",
+    "updatedAt": "2025-06-30T09:53:11.338Z",
+    "chapters": [
+      {
+        "id": "1d1c6019-2d66-45cb-bd60-3dd6133f07d3",
+        "title": "Setting Up Your Node.js API Project",
+        "description": "<p>Learn how to scaffold a clean and scalable Node.js project.</p><ul><li>Project structure best practices</li><li>Installing and configuring Express</li><li>Environment configuration</li></ul>",
+        "videoUrl": "https://utfs.io/f/5VMVggWXb9pmeHvSjMZn6hrVf3YayFOgdKuNbMzoZ51vmRPp",
+        "position": 1,
+        "isPublished": true,
+        "isFree": true,
+        "courseId": "fcdf3e0c-c23d-490f-b424-84f296b3fc2d",
+        "createdAt": "2025-06-30T09:31:13.914Z",
+        "updatedAt": "2025-06-30T09:31:13.914Z",
+        "muxData": {
+          "id": "274476a7-f302-43c3-85ea-c8d1c3137ff3",
+          "assetId": "qqoj7vKYWcco9x00cAcjkmg4vtEjJPE5ImB01I9MQYHPU",
+          "playbackId": "iGezYTHk53302Kku75Xd5o1Ss5D8zPAeN3Q4Je01N4jGM",
+          "chapterId": "1d1c6019-2d66-45cb-bd60-3dd6133f07d3"
+        }
+      },
+      {
+        "id": "f3b5991d-e5fe-4b02-ab18-a2370036469f",
+        "title": "Routing, Controllers, and Middlewares",
+        "description": "<p>Build clean and modular routes with proper separation of concerns.</p><ol><li>Organizing controllers and routers</li><li>Using middlewares effectively</li><li>Error handling and async flow</li></ol>",
+        "videoUrl": "https://utfs.io/f/5VMVggWXb9pmOZtQGsNaZscM6BCTW9YhNK8gE1joRL4Fwepu",
+        "position": 2,
+        "isPublished": true,
+        "isFree": false,
+        "courseId": "fcdf3e0c-c23d-490f-b424-84f296b3fc2d",
+        "createdAt": "2025-06-30T09:31:13.914Z",
+        "updatedAt": "2025-06-30T09:31:13.914Z",
+        "muxData": {
+          "id": "bd1593d8-b797-4d79-9231-7b1f7ec67b35",
+          "assetId": "qqoj7vKYWcco9x00cAcjkmg4vtEjJPE5ImB01I9MQYHPU",
+          "playbackId": "iGezYTHk53302Kku75Xd5o1Ss5D8zPAeN3Q4Je01N4jGM",
+          "chapterId": "f3b5991d-e5fe-4b02-ab18-a2370036469f"
+        }
+      },
+      {
+        "id": "0e789223-dc69-4c03-b4f5-d6b568777e21",
+        "title": "API Versioning and Documentation",
+        "description": "<p>Maintain multiple versions of your API and create readable documentation.</p><ul><li>Versioning strategies (URI vs headers)</li><li>Swagger and OpenAPI</li><li>Self-hosted docs vs portals</li></ul>",
+        "videoUrl": "https://utfs.io/f/5VMVggWXb9pmOZtQGsNaZscM6BCTW9YhNK8gE1joRL4Fwepu",
+        "position": 3,
+        "isPublished": true,
+        "isFree": false,
+        "courseId": "fcdf3e0c-c23d-490f-b424-84f296b3fc2d",
+        "createdAt": "2025-06-30T09:31:13.914Z",
+        "updatedAt": "2025-06-30T09:31:13.914Z",
+        "muxData": {
+          "id": "0efc3bf0-968a-4235-88fc-13bfcc83f9e7",
+          "assetId": "qqoj7vKYWcco9x00cAcjkmg4vtEjJPE5ImB01I9MQYHPU",
+          "playbackId": "iGezYTHk53302Kku75Xd5o1Ss5D8zPAeN3Q4Je01N4jGM",
+          "chapterId": "0e789223-dc69-4c03-b4f5-d6b568777e21"
+        }
+      },
+      {
+        "id": "0e561b86-7f2b-4536-b8e5-1329a1f84049",
+        "title": "Testing and Deployment",
+        "description": "<p>Ensure quality with tests and CI/CD-friendly deployment pipelines.</p><ul><li>Unit and integration tests with Jest</li><li>Mocking requests/responses</li><li>Deploying with Docker & Railway</li></ul>",
+        "videoUrl": "https://utfs.io/f/5VMVggWXb9pmOZtQGsNaZscM6BCTW9YhNK8gE1joRL4Fwepu",
+        "position": 4,
+        "isPublished": true,
+        "isFree": false,
+        "courseId": "fcdf3e0c-c23d-490f-b424-84f296b3fc2d",
+        "createdAt": "2025-06-30T09:31:13.914Z",
+        "updatedAt": "2025-06-30T09:31:13.914Z",
+        "muxData": {
+          "id": "bd5b9e66-c327-4c06-97d2-eddaf2ffa8e9",
+          "assetId": "qqoj7vKYWcco9x00cAcjkmg4vtEjJPE5ImB01I9MQYHPU",
+          "playbackId": "iGezYTHk53302Kku75Xd5o1Ss5D8zPAeN3Q4Je01N4jGM",
+          "chapterId": "0e561b86-7f2b-4536-b8e5-1329a1f84049"
+        }
+      }
+    ],
+    "attachments": [
+      {
+        "id": "1cf9e62c-14e3-4c0b-905d-856a0ff686ce",
+        "name": "api-reference-example.json",
+        "url": "https://utfs.io/f/5VMVggWXb9pmwWyf04Lb0qRudFOp6yvEmgxLBsQAl3e7ifD4",
+        "courseId": "fcdf3e0c-c23d-490f-b424-84f296b3fc2d",
+        "createdAt": "2025-06-30T09:31:13.914Z",
+        "updatedAt": "2025-06-30T09:31:13.914Z"
+      }
+    ],
+    "category": {
+      "id": "8f92d3d2-113c-485c-84b4-0150e80879be",
+      "name": "Development"
+    }
+  },
+  {
+    "id": "80bc6d95-ffb4-407e-9c73-5749f5460fb2",
+    "userId": "user_2xis9eFWImMhDqMklAPUcZyQOHc",
+    "title": "The Business of Freelance Design",
+    "description": "Learn how to turn your design skills into a profitable freelance business with real-world strategies and client management tools.",
+    "imageUrl": "https://utfs.io/f/5VMVggWXb9pmW82v8YVjX1lvN0eduLtBkFAQZ5TERCgcPj67",
+    "price": 69,
+    "isPublished": true,
+    "categoryId": "b0dd2704-4913-494c-93e3-c38cf304b04f",
+    "createdAt": "2025-06-30T09:31:13.915Z",
+    "updatedAt": "2025-06-30T09:48:27.956Z",
+    "chapters": [
+      {
+        "id": "723ffe16-b3f1-449c-a869-aff28cdd7bbf",
+        "title": "Building Long-Term Client Relationships",
+        "description": "<p>One-off gigs are good. <em>Retainers are better.</em></p>\n        <ul>\n          <li>Offer ongoing value post-launch</li>\n          <li>Use check-ins to upsell without pressure</li>\n          <li>Turn satisfied clients into brand ambassadors</li>\n        </ul>",
+        "videoUrl": "https://utfs.io/f/5VMVggWXb9pmWFfdYljX1lvN0eduLtBkFAQZ5TERCgcPj673",
+        "position": 3,
+        "isPublished": true,
+        "isFree": false,
+        "courseId": "80bc6d95-ffb4-407e-9c73-5749f5460fb2",
+        "createdAt": "2025-06-30T09:31:13.915Z",
+        "updatedAt": "2025-06-30T09:31:13.915Z",
+        "muxData": {
+          "id": "37c8d4d5-b274-43da-8fad-81614d931c3d",
+          "assetId": "qqoj7vKYWcco9x00cAcjkmg4vtEjJPE5ImB01I9MQYHPU",
+          "playbackId": "iGezYTHk53302Kku75Xd5o1Ss5D8zPAeN3Q4Je01N4jGM",
+          "chapterId": "723ffe16-b3f1-449c-a869-aff28cdd7bbf"
+        }
+      },
+      {
+        "id": "75125b69-fe69-48b0-98d3-ea7c4b7b48c0",
+        "title": "Freelance Productivity Systems",
+        "description": "<p>You’re your own boss — but are you a good one?</p>\n        <ul>\n          <li>Time-blocking with tools like Notion or Sunsama</li>\n          <li>Tracking tasks and payments</li>\n          <li>Setting realistic weekly goals</li>\n        </ul>",
+        "videoUrl": "https://utfs.io/f/5VMVggWXb9pm5JyB1NWXb9pmHJ3lnAO6cfZjY8dNiR7e1uEV",
+        "position": 4,
+        "isPublished": true,
+        "isFree": false,
+        "courseId": "80bc6d95-ffb4-407e-9c73-5749f5460fb2",
+        "createdAt": "2025-06-30T09:31:13.915Z",
+        "updatedAt": "2025-06-30T09:31:13.915Z",
+        "muxData": {
+          "id": "19624660-390f-460d-b339-6bb06d85d474",
+          "assetId": "qqoj7vKYWcco9x00cAcjkmg4vtEjJPE5ImB01I9MQYHPU",
+          "playbackId": "iGezYTHk53302Kku75Xd5o1Ss5D8zPAeN3Q4Je01N4jGM",
+          "chapterId": "75125b69-fe69-48b0-98d3-ea7c4b7b48c0"
+        }
+      },
+      {
+        "id": "00b840b6-e862-45ce-8970-f90fb811ad1a",
+        "title": "Finding Your First Clients",
+        "description": "<p><strong>No more waiting for referrals.</strong> We'll show you how to take initiative.</p>\n        <ul>\n          <li>Create a killer portfolio, even with mock work</li>\n          <li>Use platforms like Upwork and Dribbble wisely</li>\n          <li>Write cold emails that actually get replies</li>\n        </ul>",
+        "videoUrl": "https://utfs.io/f/5VMVggWXb9pmeHvSjMZn6hrVf3YayFOgdKuNbMzoZ51vmRPp",
+        "position": 1,
+        "isPublished": true,
+        "isFree": true,
+        "courseId": "80bc6d95-ffb4-407e-9c73-5749f5460fb2",
+        "createdAt": "2025-06-30T09:31:13.915Z",
+        "updatedAt": "2025-06-30T09:31:13.915Z",
+        "muxData": {
+          "id": "ee820c10-ad4b-4ff7-baa8-25800c9964e1",
+          "assetId": "qqoj7vKYWcco9x00cAcjkmg4vtEjJPE5ImB01I9MQYHPU",
+          "playbackId": "iGezYTHk53302Kku75Xd5o1Ss5D8zPAeN3Q4Je01N4jGM",
+          "chapterId": "00b840b6-e862-45ce-8970-f90fb811ad1a"
+        }
+      },
+      {
+        "id": "1b1e545b-e0cc-404b-a67d-b79439bce083",
+        "title": "Pricing and Negotiation",
+        "description": "<p>Don’t guess your rates — price with confidence.</p>\n        <ol>\n          <li>Understand pricing models (hourly vs value-based)</li>\n          <li>Build minimum project rates</li>\n          <li>Negotiate scope creep like a pro</li>\n        </ol>",
+        "videoUrl": "https://utfs.io/f/5VMVggWXb9pmOZtQGsNaZscM6BCTW9YhNK8gE1joRL4Fwepu",
+        "position": 2,
+        "isPublished": true,
+        "isFree": false,
+        "courseId": "80bc6d95-ffb4-407e-9c73-5749f5460fb2",
+        "createdAt": "2025-06-30T09:31:13.915Z",
+        "updatedAt": "2025-06-30T09:31:13.915Z",
+        "muxData": {
+          "id": "16d3d184-459c-491e-986a-e8cc81460bec",
+          "assetId": "qqoj7vKYWcco9x00cAcjkmg4vtEjJPE5ImB01I9MQYHPU",
+          "playbackId": "iGezYTHk53302Kku75Xd5o1Ss5D8zPAeN3Q4Je01N4jGM",
+          "chapterId": "1b1e545b-e0cc-404b-a67d-b79439bce083"
+        }
+      }
+    ],
+    "attachments": [
+      {
+        "id": "dcebf9d7-dd30-4dd8-9db3-5591e3a5b085",
+        "name": "client-contract-template.pdf",
+        "url": "https://utfs.io/f/5VMVggWXb9pmwWyf04Lb0qRudFOp6yvEmgxLBsQAl3e7ifD4",
+        "courseId": "80bc6d95-ffb4-407e-9c73-5749f5460fb2",
+        "createdAt": "2025-06-30T09:31:13.915Z",
+        "updatedAt": "2025-06-30T09:31:13.915Z"
+      }
+    ],
+    "category": {
+      "id": "b0dd2704-4913-494c-93e3-c38cf304b04f",
+      "name": "Design & Creativity"
+    }
+  },
+  {
+    "id": "221f724c-73ae-4977-9099-070696a7a10b",
+    "userId": "user_2xis9eFWImMhDqMklAPUcZyQOHc",
+    "title": "Investing Basics: Start Smart with Your Money",
+    "description": "A beginner-friendly course to help you understand the foundations of investing, risk management, and long-term wealth building. Learn how to grow your money with confidence and avoid common pitfalls.",
+    "imageUrl": "https://utfs.io/f/5VMVggWXb9pmiG4weofLO01egbS39V8dzjm2FW6olZcEI4Jw",
+    "price": 35,
+    "isPublished": true,
+    "categoryId": "f3c85e7a-0cd3-4bcd-ac69-7e43370fbad9",
+    "createdAt": "2025-06-30T09:31:13.915Z",
+    "updatedAt": "2025-06-30T09:49:48.983Z",
+    "chapters": [
+      {
+        "id": "107bd080-6c76-48b7-a32c-ec729a226b9f",
+        "title": "Compound Interest & Long-Term Growth",
+        "description": "<p>Visualize how <em>small, consistent investments</em> grow over time and how to automate your savings/investing habits.</p>",
+        "videoUrl": "https://utfs.io/f/5VMVggWXb9pmK6mYc1kM6HVfFOp95XazvV6Sm5E6k4w3iTxp",
+        "position": 3,
+        "isPublished": true,
+        "isFree": false,
+        "courseId": "221f724c-73ae-4977-9099-070696a7a10b",
+        "createdAt": "2025-06-30T09:31:13.915Z",
+        "updatedAt": "2025-06-30T09:31:13.915Z",
+        "muxData": {
+          "id": "e21e87a5-db4d-4180-86d2-e2788eed93bb",
+          "assetId": "qqoj7vKYWcco9x00cAcjkmg4vtEjJPE5ImB01I9MQYHPU",
+          "playbackId": "iGezYTHk53302Kku75Xd5o1Ss5D8zPAeN3Q4Je01N4jGM",
+          "chapterId": "107bd080-6c76-48b7-a32c-ec729a226b9f"
+        }
+      },
+      {
+        "id": "5d95a415-c3b0-4ede-b420-c5ae05ac73f2",
+        "title": "Understanding Investment Types",
+        "description": "<p>Stocks, bonds, ETFs, real estate—<strong>know the differences</strong>, benefits, and use cases of each asset class in simple terms.</p>",
+        "videoUrl": "https://utfs.io/f/5VMVggWXb9pmeHvSjMZn6hrVf3YayFOgdKuNbMzoZ51vmRPp",
+        "position": 1,
+        "isPublished": true,
+        "isFree": true,
+        "courseId": "221f724c-73ae-4977-9099-070696a7a10b",
+        "createdAt": "2025-06-30T09:31:13.915Z",
+        "updatedAt": "2025-06-30T09:31:13.915Z",
+        "muxData": {
+          "id": "92d3961c-1035-44e0-9873-2b02298a72f0",
+          "assetId": "qqoj7vKYWcco9x00cAcjkmg4vtEjJPE5ImB01I9MQYHPU",
+          "playbackId": "iGezYTHk53302Kku75Xd5o1Ss5D8zPAeN3Q4Je01N4jGM",
+          "chapterId": "5d95a415-c3b0-4ede-b420-c5ae05ac73f2"
+        }
+      },
+      {
+        "id": "983d319a-d55a-4978-b008-3e04c7678677",
+        "title": "Risk vs Reward",
+        "description": "<p>Get comfortable with <strong>risk management</strong> principles, diversification strategies, and avoiding emotional decision-making.</p>",
+        "videoUrl": "https://utfs.io/f/5VMVggWXb9pmOZtQGsNaZscM6BCTW9YhNK8gE1joRL4Fwepu",
+        "position": 2,
+        "isPublished": true,
+        "isFree": false,
+        "courseId": "221f724c-73ae-4977-9099-070696a7a10b",
+        "createdAt": "2025-06-30T09:31:13.915Z",
+        "updatedAt": "2025-06-30T09:31:13.915Z",
+        "muxData": {
+          "id": "36997cb8-b544-4c3a-ab04-440e3ebe94e4",
+          "assetId": "qqoj7vKYWcco9x00cAcjkmg4vtEjJPE5ImB01I9MQYHPU",
+          "playbackId": "iGezYTHk53302Kku75Xd5o1Ss5D8zPAeN3Q4Je01N4jGM",
+          "chapterId": "983d319a-d55a-4978-b008-3e04c7678677"
+        }
+      },
+      {
+        "id": "b0687d2a-dae5-4dc2-a034-c6325c8f7162",
+        "title": "Avoiding Scams and Traps",
+        "description": "<p>Learn to spot red flags, <strong>analyze investment offers</strong>, and avoid common financial scams and hype traps.</p>",
+        "videoUrl": "https://utfs.io/f/5VMVggWXb9pmMNpHFiUB2brVGnPTO4Y23QKJh1rK8mA9GrcF",
+        "position": 4,
+        "isPublished": true,
+        "isFree": false,
+        "courseId": "221f724c-73ae-4977-9099-070696a7a10b",
+        "createdAt": "2025-06-30T09:31:13.915Z",
+        "updatedAt": "2025-06-30T09:31:13.915Z",
+        "muxData": {
+          "id": "c1be9420-4363-4016-867e-a856bad30d2a",
+          "assetId": "qqoj7vKYWcco9x00cAcjkmg4vtEjJPE5ImB01I9MQYHPU",
+          "playbackId": "iGezYTHk53302Kku75Xd5o1Ss5D8zPAeN3Q4Je01N4jGM",
+          "chapterId": "b0687d2a-dae5-4dc2-a034-c6325c8f7162"
+        }
+      }
+    ],
+    "attachments": [
+      {
+        "id": "3b1b885e-bec9-4be9-9385-0e68dfeb1439",
+        "name": "investment-checklist.pdf",
+        "url": "https://utfs.io/f/5VMVggWXb9pmwWyf04Lb0qRudFOp6yvEmgxLBsQAl3e7ifD4",
+        "courseId": "221f724c-73ae-4977-9099-070696a7a10b",
+        "createdAt": "2025-06-30T09:31:13.915Z",
+        "updatedAt": "2025-06-30T09:31:13.915Z"
+      }
+    ],
+    "category": {
+      "id": "f3c85e7a-0cd3-4bcd-ac69-7e43370fbad9",
+      "name": "Finance & Investing"
+    }
+  },
+  {
+    "id": "fd9a71f7-3be1-4ffa-86a5-dfb622b1ca15",
+    "userId": "user_2xis9eFWImMhDqMklAPUcZyQOHc",
+    "title": "Build Realtime Web Apps with WebSockets & Next.js",
+    "description": "Learn how to create realtime features like chat, notifications, collaborative editing and live updates using WebSockets and modern Next.js architecture.",
+    "imageUrl": "https://utfs.io/f/5VMVggWXb9pm6GHVJ2IcqXVQhmWL2vTpuocaB6jZCzwU897d",
+    "price": 59,
+    "isPublished": true,
+    "categoryId": "8f92d3d2-113c-485c-84b4-0150e80879be",
+    "createdAt": "2025-06-30T09:31:13.914Z",
+    "updatedAt": "2025-06-30T09:58:04.224Z",
+    "chapters": [
+      {
+        "id": "916b4a79-636a-4811-8b2b-c5c74ef786a8",
+        "title": "Understanding WebSockets & Protocols",
+        "description": "<p>Dive into <strong>WebSocket basics</strong>, how they compare to HTTP and Server-Sent Events, and when to use them.</p><ul><li>TCP vs HTTP</li><li>Socket.IO vs native</li><li>Ping-pong mechanism</li></ul>",
+        "videoUrl": "https://utfs.io/f/5VMVggWXb9pmeHvSjMZn6hrVf3YayFOgdKuNbMzoZ51vmRPp",
+        "position": 1,
+        "isPublished": true,
+        "isFree": true,
+        "courseId": "fd9a71f7-3be1-4ffa-86a5-dfb622b1ca15",
+        "createdAt": "2025-06-30T09:31:13.914Z",
+        "updatedAt": "2025-06-30T09:31:13.914Z",
+        "muxData": {
+          "id": "2ebe475d-46bd-4c41-ba10-c6f8f0de54d5",
+          "assetId": "qqoj7vKYWcco9x00cAcjkmg4vtEjJPE5ImB01I9MQYHPU",
+          "playbackId": "iGezYTHk53302Kku75Xd5o1Ss5D8zPAeN3Q4Je01N4jGM",
+          "chapterId": "916b4a79-636a-4811-8b2b-c5c74ef786a8"
+        }
+      },
+      {
+        "id": "5aaba42e-822a-499d-9a41-7381f840a2fe",
+        "title": "Next.js API Routes + WS Server",
+        "description": "<p>Set up a scalable WebSocket server inside your Next.js app using API routes and <code>ws</code> package.</p>",
+        "videoUrl": "https://utfs.io/f/5VMVggWXb9pmOZtQGsNaZscM6BCTW9YhNK8gE1joRL4Fwepu",
+        "position": 2,
+        "isPublished": true,
+        "isFree": false,
+        "courseId": "fd9a71f7-3be1-4ffa-86a5-dfb622b1ca15",
+        "createdAt": "2025-06-30T09:31:13.914Z",
+        "updatedAt": "2025-06-30T09:31:13.914Z",
+        "muxData": {
+          "id": "fcd886df-ef13-450e-aac0-7c567ddfc32c",
+          "assetId": "qqoj7vKYWcco9x00cAcjkmg4vtEjJPE5ImB01I9MQYHPU",
+          "playbackId": "iGezYTHk53302Kku75Xd5o1Ss5D8zPAeN3Q4Je01N4jGM",
+          "chapterId": "5aaba42e-822a-499d-9a41-7381f840a2fe"
+        }
+      },
+      {
+        "id": "687c689e-6826-4720-9c86-9ee44e0a4818",
+        "title": "Client Integration & Authentication",
+        "description": "<p>Connect the frontend to the WebSocket backend and integrate <strong>auth middleware</strong> to identify users.</p><ul><li>Token-based handshake</li><li>Room-based communication</li></ul>",
+        "videoUrl": "https://utfs.io/f/5VMVggWXb9pmOZtQGsNaZscM6BCTW9YhNK8gE1joRL4Fwepu",
+        "position": 3,
+        "isPublished": true,
+        "isFree": false,
+        "courseId": "fd9a71f7-3be1-4ffa-86a5-dfb622b1ca15",
+        "createdAt": "2025-06-30T09:31:13.914Z",
+        "updatedAt": "2025-06-30T09:31:13.914Z",
+        "muxData": {
+          "id": "e9c287e1-2ca1-4aac-b6fe-1fadd82da975",
+          "assetId": "qqoj7vKYWcco9x00cAcjkmg4vtEjJPE5ImB01I9MQYHPU",
+          "playbackId": "iGezYTHk53302Kku75Xd5o1Ss5D8zPAeN3Q4Je01N4jGM",
+          "chapterId": "687c689e-6826-4720-9c86-9ee44e0a4818"
+        }
+      },
+      {
+        "id": "004f2b1c-1aec-46ae-8a6a-4e104576b57a",
+        "title": "Realtime Features: Chat & Live Status",
+        "description": "<p>Implement core features such as <em>group chat</em>, <strong>online indicators</strong> and <em>live typing</em>.</p><p>You'll finish this module with a working realtime messaging system.</p>",
+        "videoUrl": "https://utfs.io/f/5VMVggWXb9pmOZtQGsNaZscM6BCTW9YhNK8gE1joRL4Fwepu",
+        "position": 4,
+        "isPublished": true,
+        "isFree": false,
+        "courseId": "fd9a71f7-3be1-4ffa-86a5-dfb622b1ca15",
+        "createdAt": "2025-06-30T09:31:13.914Z",
+        "updatedAt": "2025-06-30T09:31:13.914Z",
+        "muxData": {
+          "id": "d6d4244e-47ea-4beb-bf2a-e1f6a7b3c7d5",
+          "assetId": "qqoj7vKYWcco9x00cAcjkmg4vtEjJPE5ImB01I9MQYHPU",
+          "playbackId": "iGezYTHk53302Kku75Xd5o1Ss5D8zPAeN3Q4Je01N4jGM",
+          "chapterId": "004f2b1c-1aec-46ae-8a6a-4e104576b57a"
+        }
+      }
+    ],
+    "attachments": [
+      {
+        "id": "faf6e572-ebfe-4662-949e-afd916c547aa",
+        "name": "realtime-app-architecture.pdf",
+        "url": "https://utfs.io/f/5VMVggWXb9pmwWyf04Lb0qRudFOp6yvEmgxLBsQAl3e7ifD4",
+        "courseId": "fd9a71f7-3be1-4ffa-86a5-dfb622b1ca15",
+        "createdAt": "2025-06-30T09:31:13.914Z",
+        "updatedAt": "2025-06-30T09:31:13.914Z"
+      }
+    ],
+    "category": {
+      "id": "8f92d3d2-113c-485c-84b4-0150e80879be",
+      "name": "Development"
+    }
+  },
+  {
+    "id": "11d4972d-9cfe-49db-afe0-5ac85e5437e6",
+    "userId": "user_2xis9eFWImMhDqMklAPUcZyQOHc",
+    "title": "Advanced TypeScript Patterns for Large Applications",
+    "description": "Master scalable patterns in TypeScript used in enterprise-level applications. This course will teach you generics, discriminated unions, utility types, type guards, and modular architecture using TypeScript.",
+    "imageUrl": "https://utfs.io/f/5VMVggWXb9pmj3QjgNzJx72KnduUHP3qfSeABOGXtgijZ8ay",
+    "price": 65,
+    "isPublished": true,
+    "categoryId": "8f92d3d2-113c-485c-84b4-0150e80879be",
+    "createdAt": "2025-06-30T09:31:13.914Z",
+    "updatedAt": "2025-06-30T09:59:56.816Z",
+    "chapters": [
+      {
+        "id": "6a9d2282-34e2-4bea-bbad-35972b1bd291",
+        "title": "Utility Types & Type Transformations",
+        "description": "<p>Explore <strong>Pick</strong>, <em>Omit</em>, <code>Partial</code>, <code>Record</code> and custom mapped types for reducing duplication and improving inference.</p>",
+        "videoUrl": "https://utfs.io/f/5VMVggWXb9pmeHvSjMZn6hrVf3YayFOgdKuNbMzoZ51vmRPp",
+        "position": 1,
+        "isPublished": true,
+        "isFree": true,
+        "courseId": "11d4972d-9cfe-49db-afe0-5ac85e5437e6",
+        "createdAt": "2025-06-30T09:31:13.914Z",
+        "updatedAt": "2025-06-30T09:31:13.914Z",
+        "muxData": {
+          "id": "04c24d04-3394-4af3-af4c-0c66f170922b",
+          "assetId": "qqoj7vKYWcco9x00cAcjkmg4vtEjJPE5ImB01I9MQYHPU",
+          "playbackId": "iGezYTHk53302Kku75Xd5o1Ss5D8zPAeN3Q4Je01N4jGM",
+          "chapterId": "6a9d2282-34e2-4bea-bbad-35972b1bd291"
+        }
+      },
+      {
+        "id": "cb55a1a9-447a-4181-84e5-83787d969959",
+        "title": "Discriminated Unions and Exhaustive Checks",
+        "description": "<p>Build safe business logic using union types with <strong>tagged discriminators</strong> and enforce exhaustiveness with <code>never</code>.</p>",
+        "videoUrl": "https://utfs.io/f/5VMVggWXb9pmOZtQGsNaZscM6BCTW9YhNK8gE1joRL4Fwepu",
+        "position": 2,
+        "isPublished": true,
+        "isFree": false,
+        "courseId": "11d4972d-9cfe-49db-afe0-5ac85e5437e6",
+        "createdAt": "2025-06-30T09:31:13.914Z",
+        "updatedAt": "2025-06-30T09:31:13.914Z",
+        "muxData": {
+          "id": "983055e1-59d5-4ce4-99c2-3b18bbdf339f",
+          "assetId": "qqoj7vKYWcco9x00cAcjkmg4vtEjJPE5ImB01I9MQYHPU",
+          "playbackId": "iGezYTHk53302Kku75Xd5o1Ss5D8zPAeN3Q4Je01N4jGM",
+          "chapterId": "cb55a1a9-447a-4181-84e5-83787d969959"
+        }
+      },
+      {
+        "id": "f5cdc44c-298c-4bff-a1c0-69ccfef696be",
+        "title": "Generic Components & Factories",
+        "description": "<p>Write truly reusable and typed components using generics, constraints, and overloads.</p><ul><li>Generic constraints</li><li>Factory patterns</li><li>Polymorphic components</li></ul>",
+        "videoUrl": "https://utfs.io/f/5VMVggWXb9pmOZtQGsNaZscM6BCTW9YhNK8gE1joRL4Fwepu",
+        "position": 3,
+        "isPublished": true,
+        "isFree": false,
+        "courseId": "11d4972d-9cfe-49db-afe0-5ac85e5437e6",
+        "createdAt": "2025-06-30T09:31:13.914Z",
+        "updatedAt": "2025-06-30T09:31:13.914Z",
+        "muxData": {
+          "id": "c7165ab9-bdbd-4fec-9d6d-ceecf9e13b14",
+          "assetId": "qqoj7vKYWcco9x00cAcjkmg4vtEjJPE5ImB01I9MQYHPU",
+          "playbackId": "iGezYTHk53302Kku75Xd5o1Ss5D8zPAeN3Q4Je01N4jGM",
+          "chapterId": "f5cdc44c-298c-4bff-a1c0-69ccfef696be"
+        }
+      },
+      {
+        "id": "aa519e48-a28b-41d1-bb16-559a106cfdb1",
+        "title": "Type-Safe API Contracts",
+        "description": "<p>Learn how to build a full-stack API layer with <strong>zod</strong> or <strong>io-ts</strong> for validating and typing both client and server sides.</p>",
+        "videoUrl": "https://utfs.io/f/5VMVggWXb9pmOZtQGsNaZscM6BCTW9YhNK8gE1joRL4Fwepu",
+        "position": 4,
+        "isPublished": true,
+        "isFree": false,
+        "courseId": "11d4972d-9cfe-49db-afe0-5ac85e5437e6",
+        "createdAt": "2025-06-30T09:31:13.914Z",
+        "updatedAt": "2025-06-30T09:31:13.914Z",
+        "muxData": {
+          "id": "6dba6c05-9386-4a26-ad50-8c71482ac24e",
+          "assetId": "qqoj7vKYWcco9x00cAcjkmg4vtEjJPE5ImB01I9MQYHPU",
+          "playbackId": "iGezYTHk53302Kku75Xd5o1Ss5D8zPAeN3Q4Je01N4jGM",
+          "chapterId": "aa519e48-a28b-41d1-bb16-559a106cfdb1"
+        }
+      }
+    ],
+    "attachments": [
+      {
+        "id": "6c80f1e7-9d37-4b53-8696-a0af9995be3b",
+        "name": "advanced-ts-cheatsheet.pdf",
+        "url": "https://utfs.io/f/5VMVggWXb9pmwWyf04Lb0qRudFOp6yvEmgxLBsQAl3e7ifD4",
+        "courseId": "11d4972d-9cfe-49db-afe0-5ac85e5437e6",
+        "createdAt": "2025-06-30T09:31:13.914Z",
+        "updatedAt": "2025-06-30T09:31:13.914Z"
+      },
+      {
+        "id": "09b2035f-e267-49e4-bf66-79747d6a19f3",
+        "name": "tsconfig-best-practices.json",
+        "url": "https://utfs.io/f/5VMVggWXb9pmwWyf04Lb0qRudFOp6yvEmgxLBsQAl3e7ifD4",
+        "courseId": "11d4972d-9cfe-49db-afe0-5ac85e5437e6",
+        "createdAt": "2025-06-30T09:31:13.914Z",
+        "updatedAt": "2025-06-30T09:31:13.914Z"
+      }
+    ],
+    "category": {
+      "id": "8f92d3d2-113c-485c-84b4-0150e80879be",
+      "name": "Development"
+    }
+  },
+  {
+    "id": "43971c88-5417-41d7-9dd1-02f179f2d57d",
+    "userId": "user_2xis9eFWImMhDqMklAPUcZyQOHc",
+    "title": "Productivity Habits for Developers",
+    "description": "Learn how to boost your efficiency as a developer with proven techniques, tools, and routines. This course is ideal for engineers who want to get more done without burnout.",
+    "imageUrl": "https://utfs.io/f/5VMVggWXb9pmzQrYw08594SmnI0HWt7skYgrxNQRocVfq8yM",
+    "price": 39,
+    "isPublished": true,
+    "categoryId": "b0dd2704-4913-494c-93e3-c38cf304b04f",
+    "createdAt": "2025-06-30T09:31:13.913Z",
+    "updatedAt": "2025-06-30T10:02:27.675Z",
+    "chapters": [
+      {
+        "id": "409d3acb-b85f-49db-becb-dcfbf3adcd67",
+        "title": "Morning Routines for Focus",
+        "description": "<p>Discover how to start your day with clarity, purpose, and momentum using structured morning routines.</p>",
+        "videoUrl": "https://utfs.io/f/5VMVggWXb9pmeHvSjMZn6hrVf3YayFOgdKuNbMzoZ51vmRPp",
+        "position": 1,
+        "isPublished": true,
+        "isFree": true,
+        "courseId": "43971c88-5417-41d7-9dd1-02f179f2d57d",
+        "createdAt": "2025-06-30T09:31:13.913Z",
+        "updatedAt": "2025-06-30T09:31:13.913Z",
+        "muxData": {
+          "id": "c66831c5-b36e-4a17-b909-7bf6a5666996",
+          "assetId": "qqoj7vKYWcco9x00cAcjkmg4vtEjJPE5ImB01I9MQYHPU",
+          "playbackId": "iGezYTHk53302Kku75Xd5o1Ss5D8zPAeN3Q4Je01N4jGM",
+          "chapterId": "409d3acb-b85f-49db-becb-dcfbf3adcd67"
+        }
+      },
+      {
+        "id": "d9a75cdd-367a-489b-afac-4dfd5225299b",
+        "title": "Eliminating Distractions",
+        "description": "<p>Learn practical methods to reduce context switching and stay in deep work mode.</p>",
+        "videoUrl": "https://utfs.io/f/5VMVggWXb9pmOZtQGsNaZscM6BCTW9YhNK8gE1joRL4Fwepu",
+        "position": 2,
+        "isPublished": true,
+        "isFree": false,
+        "courseId": "43971c88-5417-41d7-9dd1-02f179f2d57d",
+        "createdAt": "2025-06-30T09:31:13.913Z",
+        "updatedAt": "2025-06-30T09:31:13.913Z",
+        "muxData": {
+          "id": "79f04eea-6a65-47b6-8ffd-d011794dea7a",
+          "assetId": "qqoj7vKYWcco9x00cAcjkmg4vtEjJPE5ImB01I9MQYHPU",
+          "playbackId": "iGezYTHk53302Kku75Xd5o1Ss5D8zPAeN3Q4Je01N4jGM",
+          "chapterId": "d9a75cdd-367a-489b-afac-4dfd5225299b"
+        }
+      }
+    ],
+    "attachments": [
+      {
+        "id": "4c3a1b6d-a4ad-482a-b4f2-1e1a0660e0e6",
+        "name": "productivity-guide.pdf",
+        "url": "https://utfs.io/f/5VMVggWXb9pmwWyf04Lb0qRudFOp6yvEmgxLBsQAl3e7ifD4",
+        "courseId": "43971c88-5417-41d7-9dd1-02f179f2d57d",
+        "createdAt": "2025-06-30T09:31:13.913Z",
+        "updatedAt": "2025-06-30T09:31:13.913Z"
+      }
+    ],
+    "category": {
+      "id": "b0dd2704-4913-494c-93e3-c38cf304b04f",
+      "name": "Design & Creativity"
+    }
+  },
+  {
+    "id": "0e563e58-07ad-43c5-b1dc-cb1d33b8afe0",
+    "userId": "user_2xis9eFWImMhDqMklAPUcZyQOHc",
+    "title": "Creative Writing Toolkit: Build Better Stories",
+    "description": "Unlock your creative potential and craft compelling narratives, characters, and dialogues. This course is ideal for aspiring authors, bloggers, and storytellers who want to build emotional resonance and narrative structure.",
+    "imageUrl": "https://utfs.io/f/5VMVggWXb9pmaqB2bqe1uGfWdAQI2XeL6VSqUETRjk9nvJDY",
+    "price": 25,
+    "isPublished": true,
+    "categoryId": "78a0ec59-20a4-4b9b-b277-8bb02d9a0802",
+    "createdAt": "2025-06-30T09:31:13.914Z",
+    "updatedAt": "2025-06-30T10:03:59.986Z",
+    "chapters": [
+      {
+        "id": "56bb2485-c0e6-4f4e-b4f9-3c7d0370b584",
+        "title": "Finding Your Unique Voice",
+        "description": "<p>Explore how to cultivate a writing voice that is <em>authentic</em>, <strong>recognizable</strong>, and emotionally engaging. Includes guided prompts and author case studies.</p>",
+        "videoUrl": "https://utfs.io/f/5VMVggWXb9pmeHvSjMZn6hrVf3YayFOgdKuNbMzoZ51vmRPp",
+        "position": 1,
+        "isPublished": true,
+        "isFree": true,
+        "courseId": "0e563e58-07ad-43c5-b1dc-cb1d33b8afe0",
+        "createdAt": "2025-06-30T09:31:13.914Z",
+        "updatedAt": "2025-06-30T09:31:13.914Z",
+        "muxData": {
+          "id": "081329ab-1341-4cef-8982-4e363761ff8f",
+          "assetId": "qqoj7vKYWcco9x00cAcjkmg4vtEjJPE5ImB01I9MQYHPU",
+          "playbackId": "iGezYTHk53302Kku75Xd5o1Ss5D8zPAeN3Q4Je01N4jGM",
+          "chapterId": "56bb2485-c0e6-4f4e-b4f9-3c7d0370b584"
+        }
+      },
+      {
+        "id": "174aef12-6868-4d40-83a6-53584e50d0e0",
+        "title": "Building Characters with Depth",
+        "description": "<p>Design characters with <strong>motivations, flaws, and arcs</strong> that feel real and human. Includes frameworks for character sheets and backstory weaving.</p>",
+        "videoUrl": "https://utfs.io/f/5VMVggWXb9pmOZtQGsNaZscM6BCTW9YhNK8gE1joRL4Fwepu",
+        "position": 2,
+        "isPublished": true,
+        "isFree": false,
+        "courseId": "0e563e58-07ad-43c5-b1dc-cb1d33b8afe0",
+        "createdAt": "2025-06-30T09:31:13.914Z",
+        "updatedAt": "2025-06-30T09:31:13.914Z",
+        "muxData": {
+          "id": "be6b98e2-eb48-4b98-ae06-6f60dede6cac",
+          "assetId": "qqoj7vKYWcco9x00cAcjkmg4vtEjJPE5ImB01I9MQYHPU",
+          "playbackId": "iGezYTHk53302Kku75Xd5o1Ss5D8zPAeN3Q4Je01N4jGM",
+          "chapterId": "174aef12-6868-4d40-83a6-53584e50d0e0"
+        }
+      },
+      {
+        "id": "0adb5a05-c772-4bde-a6ce-6b2a4bded8ee",
+        "title": "Plotting and Structure Techniques",
+        "description": "<p>Learn the difference between <em>linear</em> and <em>nonlinear</em> storylines, explore the 3-act structure, and discover how to maintain narrative tension.</p>",
+        "videoUrl": "https://utfs.io/f/5VMVggWXb9pmK6mYc1kM6HVfFOp95XazvV6Sm5E6k4w3iTxp",
+        "position": 3,
+        "isPublished": true,
+        "isFree": false,
+        "courseId": "0e563e58-07ad-43c5-b1dc-cb1d33b8afe0",
+        "createdAt": "2025-06-30T09:31:13.914Z",
+        "updatedAt": "2025-06-30T09:31:13.914Z",
+        "muxData": {
+          "id": "4307248d-cb79-4921-9c91-e1b2521f6a3b",
+          "assetId": "qqoj7vKYWcco9x00cAcjkmg4vtEjJPE5ImB01I9MQYHPU",
+          "playbackId": "iGezYTHk53302Kku75Xd5o1Ss5D8zPAeN3Q4Je01N4jGM",
+          "chapterId": "0adb5a05-c772-4bde-a6ce-6b2a4bded8ee"
+        }
+      },
+      {
+        "id": "37e8f14b-40a3-4cf1-bee9-a5b7081fabfc",
+        "title": "Writing Dialogue That Feels Real",
+        "description": "<p>Create snappy, <strong>character-driven dialogue</strong> that sounds natural and drives the story forward. Includes editing tips for pacing and subtext.</p>",
+        "videoUrl": "https://utfs.io/f/5VMVggWXb9pmMNpHFiUB2brVGnPTO4Y23QKJh1rK8mA9GrcF",
+        "position": 4,
+        "isPublished": true,
+        "isFree": false,
+        "courseId": "0e563e58-07ad-43c5-b1dc-cb1d33b8afe0",
+        "createdAt": "2025-06-30T09:31:13.914Z",
+        "updatedAt": "2025-06-30T09:31:13.914Z",
+        "muxData": {
+          "id": "87a69838-7a62-4780-9c7b-981184d9ee63",
+          "assetId": "qqoj7vKYWcco9x00cAcjkmg4vtEjJPE5ImB01I9MQYHPU",
+          "playbackId": "iGezYTHk53302Kku75Xd5o1Ss5D8zPAeN3Q4Je01N4jGM",
+          "chapterId": "37e8f14b-40a3-4cf1-bee9-a5b7081fabfc"
+        }
+      }
+    ],
+    "attachments": [
+      {
+        "id": "8104cce3-73b0-4521-b072-9b7b57057e13",
+        "name": "story-structure-template.docx",
+        "url": "https://utfs.io/f/5VMVggWXb9pmwWyf04Lb0qRudFOp6yvEmgxLBsQAl3e7ifD4",
+        "courseId": "0e563e58-07ad-43c5-b1dc-cb1d33b8afe0",
+        "createdAt": "2025-06-30T09:31:13.914Z",
+        "updatedAt": "2025-06-30T09:31:13.914Z"
+      }
+    ],
+    "category": {
+      "id": "78a0ec59-20a4-4b9b-b277-8bb02d9a0802",
+      "name": "Writing & Content"
+    }
+  }
+]

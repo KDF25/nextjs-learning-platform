@@ -8,7 +8,7 @@ import {
 } from "@hello-pangea/dnd";
 import { Chapter } from "@prisma/client";
 import { Grip, Pencil } from "lucide-react";
-import { FC, useState } from "react";
+import { FC, useEffect, useState } from "react";
 
 import { useMounted } from "@/shared/hooks";
 import { cn } from "@/shared/lib";
@@ -29,6 +29,10 @@ export const ChapterList: FC<IChapterListProps> = ({
 }) => {
 	const { isMounted } = useMounted();
 	const [chapters, setChapters] = useState<Chapter[]>(initialChapters);
+
+	useEffect(() => {
+		setChapters(initialChapters);
+	}, [initialChapters]);
 
 	if (!isMounted) {
 		return null;
@@ -89,7 +93,9 @@ export const ChapterList: FC<IChapterListProps> = ({
 										>
 											<Grip size={16} />
 										</div>
-										{chapter?.title}
+										<p className="truncate">
+											{chapter?.title}
+										</p>
 										<div className="ml-auto flex items-center gap-x-2 mr-2">
 											{chapter?.isFree && (
 												<Badge> Free</Badge>

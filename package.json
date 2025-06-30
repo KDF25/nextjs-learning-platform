@@ -12,7 +12,8 @@
     "prisma:push": "npx prisma db push --schema=src/shared/database/prisma/schema.prisma",
     "prisma:migrate": "npx prisma migrate dev --schema=src/shared/database/prisma/schema.prisma",
     "prisma:studio": "npx prisma studio --schema=src/shared/database/prisma/schema.prisma",
-    "prisma:seed": "npx prisma db seed "
+    "prisma:seed": "npx prisma db seed ",
+     "prisma:parse": "tsx src/shared/database/prisma/parse.ts"
   },
   "prisma": {
     "seed": "ts-node --compiler-options {\"module\":\"CommonJS\"} src/shared/database/prisma/seed.ts"
@@ -76,6 +77,7 @@
     "prisma": "^6.9.0",
     "tailwindcss": "^3.4.1",
     "ts-node": "^10.9.2",
+    "tsx": "^4.20.3",
     "typescript": "^5.8.3"
   }
 }

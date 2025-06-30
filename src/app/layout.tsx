@@ -18,7 +18,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
 	title: "Skill Forge",
-	manifest: "./manifest.json",
+	manifest: "/manifest.json",
 	description:
 		"Skill Forge is your ultimate platform for mastering new skills. Explore a wide range of expert-led courses and enhance your career with flexible online learning.",
 	metadataBase: new URL(process.env.NEXT_PUBLIC_APP_URL || ""),
@@ -40,7 +40,7 @@ export const metadata: Metadata = {
 		type: "website"
 	},
 	icons: {
-		icon: "./icons/icon-512.png"
+		icon: "/icons/icon-512.png"
 	}
 };
 

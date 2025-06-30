@@ -32,7 +32,7 @@ export const VideoSection: FC<IVideoSectionProps> = ({
 				id: initialData?.id,
 				videoUrl: data?.videoUrl
 			} as Chapter);
-			toast.success("Access updated");
+			toast.success("Chapter updated");
 			router.refresh();
 			setIsEditing(false);
 		} catch {

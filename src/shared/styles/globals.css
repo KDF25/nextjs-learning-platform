@@ -122,5 +122,23 @@ html, body, :root {
   }
 }
 
+.custom-scroll::-webkit-scrollbar {
+  height: 4px; /* тонкий скролл по горизонтали */
+}
+
+.custom-scroll::-webkit-scrollbar-thumb {
+  background-color: rgba(100, 100, 100, 0.4); /* цвет бегунка */
+  border-radius: 4px;
+}
+
+.custom-scroll::-webkit-scrollbar-track {
+  background: transparent; /* фон трека */
+}
+
+.custom-scroll {
+  scrollbar-color: rgba(100, 100, 100, 0.4) transparent; /* для Firefox */
+  scrollbar-width: thin;
+}
+
 
 @import "@uploadthing/react/styles.css";
