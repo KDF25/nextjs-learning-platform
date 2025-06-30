@@ -46,15 +46,16 @@ export const CourseSidebarItem: FC<ICourseSidebarItemProps> = ({
 				isCompleted && isActive && "bg-emerald-200/20"
 			)}
 		>
-			<div className="flex item-center gap-x-2 py-4">
-				<Icon
-					size={22}
-					className={cn(
-						"text-slate-500",
-						isActive && "text-slate-700",
-						isCompleted && "text-emerald-700"
-					)}
-				/>
+			<div className="flex item-center gap-x-2 py-4 overflow-hidden">
+				<div>
+					<Icon
+						className={cn(
+							"text-slate-500 w-6 h-6",
+							isActive && "text-slate-700",
+							isCompleted && "text-emerald-700"
+						)}
+					/>
+				</div>
 				<p className="truncate">{item?.title}</p>
 			</div>
 			<div

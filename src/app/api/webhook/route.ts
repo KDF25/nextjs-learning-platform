@@ -33,16 +33,16 @@ export async function POST(request: Request) {
 
 	if (event.type === "checkout.session.completed") {
 		if (!userId || !courseId) {
-				return new NextResponse("Webhook Error: Missing metadata", {
+			return new NextResponse("Webhook Error: Missing metadata", {
 				status: 400
 			});
-		} 
+		}
 		await prisma.purchase.create({
-				data: {
-					userId,
-					courseId
-				}
-			});
+			data: {
+				userId,
+				courseId
+			}
+		});
 	} else {
 		return new NextResponse("Webhook Error: Unhandled event", {
 			status: 400
