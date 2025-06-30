@@ -10,13 +10,17 @@ import { cn } from "@/shared/lib";
 
 interface ICourseSidebarItemProps {
 	item: Chapter & { userProgress: UserProgress[] | null };
+	isLocked: boolean;
 }
 
-export const CourseSidebarItem: FC<ICourseSidebarItemProps> = ({ item }) => {
+export const CourseSidebarItem: FC<ICourseSidebarItemProps> = ({
+	item,
+	isLocked
+}) => {
 	const pathname = usePathname();
 	const router = useRouter();
 
-	const Icon = !item?.isFree
+	const Icon = isLocked
 		? Lock
 		: item?.userProgress?.[0]?.isCompleted
 			? CheckCircle

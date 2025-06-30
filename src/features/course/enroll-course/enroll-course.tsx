@@ -15,12 +15,10 @@ interface IEnrollCourseProps {
 
 export const EnrollCourse: FC<IEnrollCourseProps> = ({ price, courseId }) => {
 	const { checkout, isLoading } = useCourseCheckout();
-	// const router = useRouter();
 
 	const handleCheckout = () => {
 		checkout(courseId)
 			.then((response) => {
-				toast.success("Course deleted");
 				window.location.assign(response?.data?.url);
 			})
 			.catch(() => toast.error("Something went wrong"));

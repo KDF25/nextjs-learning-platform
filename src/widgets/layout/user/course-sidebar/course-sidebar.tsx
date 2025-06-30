@@ -33,7 +33,11 @@ export const CourseSidebar: FC<ICourseSidebarProps> = async ({
 			</div>
 			<div className="flex flex-col w-full">
 				{course?.chapters?.map((chapter) => (
-					<CourseSidebarItem key={chapter.id} item={chapter} />
+					<CourseSidebarItem
+						key={chapter.id}
+						item={chapter}
+						isLocked={chapter?.isFree && !purchase}
+					/>
 				))}
 			</div>
 		</div>
