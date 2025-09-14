@@ -3,6 +3,7 @@ import { redirect } from "next/navigation";
 import { FC } from "react";
 
 import { ENUM_PATH } from "@/shared/config";
+import { CustomBackground } from "@/shared/ui";
 
 import { CourseService } from "@/entities/course";
 
@@ -33,7 +34,8 @@ const CourseLayout: FC<ICourseLayoutProps> = async ({ children, params }) => {
 	const progressCount = await CourseService.getProgress(userId, course.id);
 
 	return (
-		<div className="h-full">
+		<div className="h-full relative">
+			<CustomBackground />
 			<div className="h-[80px] md:pl-80 fixed inset-y-0 w-full z-50">
 				<CourseNavbar
 					userId={userId}

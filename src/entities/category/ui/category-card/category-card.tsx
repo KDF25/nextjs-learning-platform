@@ -17,7 +17,7 @@ export const CategoryCard: FC<ICategoryCardProps> = ({
 	return (
 		<button
 			className={cn(
-				"py-2 px-3 text-sm border border-slate-200 rounded-full flex items-center gap-x-1 hover:border-sky-700 transition",
+				"py-2 px-3 text-sm border border-slate-200 rounded-full flex items-center gap-x-1 hover:border-sky-700 transition bg-background/70",
 				isActive && "bg-sky-200/20 text-sky-800 border-sky-700"
 			)}
 			type="button"

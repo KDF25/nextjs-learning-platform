@@ -21,7 +21,7 @@ export const CourseSidebar: FC<ICourseSidebarProps> = async ({
 	const purchase = await PurchaseService.getPurchases(userId, course.id);
 
 	return (
-		<div className="h-full border-r flex flex-col overflow-y-auto shadow-sm">
+		<div className="h-full border-r flex flex-col overflow-y-auto shadow-sm bg-background">
 			<div className="flex flex-col border-b p-8 gap-10">
 				<h1 className="font-semibold">{course?.title}</h1>
 				{!purchase && (

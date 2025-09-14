@@ -140,5 +140,29 @@ html, body, :root {
   scrollbar-width: thin;
 }
 
+.main_background {
+  position: relative;
+}
+
+.main_background::before {
+    background: #fefcff;
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    opacity: 0.2;  
+    background-image: radial-gradient(
+        circle at 10% 80%,
+        var(--Personal-colors-main),
+        transparent 20%
+      ),
+      radial-gradient(
+        circle at 80% 10%,
+        var(--Personal-colors-main2),
+        transparent 20%
+      );
+
+}
+
 
 @import "@uploadthing/react/styles.css";

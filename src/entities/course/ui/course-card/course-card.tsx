@@ -15,7 +15,7 @@ interface ICourseCardProps {
 export const CourseCard: FC<ICourseCardProps> = ({ card }) => {
 	return (
 		<Link href={`/courses/${card.id}`}>
-			<div className="group hover:shadow-cm transition overflow-hidden border rounded-lg p-3 h-full flex flex-col gap-2">
+			<div className="group hover:shadow-cm transition overflow-hidden border rounded-lg p-3 h-full flex flex-col gap-2 bg-background/70">
 				<div className="relative w-full aspect-video rounded-md overflow-hidden">
 					<Image
 						fill

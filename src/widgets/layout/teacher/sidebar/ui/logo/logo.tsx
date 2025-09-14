@@ -1,15 +1,17 @@
-"use client";
-
-import Image from "next/image";
+import Link from "next/link";
 import { FC } from "react";
 
-import { IMAGES } from "@/shared/assets";
+import { ENUM_PATH } from "@/shared/config";
 
 export const Logo: FC = () => {
 	return (
-		<div className="flex flex-row items-center justify-center gap-2">
-			<Image src={IMAGES.logo2} alt="logo" width={80} height={80} />
-			<p className="text-xl text-sky-700 font-bold">Skill Forge</p>
-		</div>
+		<Link href={ENUM_PATH.TEACHER.COURSES}>
+			<div className="flex flex-row items-center justify-center gap-2">
+				<div className="w-10 h-10 bg-sky-700 rounded-lg flex items-center justify-center p-4">
+					<span className="text-white font-bold text-xl">N</span>
+				</div>
+				<p className="text-xl text-sky-700 font-bold">Nexus</p>
+			</div>
+		</Link>
 	);
 };

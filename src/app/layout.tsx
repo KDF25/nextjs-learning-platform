@@ -17,23 +17,22 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-	title: "Skill Forge",
-	manifest: "/manifest.json",
+	title: "Nexus | Online Learning Platform",
 	description:
-		"Skill Forge is your ultimate platform for mastering new skills. Explore a wide range of expert-led courses and enhance your career with flexible online learning.",
+		"Nexus is your ultimate platform for mastering new skills. Explore a wide range of expert-led courses and enhance your career with flexible online learning.",
 	metadataBase: new URL(process.env.NEXT_PUBLIC_APP_URL || ""),
 	openGraph: {
-		title: "Skill Forge",
+		title: "Nexus",
 		description:
-			"Skill Forge offers high-quality courses across various domains, from tech to business and personal development. Learn at your own pace and unlock new career opportunities.",
+			"Nexus offers high-quality courses across various domains, from tech to business and personal development. Learn at your own pace and unlock new career opportunities.",
 		url: process.env.NEXT_PUBLIC_APP_URL,
-		siteName: "Skill Forge",
+		siteName: "Nexus",
 		images: [
 			{
 				url: IMAGES.logo.src,
 				width: 800,
 				height: 600,
-				alt: "Skill Forge - Online Learning Platform"
+				alt: "Nexus | Online Learning Platform"
 			}
 		],
 		locale: "en-US",
