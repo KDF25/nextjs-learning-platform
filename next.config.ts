@@ -11,4 +11,5 @@ export default withPWA({
   disable: false,
   register: true,
   skipWaiting: true,
+  clientsClaim: true, 
 })(nextConfig);

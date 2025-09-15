@@ -21,6 +21,16 @@ export const metadata: Metadata = {
 	description:
 		"Nexus is your ultimate platform for mastering new skills. Explore a wide range of expert-led courses and enhance your career with flexible online learning.",
 	metadataBase: new URL(process.env.NEXT_PUBLIC_APP_URL || ""),
+	keywords: [
+		"learning",
+		"online",
+		"courses",
+		"platform",
+		"freelance",
+		"freelancer",
+		"freelancing",
+		"freelance jobs"
+	],
 	openGraph: {
 		title: "Nexus",
 		description:
