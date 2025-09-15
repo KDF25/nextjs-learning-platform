@@ -64,16 +64,19 @@ export const ChapterPreview: FC<IChapterPreviewProps> = ({
 						/>
 					)}
 				</div>
-				<Separator />
-				<div>
-					<EditorPreview value={chapter?.description || ""} />
+				<div className="grid gap-4">
+					<Separator className="bg-sky-500" />
+					<div className="bg-background/70 rounded-md grid gap-2 p-4">
+						<p className="font-medium text-sky-700">Description:</p>
+						<EditorPreview value={chapter?.description || ""} />
+					</div>
+					{!!attachments.length && (
+						<>
+							<Separator className="bg-sky-500" />
+							<AttachmentSection attachments={attachments} />
+						</>
+					)}
 				</div>
-				{!!attachments.length && (
-					<>
-						<Separator />
-						<AttachmentSection attachments={attachments} />
-					</>
-				)}
 			</div>
 		</div>
 	);

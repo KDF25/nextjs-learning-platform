@@ -33,7 +33,7 @@ export const NavbarRoutes: FC = ({}) => {
 				</div>
 			)}
 			<div className="flex gap-x-2 ml-auto">
-				<div className="flex md:hidden gap-6">
+				<div className="flex  gap-6">
 					{routes.map((item) => (
 						<Link
 							href={item.href}

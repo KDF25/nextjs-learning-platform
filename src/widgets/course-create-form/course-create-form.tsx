@@ -70,6 +70,7 @@ export const CourseCreateForm: FC = ({}) => {
 									<FormControl>
 										<Input
 											disabled={isSubmitting}
+											className="bg-background"
 											placeholder="e.g. Introduction to React"
 											{...field}
 										/>

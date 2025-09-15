@@ -12,13 +12,17 @@ interface IChartProps {
 }
 
 export const Chart: FC<IChartProps> = ({ data }) => {
+	const formData = data.map((item) => ({
+		name: item.name.slice(0, 10),
+		total: item.total
+	}));
 	return (
 		<Card>
 			<ResponsiveContainer width="100%" height={350}>
-				<BarChart data={data}>
+				<BarChart data={formData}>
 					<XAxis
 						dataKey={"name"}
-						stroke="#888888"
+						stroke="#000"
 						fontSize={12}
 						tickLine={false}
 						axisLine={false}
