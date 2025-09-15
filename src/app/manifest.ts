@@ -2,8 +2,6 @@ import { MetadataRoute } from "next";
 
 import { ENUM_PATH } from "@/shared/config";
 
-// import { ENUM_PATHS } from "@/shared/config";
-
 export default async function manifest() {
 	return {
 		name: "Nexo — Learning Platform",
@@ -22,19 +20,19 @@ export default async function manifest() {
 			{
 				src: "/screens/wide1.png",
 				type: "image/jpeg",
-				sizes: "800x500",
+				sizes: "2000x1150",
 				form_factor: "wide"
 			},
 			{
 				src: "/screens/wide2.png",
 				type: "image/jpeg",
-				sizes: "800x500",
+				sizes: "2000x1150",
 				form_factor: "wide"
 			},
 			{
 				src: "/screens/wide3.png",
 				type: "image/jpeg",
-				sizes: "800x500",
+				sizes: "2000x1150",
 				form_factor: "wide"
 			},
 			{
@@ -45,6 +43,12 @@ export default async function manifest() {
 			},
 			{
 				src: "./screens/mobile2.jpg",
+				type: "image/jpeg",
+				sizes: "590x1280",
+				form_factor: "narrow"
+			},
+			{
+				src: "./screens/mobile3.jpg",
 				type: "image/jpeg",
 				sizes: "590x1280",
 				form_factor: "narrow"
