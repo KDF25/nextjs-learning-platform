@@ -131,7 +131,6 @@ export const CourseService = {
 		try {
 			const courses = await prisma.course.findMany({
 				where: {
-					userId,
 					title: {
 						search: title
 					},

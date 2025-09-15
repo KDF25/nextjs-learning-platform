@@ -1,11 +1,7 @@
-import favicon from "./favicon.ico";
-import logo2 from "./logo2.png";
-import logo from "./logo.png";
 import no_result from "./no-results.png";
+import OG_image from "./og-image.png";
 
 export const IMAGES = {
-	logo,
-	logo2,
-	favicon,
-	no_result
+	no_result,
+	OG_image
 };
